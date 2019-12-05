@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="226c9cb9-594c-4d7f-a895-5d1fa6c9ef84"
+  Name="Status"
+  AuthoringIsExpanded="false"
+  DataType="String">
+  <ValueList
+    Guid="b36a79cc-ac38-4fb2-99c2-3597c0626073" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters />
+    <SourceValueListName>ClaimStatusList</SourceValueListName>
+  </ValueList>
+</FieldDef>

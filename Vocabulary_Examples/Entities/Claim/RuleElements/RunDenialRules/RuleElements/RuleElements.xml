@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:DecisionTableDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="8d6581e9-0795-416e-9888-1a83e4674641"
+    Name="8d6581e9-0795-416e-9888-1a83e4674641">
+    <q1:Conditions />
+    <q1:Actions />
+    <q1:Decisions />
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+    <q1:UseCompatibilityMode>false</q1:UseCompatibilityMode>
+  </RuleElementDef>
+</RuleElementDefCollection>

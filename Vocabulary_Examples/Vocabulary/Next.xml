@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssignmentTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="23b897df-50c7-47ee-b653-787c3dfbb463"
+  Name="Next">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Next</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">List Functions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Next $field$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="74a238a5-bb0e-4d90-b7ea-eb250f304893"
+      Name="field">
+      <DisplayText>[field]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="d40d0638-be30-4134-bb91-82190713fafb"
+          Name="DataTypeValueDef1">
+          <DataType>Integer</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local</TemplateScope>
+  <TargetExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$field$</TargetExpressionPrototype>
+  <ValueExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$field$ + 1</ValueExpressionPrototype>
+</AssignmentTemplateDef>

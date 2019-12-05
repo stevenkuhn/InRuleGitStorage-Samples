@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="7af4888d-88c9-44f2-a0d5-4a55e92b6b3d"
+  Name="TransactionDate"
+  DataType="Date"
+  DisplayName="Transaction Date" />

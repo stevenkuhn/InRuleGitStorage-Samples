@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="2aff34d3-b005-45ed-b092-30ec24bcae58"
+  Name="ClaimStatusList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="ce783d98-b8dc-4978-8b75-5581b8442c37">
+      <Value>O</Value>
+      <DisplayText>Open</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="ea9500e1-4be3-435e-9723-45ae00b242e0">
+      <Value>C</Value>
+      <DisplayText>Closed</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="4bbe59cb-da12-430f-b877-1bbeead88762">
+      <Value>R</Value>
+      <DisplayText>Reopened</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

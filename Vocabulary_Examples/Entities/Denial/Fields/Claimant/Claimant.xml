@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="a5c6de79-8b0d-4535-b7b6-40bd73f2b071"
+  Name="Claimant"
+  DataType="Entity"
+  DataTypeEntityName="Claimant" />

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NotificationTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="170b1f53-3ca7-43fc-b695-121fdf509137"
+  Name="DisplayMessage">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Display Message</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">Actions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Display informational message $message$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="07eecbf1-d906-4d1a-b626-89bfdb9930cd"
+      Name="message">
+      <DisplayText>[message]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="9023454a-e215-4ff6-8413-bbdc71294db8"
+          Name="DataTypeValueDef1">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="5f3a6af4-f7b0-467b-aa53-75b74bde69fc"
+          Name="DataTypeValueDef2">
+          <DataType>Integer</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="00fbf23a-4ebb-4b8a-aa62-03b34cefaf9b"
+          Name="DataTypeValueDef3">
+          <DataType>Number</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <NotificationType xmlns="http://www.inrule.com/XmlSchema/Schema">Informational</NotificationType>
+  <AllowMultipleNotifications xmlns="http://www.inrule.com/XmlSchema/Schema">true</AllowMultipleNotifications>
+  <MessagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">&lt;%$message$%&gt;</MessagePrototype>
+</NotificationTemplateDef>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="0db87472-9759-41da-896f-6ad0399aa910"
+  Name="ClaimID"
+  DataType="Integer"
+  DisplayName="Claim ID" />

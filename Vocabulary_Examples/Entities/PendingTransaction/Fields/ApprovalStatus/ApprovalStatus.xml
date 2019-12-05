@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="90933d83-2650-4aac-a1e2-3cf0f4c4295c"
+  Name="ApprovalStatus"
+  DataType="String"
+  DisplayName="Approval Status">
+  <ValueList
+    Guid="7b039ba6-0bf3-4d27-afb1-c9487e75f1c1" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters />
+    <SourceValueListName>ApprovalStatusList</SourceValueListName>
+  </ValueList>
+</FieldDef>

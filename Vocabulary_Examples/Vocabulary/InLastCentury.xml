@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="c042cd3c-514c-4368-a66b-291f7fa6a8b7"
+  Name="InLastCentury">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">In Last Century</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">Date Functions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$year$ is in last century</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="e6771ddd-282c-43e9-b58b-f6c2964e3a87"
+      Name="year">
+      <DisplayText>[year]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="1a915759-5833-47ec-9285-d52b36afebbe"
+          Name="DataTypeValueDef1">
+          <DataType>Integer</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="e8cd444b-4951-4ead-9a76-50fcccfe4de7"
+          Name="DataTypeValueDef2">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local</TemplateScope>
+  <ExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">left(Year(Today())-100,2) = left($year$,2)</ExpressionPrototype>
+  <FunctionName xmlns="http://www.inrule.com/XmlSchema/Schema">InLastCentury</FunctionName>
+  <SelectionMode xmlns="http://www.inrule.com/XmlSchema/Schema">Template</SelectionMode>
+  <Impersonates xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ImpersonationDef
+      xsi:type="DataTypeImpersonationDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="c9bfff19-37ef-430d-be2c-253e98f9a277"
+      Name="DataTypeImpersonationDef1">
+      <DataType>Boolean</DataType>
+    </ImpersonationDef>
+  </Impersonates>
+</ExpressionTemplateDef>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssignmentTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="2a9a6163-15d4-4f6a-909a-7bc66a563bd5"
+  Name="SetPendingTransactionApprovalStatus">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Set Pending Transaction Approval Status</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Set the pending transaction approval status to $status$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="b22ea2c8-f606-4830-ad5e-fb98b9d9adf9"
+      Name="status">
+      <DisplayText>[status]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="ListValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="589d3c8a-4cef-44d1-a597-1b7511b60eca"
+          Name="ListValueDef1">
+          <ListName>ApprovalStatusList</ListName>
+          <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <TargetExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">PendingTransaction.ApprovalStatus</TargetExpressionPrototype>
+  <ValueExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$status$</ValueExpressionPrototype>
+</AssignmentTemplateDef>
