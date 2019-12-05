@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecuteMethodActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="6f442d64-add0-4b60-b32c-760f02f0699a"
+  Name="LoadXMLToEntity">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="UDFUtils.UdfLibrary.StringLib.Udf.TransformXmlToEntity(&lt;Arg Name=&quot;xml&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="UDFUtils.UdfLibrary.StringLib.Udf.TransformXmlToEntity(&lt;Arg Name=&quot;xml&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="UDFUtils.UdfLibrary.StringLib.Udf.TransformXmlToEntity(&lt;Arg Name=&quot;xml&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="UDFUtils.UdfLibrary.RuleLib.Udf.GetRuleEval(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ruleName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <AliasName xmlns="http://www.inrule.com/XmlSchema/Schema">StringLibrary</AliasName>
+  <MethodName xmlns="http://www.inrule.com/XmlSchema/Schema">LoadXmlToEntity</MethodName>
+  <MethodReturnAssignTo xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <ParameterValues xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ExecuteMethodActionParamDef
+      Name="xml">
+      <ArgName>xml</ArgName>
+      <FullTypeName>System.String</FullTypeName>
+      <IsOut>false</IsOut>
+      <ArgValue>
+        <FormulaText>"&lt;TextField1&gt;data one&lt;/TextField1&gt;&lt;TextField3&gt;data two&lt;/TextField3&gt;"</FormulaText>
+      </ArgValue>
+    </ExecuteMethodActionParamDef>
+  </ParameterValues>
+</ExecuteMethodActionDef>

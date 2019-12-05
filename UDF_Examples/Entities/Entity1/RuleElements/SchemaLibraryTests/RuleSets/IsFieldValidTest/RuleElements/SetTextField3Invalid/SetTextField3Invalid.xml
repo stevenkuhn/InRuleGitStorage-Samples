@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetFieldInvalidActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="f8bbfd09-9e7c-408b-9cce-b3bea6e18d96"
+  Name="SetTextField3Invalid">
+  <Message xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>Field 3 is invalid</FormulaText>
+  </Message>
+  <FieldName xmlns="http://www.inrule.com/XmlSchema/Schema">TextField3</FieldName>
+</SetFieldInvalidActionDef>

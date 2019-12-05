@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecuteMethodActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="aa70408f-bd2b-4547-88ba-8a710fb5616c"
+  Name="SetCollectionMemberValues">
+  <AliasName xmlns="http://www.inrule.com/XmlSchema/Schema">SchemaLibrary</AliasName>
+  <MethodName xmlns="http://www.inrule.com/XmlSchema/Schema">SetCollectionMemberValues</MethodName>
+  <MethodReturnAssignTo xmlns="http://www.inrule.com/XmlSchema/Schema">TextField1</MethodReturnAssignTo>
+  <ParameterValues xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ExecuteMethodActionParamDef
+      Name="collectionName">
+      <ArgName>collectionName</ArgName>
+      <FullTypeName>System.String</FullTypeName>
+      <IsOut>false</IsOut>
+      <ArgValue>
+        <FormulaText>"Entity2Collection"</FormulaText>
+      </ArgValue>
+    </ExecuteMethodActionParamDef>
+    <ExecuteMethodActionParamDef
+      Name="fieldName">
+      <ArgName>fieldName</ArgName>
+      <FullTypeName>System.String</FullTypeName>
+      <IsOut>false</IsOut>
+      <ArgValue>
+        <FormulaText>"Field2"</FormulaText>
+      </ArgValue>
+    </ExecuteMethodActionParamDef>
+    <ExecuteMethodActionParamDef
+      Name="value">
+      <ArgName>value</ArgName>
+      <FullTypeName>System.String</FullTypeName>
+      <IsOut>false</IsOut>
+      <ArgValue>
+        <FormulaText>"This is my test collection field value"</FormulaText>
+      </ArgValue>
+    </ExecuteMethodActionParamDef>
+    <ExecuteMethodActionParamDef
+      Name="index">
+      <ArgName>index</ArgName>
+      <FullTypeName>System.String</FullTypeName>
+      <IsOut>false</IsOut>
+      <ArgValue>
+        <FormulaText>2</FormulaText>
+      </ArgValue>
+    </ExecuteMethodActionParamDef>
+  </ParameterValues>
+</ExecuteMethodActionDef>

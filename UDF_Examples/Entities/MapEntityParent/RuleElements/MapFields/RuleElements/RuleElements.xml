@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:ExecuteMethodActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="7a195f20-3ecd-409c-a48b-99339c0b1559"
+    Name="7a195f20-3ecd-409c-a48b-99339c0b1559">
+    <q1:AliasName />
+    <q1:MethodName />
+    <q1:MethodReturnAssignTo />
+    <q1:ParameterValues />
+  </RuleElementDef>
+</RuleElementDefCollection>

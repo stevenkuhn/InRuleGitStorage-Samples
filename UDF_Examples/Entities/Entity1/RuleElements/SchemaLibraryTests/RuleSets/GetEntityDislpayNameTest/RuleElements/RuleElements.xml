@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:SetValueActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="6c705891-a2ba-4bcb-8584-e9597f9e8f38"
+    Name="6c705891-a2ba-4bcb-8584-e9597f9e8f38">
+    <q1:Element>
+      <q1:FormulaText />
+    </q1:Element>
+    <q1:Value>
+      <q1:FormulaText />
+    </q1:Value>
+  </RuleElementDef>
+</RuleElementDefCollection>

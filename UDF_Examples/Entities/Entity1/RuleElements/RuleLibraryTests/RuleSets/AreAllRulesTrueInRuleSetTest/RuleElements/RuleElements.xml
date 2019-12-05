@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="2f37ca8a-88e4-4c20-9688-29c541501c8f"
+    Name="2f37ca8a-88e4-4c20-9688-29c541501c8f">
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="818f672e-7f53-470a-9372-4d3ba31eb937"
+    Name="818f672e-7f53-470a-9372-4d3ba31eb937">
+    <q2:HasContextVersionSettings>false</q2:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="39abf526-105c-4bca-b508-9e32d4fa3dfe"
+    Name="39abf526-105c-4bca-b508-9e32d4fa3dfe">
+    <q3:Condition>
+      <q3:ReturnType>Boolean</q3:ReturnType>
+      <q3:FormulaText />
+    </q3:Condition>
+    <q3:HasContextVersionSettings>false</q3:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>

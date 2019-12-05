@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="3563ad7e-0e9b-48ff-b5bb-f6c9269209b5"
+  Name="SourceFieldB"
+  DataType="String"
+  DisplayName="Source Field B">
+  <DefaultValue xmlns="http://www.inrule.com/XmlSchema/Schema">"zxcv"</DefaultValue>
+</FieldDef>

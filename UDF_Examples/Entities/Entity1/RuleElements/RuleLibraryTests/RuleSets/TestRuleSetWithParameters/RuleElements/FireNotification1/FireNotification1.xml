@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FireNotificationActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="e889d8a2-d32e-41d1-b7ba-f1406719b61b"
+  Name="FireNotification1">
+  <NotificationType xmlns="http://www.inrule.com/XmlSchema/Schema">Informational</NotificationType>
+  <NotificationMessage xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>Here is my parameter 1 value:  &lt;%Parameter1%&gt;. Here is my parameter 2 value:  &lt;%Parameter2%&gt;</FormulaText>
+  </NotificationMessage>
+</FireNotificationActionDef>

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4dae6deb-f741-419b-91c1-d22b538050da"
+  Name="testrule1">
+  <AssignedCategories xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <string>xxxx</string>
+  </AssignedCategories>
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="ConditionGroupTemplateSingleCondition" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="IsNumericString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="IsNumericString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0"
+          Value="FireNotificationTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1"
+          Value="StringDesigner" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <Versions xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementVersion
+      Revision="1"
+      PublicRevision="1"
+      Guid="0a064865-b2f7-41ac-a9f8-a40e060b2ffe"
+      Name="MyTestVersion">
+      <EffectiveDate>2016-01-04T16:34:12.3457825-06:00</EffectiveDate>
+      <ImplementedDate>2016-01-04T16:34:12.3457825-06:00</ImplementedDate>
+      <Active>false</Active>
+      <RuleElement
+        xsi:type="LanguageRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="4dae6deb-f741-419b-91c1-d22b538050da"
+        Name="LanguageRule1">
+        <AssignedCategories>
+          <string>xxxx</string>
+        </AssignedCategories>
+        <Attributes>
+          <anyType
+            xsi:type="CollectionItem">
+            <Key>
+              <Name>ReservedAttributeTokenKey</Name>
+              <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+            </Key>
+            <Collection>
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0"
+                Value="IfThenDefault" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.0"
+                Value="IfThenDefault" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.1"
+                Value="ConditionGroupTemplateSingleCondition" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.1.0"
+                Value="IsNumericString" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.1.0.0"
+                Value="UDFUtils.Entity1.TextField1.Implicit" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.1.0.1"
+                Value="IsNumericString" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.2"
+                Value="IfThenDefault" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.3.0"
+                Value="FireNotificationTemplateDefault" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.3.0.0"
+                Value="FireNotificationWithSettingsTemplateDefault" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.3.0.1"
+                Value="StringDesigner" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.3.1"
+                Value="FireNotificationTemplateDefault" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.3.1.0"
+                Value="FireNotificationWithSettingsTemplateDefault" />
+              <anyType
+                xsi:type="XmlSerializableStringDictionaryItem"
+                Key="0.3.1.1"
+                Value="StringDesigner" />
+            </Collection>
+          </anyType>
+        </Attributes>
+        <RuleElement
+          xsi:type="SimpleRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="494d5c76-f437-46c5-b5f5-ba8cee9c18a7"
+          Name="LanguageRule1">
+          <Condition>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>IsNumeric(TextField1)</FormulaText>
+          </Condition>
+          <SubRules>
+            <RuleElementDef
+              xsi:type="FireNotificationActionDef"
+              Revision="1"
+              PublicRevision="1"
+              Guid="99b1d5d5-4f62-462a-92a4-759aa98bd690"
+              Name="FireNotification1">
+              <NotificationType>Informational</NotificationType>
+              <NotificationMessage>
+                <FormulaParseFormat>Literal</FormulaParseFormat>
+                <FormulaText>field 1 is a number</FormulaText>
+              </NotificationMessage>
+            </RuleElementDef>
+            <RuleElementDef
+              xsi:type="FireNotificationActionDef"
+              Revision="1"
+              PublicRevision="1"
+              Guid="6bbdcd04-ddb6-4814-9c48-68722d4493b3"
+              Name="FireNotification2">
+              <NotificationType>Informational</NotificationType>
+              <NotificationMessage>
+                <FormulaParseFormat>Literal</FormulaParseFormat>
+                <FormulaText>this is the latest version</FormulaText>
+              </NotificationMessage>
+            </RuleElementDef>
+          </SubRules>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElement>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <IsDefault>false</IsDefault>
+    </RuleElementVersion>
+  </Versions>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="494d5c76-f437-46c5-b5f5-ba8cee9c18a7"
+    Name="testrule1" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition>
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>IsNumeric(TextField1)</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="FireNotificationActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="99b1d5d5-4f62-462a-92a4-759aa98bd690"
+        Name="FireNotification1">
+        <NotificationType>Informational</NotificationType>
+        <NotificationMessage>
+          <FormulaParseFormat>Literal</FormulaParseFormat>
+          <FormulaText>field 1 is a number</FormulaText>
+        </NotificationMessage>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

@@ -1,0 +1,3287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleApplicationDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="3e796f0c-8374-4c3f-9798-7e055928e2b7"
+  Id="-1"
+  Name="UDF_Examples"
+  RepositoryAssemblyFileVersion="5.4.3.211"
+  AuthoringIsExpanded="false"
+  LastValidateContentCode="397512381"
+  IsolatedTestDomain="false"
+  SchemaGuid="57ed2056-81ca-4d8f-bb15-dee643e9b29e"
+  SchemaRevision="1"
+  SchemaPublicRevision="1"
+  LastValidateDateTimeUtc="2019-09-18T21:49:33.4494675Z">
+  <UpgraderMessageList xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <RuntimeEngine xmlns="http://www.inrule.com/XmlSchema/Schema">InRule</RuntimeEngine>
+  <FeatureVersion xmlns="http://www.inrule.com/XmlSchema/Schema">106</FeatureVersion>
+  <CompatibilityVersion xmlns="http://www.inrule.com/XmlSchema/Schema">1</CompatibilityVersion>
+  <AuthoringSettings xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <SelectedAuthoringItemGuid>5c3d2041-ae66-489a-a951-faaed12810c1</SelectedAuthoringItemGuid>
+    <UseAdvancedXmlOptions>false</UseAdvancedXmlOptions>
+    <AllowAccessToParentsInLanguageRules>true</AllowAccessToParentsInLanguageRules>
+    <TreeRuleNameVisibility>HideReserved</TreeRuleNameVisibility>
+    <CreatedDateTime>2009-06-03T16:22:41.1554181-05:00</CreatedDateTime>
+    <ModifiedDateTime>2019-09-18T16:49:33.4793831-05:00</ModifiedDateTime>
+    <TargetPlatform>InRule</TargetPlatform>
+  </AuthoringSettings>
+  <IndentUnboundCollectionXml xmlns="http://www.inrule.com/XmlSchema/Schema">false</IndentUnboundCollectionXml>
+  <AllowRuleInactivation xmlns="http://www.inrule.com/XmlSchema/Schema">true</AllowRuleInactivation>
+  <UseRuleVersions xmlns="http://www.inrule.com/XmlSchema/Schema">true</UseRuleVersions>
+  <UseVersionCreationDates xmlns="http://www.inrule.com/XmlSchema/Schema">true</UseVersionCreationDates>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  <RunawayCycleCount xmlns="http://www.inrule.com/XmlSchema/Schema">100000</RunawayCycleCount>
+  <Timeout xmlns="http://www.inrule.com/XmlSchema/Schema">30000</Timeout>
+  <RuntimeErrorHandlingPolicy xmlns="http://www.inrule.com/XmlSchema/Schema">ContinueWithNextRule</RuntimeErrorHandlingPolicy>
+  <Entities xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <Categories xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <CategoryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="cbe380eb-c3ac-4f77-a899-155b7b715f27"
+      Name="xxxx" />
+    <CategoryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="f52ce4e9-2df3-4aa8-b403-3bec1b3c0812"
+      Name="yyyy" />
+  </Categories>
+  <UdfLibraries xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <UdfLibraryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="0e0f058e-26fa-4244-b85c-a4212bae7019"
+      Name="StringLibrary">
+      <UserDefinedFunctions>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="77b78d7b-e7d9-4c63-b9c4-e11f7bd6c76a"
+          Name="GetElapsedTimeFromSeconds"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="c4baaa9e-963b-4139-9824-a624d6d45038">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b6c54311-ea86-4ede-8240-a42f1998f080"
+              Name="seconds">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="e0de36e4-6144-4fe5-9d96-b547b29fe90e">
+                <DataType>Integer</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns elapsed time from a supplied number of seconds.
+
+var t = Util.TimeSpan.FromSeconds(seconds);
+return t.ToString();</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="82cb0afa-601f-4c52-aaad-ebc0c898a975"
+          Name="GetListItemByIndex"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="39bbf4e6-1df0-4648-9ec9-2ff74e12ce81">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="1b67d8ac-eded-4ef2-ac9a-e3ee8dfa311c"
+              Name="list">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="4599d72b-2ad6-466a-918a-f64bc447a282">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b0c634af-2bba-49e9-8469-41ac2da6c4bf"
+              Name="index">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="aa55ada9-ef7f-4f7b-ae67-3ab78b0f4287">
+                <DataType>Integer</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the selected item from a comma separated list of text splitting on the comma. 0 based indexing. Passing in "4" gets the 5th word from the list.
+
+var values = list.Split(",");
+
+if(index &lt; values.Length)
+{
+	return values[index];
+}
+
+return "";
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="2f2aae67-fff0-49ee-8721-d6180b147ede"
+          Name="GetListItemCount"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="749a1d89-695d-472a-8fa1-a67f50881198">
+            <DataType>Integer</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="1b67d8ac-eded-4ef2-ac9a-e3ee8dfa311c"
+              Name="list">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="4599d72b-2ad6-466a-918a-f64bc447a282">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the count of items from a comma separated list of text splitting on the comma. 
+
+var values = list.Split(",");
+return values.Length;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="30ce2756-ebd6-4506-bc7d-074334401dd7"
+          Name="GetMatchText"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="eb45d893-5cfc-40f4-9937-7c8614a49872">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="9aacfe05-a00b-42b1-9fca-bf457e0a6c67"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="695eb6a6-14f0-4af3-ad83-9647a6f6f6e2">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="da143efa-e37c-495f-b015-61d091872a1a"
+              Name="regExPattern">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="ff17b154-eaef-4b7b-82dd-5a21662113a0">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the matching text based on the supplied regExPattern. 
+// Example: regExPattern as "\d+" from text "8+2" returns "8".
+
+if(text == null)
+	return "";
+
+var  m = Util.Regex.Match(text, regExPattern);
+var s = "";
+
+  if (m.Success)
+  {
+      s = m.Value;
+  }
+  return s;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="8325905f-e8d8-4908-af47-08a2c2b57eac"
+          Name="GetNumberAfterMatchText"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="7b9b742c-b5fd-4404-a214-1fa3f0012715">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="9feb151f-a7d3-4d69-a474-19790694e627"
+              Name="findStartText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="2600e6db-b225-4131-ae2b-1dee05305fc5">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="8cc582fb-6164-448c-9e67-18a54318f16b"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="f0d1b09c-41e1-46eb-b845-3bc34c910287">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the first number after the matched text
+// Example: findStartText as "abc" from text "abc is a good example of how many times I count 123 up to 26" returns "123".
+
+if(text == null)
+	return "";
+
+var startIdx = text.IndexOf(findStartText);
+var s = "";
+var i = 0;
+var c = "";
+var retNum = "";
+
+if (startIdx &gt; -1)
+{
+	s = text.Substring(startIdx + findStartText.Length);
+    
+	retNum = GetNumberInText(s);
+}
+	
+return retNum;
+
+
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="50f47d05-0722-4fe8-b1b5-88aab13b2fc4"
+          Name="GetNumberInText"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="a2765f44-c56b-40c2-af88-65e8254c3171">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="8ebe72f9-e7e7-40a3-a40e-7a4090f4f70e"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="66e93f21-88ce-463f-b26e-5574f62f19fc">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the first instance of a number in the supplied text.
+// Example: text as "she held both the number 5 and number 6 rankings" returns "5".
+
+if(text == null)
+	return "";
+
+var i = 0;
+var c = "";
+var retNum = "";
+var foundNum = false;
+
+while(i &lt; text.Length)
+{
+	c = text.Substring(i,1)
+	if(IsNumeric(c))
+	{
+		foundNum = true;
+		retNum += c;
+	}
+	else
+	{
+		if(foundNum)
+			break;
+	}
+	i++;
+}
+return retNum;
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="9f63d9cd-6323-4b17-9abf-29ae42740a2e"
+          Name="GetTextAfter"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="eb7fe42f-a027-4b68-9977-29d4530c6bd0">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3856c6d9-8bf9-4cf7-9ab6-57650f65835c"
+              Name="findText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="67fa930d-fca9-4d52-95e3-0a0573c042d1">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="e2cac40d-7a75-4d53-806a-69212853952e"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="b6b0ce4b-b51a-4e23-adf4-66ae3ef6af89">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the text after  the first found match for the supplied match text. 
+// Example: findText as "abc" from text "this abc word is the second word" returns "word is the second word"
+
+if(text == null)
+	return "";
+
+var startIdx = text.IndexOf(findText);
+
+var s = "";
+
+if (startIdx &gt; -1)
+{
+    s = text.Substring(startIdx + findText.Length)
+}
+return s;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="84f0571f-aea1-4fd1-9c47-68f0a6438635"
+          Name="GetTextAfterLast"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="eb7fe42f-a027-4b68-9977-29d4530c6bd0">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3856c6d9-8bf9-4cf7-9ab6-57650f65835c"
+              Name="findText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="67fa930d-fca9-4d52-95e3-0a0573c042d1">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="e2cac40d-7a75-4d53-806a-69212853952e"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="b6b0ce4b-b51a-4e23-adf4-66ae3ef6af89">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the text after the last found match for the supplied match text. 
+// Example: findText as "abc" from text "abc is and abc was" returns "was"
+
+if(text == null)
+	return "";
+
+var startIdx = text.LastIndexOf(findText);
+
+var s = "";
+
+if (startIdx &gt; -1)
+{
+    s = text.Substring(startIdx + findText.Length)
+}
+return s;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a211cd86-48ad-4021-aa32-56d0479f4332"
+          Name="GetTextBefore"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="efea51e8-80c0-4be3-b1e6-1d932612bcf3">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3856c6d9-8bf9-4cf7-9ab6-57650f65835c"
+              Name="findText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="0f340b30-d20b-4e51-b42e-259f1d59c884">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="e2cac40d-7a75-4d53-806a-69212853952e"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="005bc833-d8a1-4a4f-9ebc-04ae8f5f7e5a">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the text before the first found match for the supplied match text. 
+// Example: findText as "abc" from text "this is the abc text" returns "this is the"
+
+if(text == null)
+	return "";
+
+var startIdx = text.IndexOf(findText);
+
+var s = "";
+
+if (startIdx &gt; -1)
+{
+    s = text.Substring(0, startIdx)
+}
+return s;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="bd1ad671-61ae-47a8-9122-2a3c9da66d73"
+          Name="GetTextBeforeLast"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="efea51e8-80c0-4be3-b1e6-1d932612bcf3">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3856c6d9-8bf9-4cf7-9ab6-57650f65835c"
+              Name="findText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="0f340b30-d20b-4e51-b42e-259f1d59c884">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="e2cac40d-7a75-4d53-806a-69212853952e"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="005bc833-d8a1-4a4f-9ebc-04ae8f5f7e5a">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the text before the last found match for the supplied match text. 
+// Example: findText as "abc" from text "one is abc and another is abc" returns "one is abc and another is"
+
+if(text == null)
+	return "";
+
+var startIdx = text.LastIndexOf(findText);
+
+var s = "";
+
+if (startIdx &gt; -1)
+{
+    s = text.Substring(0, startIdx)
+}
+return s;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="4bdcd6cb-c543-4f83-9a13-02af8e694863"
+          Name="GetTextBetween"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="4f950371-4e02-4194-bac3-191743c3dce7">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="9feb151f-a7d3-4d69-a474-19790694e627"
+              Name="findStartText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="98f21875-0541-4b33-a7ca-5d327ed08ca4">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="6b0e82c1-dbaf-4fc9-8c90-23b79cca2657"
+              Name="findEndText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="42080886-ee8a-4af8-9f27-0ee08c77461c">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="8cc582fb-6164-448c-9e67-18a54318f16b"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="3491faac-4314-4a6c-897b-1a96c792d0e5">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the text between the supplied start and end text.
+// Example: findStartText as"FirstName" and findEndText as "LastName" from text "FirstName MiddleName LastName" returns "MiddleName"
+
+if(text == null)
+	return "";
+
+var startIdx = text.IndexOf(findStartText);
+var s = "";
+
+if (startIdx &gt; -1)
+{
+    var endIdx = text.Substring(startIdx + findStartText.Length).IndexOf(findEndText);
+
+	if (endIdx &gt; -1)
+	{
+		s = text.Substring(startIdx + findStartText.Length, endIdx);
+	}
+}
+return s;
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="4ec7d256-493c-41a7-8592-1c8d35d8cd14"
+          Name="GetTextBetweenInclusive"
+          AuthoringIsExpanded="false">
+          <Comments>TODO:  logic flaw when findStartText is same as findEndText</Comments>
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="6c5f88ea-5db5-489f-a68d-12b4d01a5f0e">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="9feb151f-a7d3-4d69-a474-19790694e627"
+              Name="findStartText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="0cebff62-f775-4169-ad94-5857bdee2add">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="6b0e82c1-dbaf-4fc9-8c90-23b79cca2657"
+              Name="findEndText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="6707019e-6807-4085-a97b-7de565c9f3dd">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="8cc582fb-6164-448c-9e67-18a54318f16b"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="d5591c33-796a-4ac1-a138-767c818db964">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the text between the supplied start and end text, including the start and end text.
+// Example: findStartText as"FirstName" and findEndText as "LastName" from text "FirstName MiddleName LastName" returns "FirstName MiddleName LastName"
+
+if(text == null)
+	return "";
+
+var startIdx = text.IndexOf(findStartText);
+var s = "";
+
+if (startIdx &gt; -1)
+{
+    var endIdx = text.Substring(startIdx + findStartText.Length).IndexOf(findEndText);
+
+	if (endIdx &gt; -1)
+	{
+		s = text.Substring(startIdx, findStartText.Length + endIdx + findEndText.Length);
+	}
+}
+return s;
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="8d6677fc-af68-4989-b487-766285832571"
+          Name="GetTextBetweenMatchedDelimiters">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="736b953d-ac8f-4b01-9105-9ddbb84f395b">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="4006a1ca-2887-4303-af08-1192d87d86c7"
+              Name="startDelimiter">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="5ae653d3-e312-4815-8147-a17e87c1defd">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="1ddc193d-4dbe-452f-af96-53041050ec10"
+              Name="endDelimiter">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="2a354444-81b3-4ea9-be93-46a5700b05b3">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="f31e9a7f-7014-43dc-b349-e0b04805fdb9"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="782b7db5-6007-4ed8-96a2-d52bc29e5599">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="678340e9-e3aa-49ea-b841-3f75ff12902e"
+              Name="includeDelimiters">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="a964d70c-c931-4108-a2cb-3595f22e05e4">
+                <DataType>Boolean</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the text between the supplied start and end delimiters. If inclusive = true, it returns the text along with the start and end delimiters.
+// Example: startDelimiter as "&lt;&lt;" and endDelimiter as "&gt;&gt;" from text  "&lt;&lt;thistext&gt;&gt;" returns "&lt;&lt;thistext&gt;&gt;" with inclusive = true and "thistext" with inclusive = false.
+
+if(text == null)
+	return "";
+
+var i = 0;
+var startCount = 0;
+var endCount = 0;
+var startMatches = {};
+var endMatches = {};
+var textPart = "";
+
+i = Util.Convert.ToInt64(text.IndexOf(startDelimiter));
+
+if(i &lt; 0)
+	return "";
+
+while(i &lt; text.Length)
+{
+	textPart = text.Substring(i);
+	
+	if(textPart.StartsWith(startDelimiter))
+	{
+		startCount++;
+		startMatches[startCount.ToString()] = i + startDelimiter.Length;
+				
+		i += startDelimiter.Length - 1;
+	}
+	
+	if(startCount &gt; 0 &amp;&amp; textPart.StartsWith(endDelimiter) == true)
+	{
+		endCount++;
+		endMatches[endCount.ToString()] = i;
+		
+		if(startCount == endCount)
+		{
+		    var startIdx = startMatches["1"];
+			var endIdx = endMatches[endCount.ToString()];
+			text =  text.Substring(startIdx, endIdx - startIdx);
+			if(includeDelimiters) 
+			{
+				return startDelimiter + text + endDelimiter;
+			}
+			else
+			{
+				return text;
+			}
+		}
+		i += endDelimiter.Length - 1;
+	}
+
+	i++;
+}
+return "";</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="670c29cb-9ac6-4ba5-8a9f-65a745a7aacf"
+          Name="IsFoundInList"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="9660608d-11a1-46e2-96d8-ad36ba8888d1">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="1b67d8ac-eded-4ef2-ac9a-e3ee8dfa311c"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="4599d72b-2ad6-466a-918a-f64bc447a282">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b0c634af-2bba-49e9-8469-41ac2da6c4bf"
+              Name="list">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="aa55ada9-ef7f-4f7b-ae67-3ab78b0f4287">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Looks for text in a comma separated list of values and returns true if found and false if not found.
+
+if(list == null)
+	return false;
+
+var values = list.Split(",");
+var isMatch = false;
+
+for(var val in values)
+{
+	if(val == text)
+	{
+		isMatch=true;
+		break;
+	}
+}
+return isMatch;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="c9aac7cd-ce3e-46f5-ae99-de3dae6e649c"
+          Name="IsNumeric">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="a064e0b3-efb4-4080-8107-28f83a697ca5">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="0fd07831-da85-4339-9c98-3f9d96ae2450"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="a5f74eb6-1252-4e62-b40f-74ef3c60626b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Determines if supplied text is numeric. If numeric, returns true, else false.
+
+if(text == null)
+	return false;
+
+return Util.Regex.IsMatch(text, "^-?\d+([\.]{1}\d*)?$");</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="c5e1ab67-f472-42c8-9526-ae97554b9bbd"
+          Name="ParseDateString">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="112061ca-67c1-4ab7-867e-fecc9c0fd4e8">
+            <DataType>DateTime</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="29e4518e-8e1a-4d58-ac5e-353af47cbd56"
+              Name="dateString">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="1769bb94-6887-4abe-8f73-e6da0598fafd">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns a datetime from a string that can be resolved to a date.
+
+try
+{
+	return Util.DateTime.Parse(dateString);
+}
+catch(error) 
+{
+
+}
+return "";
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="f553d61f-2061-4173-8887-fc0a0a8c4379"
+          Name="ReplaceTextBetweenMatchedDelimiters">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="6a040dee-c89c-497a-aaa3-49bb8fe541da">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="85457483-1aba-477c-bf6d-06b884ed71f3"
+              Name="startDelimiter">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="0fcb5059-e8c8-4b26-b50b-86d8fb731404">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="92d19cbb-80ed-4667-81b0-412c96d99a9f"
+              Name="endDelimiter">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="2ddf67b2-2f96-479c-85e8-96e794e8bc78">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="5967f102-0690-47fa-8df0-a91bee059edc"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="5efe5ea0-d69a-4baa-ada9-19f8fc8aad56">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="01b01dcd-4ea5-4d8e-ab5b-418d605f85d6"
+              Name="replaceText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="fe2eee54-2192-49cf-bf64-f1b4ec53061d">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="0fa0e23b-e7d1-4823-bb9e-1f1385bcd8a5"
+              Name="includeDelimiters">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="981a0524-80a4-4c2f-ad46-107159cdef74">
+                <DataType>Boolean</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Replaces the text between the supplied start and end delimiters. If inclusive = true, the delimiters are also replaced. 
+// Example: startDelimiter as "&lt;&lt;", endDelimiter as "&gt;&gt;" and replaceText as "replacetext" from text "&lt;&lt;thistext&gt;&gt;" returns "replacetext" with inclusive = true and "&lt;&lt;replacetext&gt;&gt;" with inclusive = false.
+
+var matchText = GetTextBetweenMatchedDelimiters(startDelimiter, endDelimiter, text, includeDelimiters);
+if(matchText.Length &gt; 0)
+{
+	return text.Replace(matchText, replaceText);
+
+}
+return text;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="6bd4a798-dcb2-48d3-b6c9-a19ff5457220"
+          Name="StripLeadingText">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="4ba8a1db-631e-4264-9359-0b79582d4512">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b890bc6c-63ff-469c-a097-b826babc1fb4"
+              Name="findText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="bd5d8c39-e844-45e3-8eac-12dfbec4459b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="861018b3-9edd-481b-a058-7ab1223d8def"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="75c5394f-5394-4f4d-b573-ab8658ddb804">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the supplied text with the supplied leading text removed.
+// Example: findText as "abc" from text "this is abc, but this is not" returns ", but this is not".
+
+if(text == null)
+	return "";
+
+if(text.StartsWith(findText))
+{
+	return GetTextAfter(findText, text);
+}
+else
+{
+	return text;
+}
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="d9e6f182-4d9d-4672-9558-20f52c42d321"
+          Name="LoadXmlToEntity">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="dea9db8f-57ef-4df2-834f-55fd4ecbf85b">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="876a8989-501f-4ebf-8002-e5a82723e763"
+              Name="xml">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="9ffe0ec3-b0de-42d7-9362-02e3bf314004">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Loads the supplied XML into the current entity.
+// Example:  XML as "&lt;TextField1&gt;This is Field 1 data&lt;/TextField1&gt;&lt;TextField3&gt;This is Field 3 data&lt;/TextField3&gt;" loads "This is Field 1 data" into TextField1 and "This is Field 3 data" into TextField3.
+
+var entity = Context.Entity;
+
+for (var i = 0; i &lt; entity.Fields.Count; i++)
+{
+
+	var fieldName = entity.Fields[i].Name;
+	var value = GetTextBetween("&lt;" + fieldName + "&gt;", "&lt;/" + fieldName + "&gt;", xml);
+	if (Util.String.IsNullOrEmpty(value) == false)
+	{
+		entity.Fields[i].SetValue(value);
+	}	
+}
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="c0a229a7-6a2d-41de-8e32-9dc9865da050"
+          Name="CountWords">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="ced34022-f67c-4d00-86bc-9338ac8f57f2">
+            <DataType>Integer</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="5cc09eee-b600-4c7b-81d4-bf0766150d9e"
+              Name="text">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="5250026c-f54f-4f8a-b370-a6f0724467a2">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="ef05d6ea-b547-4e32-982d-8bd313ae0934"
+              Name="word">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="24c11aea-91f3-4465-a66f-9b73efe8d138">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the count of the instances of a given word, e.g. "abc" in a supplied text block.
+
+var count = (text.Length - text.Replace(word, "").Length) / word.Length;
+return count;
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="7e44c914-1b98-452f-97c2-80bdabe27da5"
+          Name="DoStringsMatch">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="69967b85-ca78-4dc4-a2f7-36a94b89cada">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="d47a0195-3fc5-4016-9f5f-bfdf024a04ea"
+              Name="compareText1">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="ae91c099-9dfb-42c7-baf3-7df53fab38a7">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="1698f082-9f80-4900-b176-bb512a50e877"
+              Name="compareText2">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="db450793-2ab2-4352-b9e6-8b69a64b6769">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="88a4f0d6-1936-4b02-b220-4c006c660e0a"
+              Name="caseInsensitive">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="3fe6cf3f-e304-4b9e-861b-3185f1cd7b11">
+                <DataType>Boolean</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Determines if supplied strings match based on the supplied boolean "CaseInsensitive" parameter. If the strings match, returns true, else false.
+
+return Util.String.Compare(compareText1, compareText2, caseInsensitive) == 0;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+      </UserDefinedFunctions>
+    </UdfLibraryDef>
+    <UdfLibraryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="c06d67aa-4f82-4e27-8fcd-5a46ecf47083"
+      Name="RuleLibrary">
+      <UserDefinedFunctions>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="228ceb50-4ea5-4c49-bb61-19684d20875c"
+          Name="AreAllRulesTrueByRuleSetName"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="1be8b2d9-0738-4b75-af3d-d82d16e42cc4">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="1f07551f-5a97-4bae-91e8-e3d83f157919"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="60f3b14f-c268-49dd-83a9-03eb7da121e9">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns true if all rules within the provided rule set have evaluated to true.
+
+var ruleSet = Context.Entity.RuleSets[ruleSetName];
+
+for (var rule in ruleSet.RuleElements){
+	if (rule.Value.ToBoolean() == false){
+		return false;
+	}	
+}
+return true;
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="f9771d3e-547e-4c9a-a86b-5a7df7bc5995"
+          Name="AreAllRulesTrueInRuleSet"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="70ecf3a9-3e80-4d4a-bc08-8ced04d1eac5">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns true if all rules within the current rule set evaluated to true.
+
+for (var rule in Context.RuleSet.RuleElements){
+	if (rule.Value.ToBoolean() == false){
+		return false;
+	}	
+}
+return true;
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="85f359ac-480f-4b3b-977c-098f4f688318"
+          Name="GetParentLanguageRule">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="e4bdf878-5707-4cf3-9f29-7592d2ea13fe">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Navigates up to see if any parent in the tree is a language rule, stopping at the rule set. Returns the name of the language rule, if found.
+
+var def = Context.RuleElement.GetDef();
+
+def = def.Parent;
+
+do
+{
+	if (IsLanguageRule(def.ToString()))
+	{
+		return def.Name;
+	}
+	
+	def = def.Parent;
+} 
+while (def != null &amp;&amp; IsRuleSet(def.ToString()) == false);
+
+return "Parent language rule not found";
+
+
+
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a06fb365-1a82-4ab0-bf37-e0b7b8df543f"
+          Name="GetParentRule">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="e4bdf878-5707-4cf3-9f29-7592d2ea13fe">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the rule name of the parent rule.
+
+var def = Context.RuleElement.GetDef();
+def = def.Parent;
+return def.Name;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a6a3f1c1-240a-44e2-b54c-a2c10656b149"
+          Name="GetRuleCondtion">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="f7a07531-1bec-4e3d-b400-d7434d509e5b">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3a51dd47-fb66-4eb7-9232-f9ecd5c15695"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="b89a9e92-3ff7-4b6a-a56a-d9dde6636ba1">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="0fcce666-957b-43ab-8adb-c712aeaf76a3"
+              Name="ruleName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="efd91173-92c0-4148-adae-d30322869e42">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the rule condition expression of the provided rule.
+
+var ruleset = Context.Entity.RuleSets[ruleSetName];
+var rule = ruleset.RuleElements[ruleName];
+return rule.GetDef().ConditionExpression;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a9428739-305d-440d-a83c-0ccd8a8d2ec5"
+          Name="GetRuleEval">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="60733bc6-a80c-4c98-ae7a-57ca09e90cd9">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="53bcf1e3-6943-43c8-a46c-e6385e5c3c98"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="189a80a8-0b03-4ff2-a5e9-14bcf56daaea">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="2571663f-9a82-4cf5-903e-1d38f3696182"
+              Name="ruleName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="18e8c620-b8c5-4368-9a60-b76a128c9c10">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the boolean evaluation value of the provided rule.
+
+var ruleset = Context.Entity.RuleSets[ruleSetName];
+var rule = ruleset.RuleElements[ruleName];
+return rule.Value.ToBoolean();</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a1ee9b7b-76bc-415c-908e-94ea3fc5faad"
+          Name="GetRuleName"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="13bd612a-1db9-4cf8-9f65-b05ee52eef64">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the rule name for the currently executing rule.
+
+if (Context.RuleElement == null)
+	return "null";
+else
+	return Context.RuleElement.Name;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="60aedab8-ddfa-43c6-926e-35926442730e"
+          Name="GetRuleNames"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="96040882-b62c-4e90-9216-1454bae73dc4">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the rule names in a comma separated list for the currently executing rule set.
+
+var ruleSet = Context.RuleSet;
+var ruleNames = "";
+
+for (var rule in ruleSet.RuleElements)
+{
+	if(ruleNames.Length &gt; 0)
+	{
+		ruleNames += ",";
+	}
+	ruleNames += rule.Name;
+}
+return ruleNames;
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="5ea48013-0d90-4c92-9515-a3dfcd8294f4"
+          Name="GetRuleSetName">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="64ef1568-af10-43d2-937e-ce91ec8364c3">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the rule set name for the currently executing rule set.
+
+return Context.RuleSet.Name;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a4b80a74-c397-425d-9a7b-15ca403a053c"
+          Name="GetRuleSetsWithCategory"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="8f82d028-e016-4711-b708-daf04cad4c20">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="f2b77b5b-ab57-4d3d-951d-8fe6b0d9716b"
+              Name="categoryName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="210dc84c-1a83-4096-8356-a7dcfd6436ca">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the rule set names in a comma separated list for the rule sets tagged with the supplied categoryName.
+
+var rulesWithCat = "";
+
+for (var ruleset in Context.Entity.RuleSets)
+{
+	for (var category in ruleset.GetDef().AssignedCategories)
+	{
+		if (category == categoryName)
+		{
+			if(rulesWithCat != "")
+			{
+				rulesWithCat += ",";
+			}
+			
+			rulesWithCat += ruleset.Name;
+		}
+	}
+}
+return rulesWithCat;
+
+
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="8d27b162-ea67-47cd-83cd-e625e483cd1d"
+          Name="IsLanguageRule">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5f3e1912-d7b7-4a20-a584-e399ece14f20">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="27fcdf5e-5c91-40f4-945b-650eff345bbb"
+              Name="ruleElementType">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="de9f219d-4efe-43ae-9fb1-7669ea205903">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns true if the supplied rule is a language rule type.
+
+return ruleElementType == "InRule.Repository.RuleElements.LanguageRuleDef";</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="d016787e-957a-480d-9140-a805406550aa"
+          Name="IsRuleSet">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5f3e1912-d7b7-4a20-a584-e399ece14f20">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="27fcdf5e-5c91-40f4-945b-650eff345bbb"
+              Name="ruleElementType">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="de9f219d-4efe-43ae-9fb1-7669ea205903">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns true if the supplied rule element is a rule set type.
+
+return ruleElementType == "InRule.Repository.RuleElements.RuleSetDef";
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="1df20789-4e42-4fe1-a539-a46938b151de"
+          Name="GetCurrentRuleVersion">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="3d025b31-ff98-418e-b9e3-f6f5ad829edc">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="20cc5c31-0ae6-4973-97bb-37f947dc2a72"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="558cd2eb-cad4-4537-bdc8-dfd509326d56">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="28cac758-46e9-4ea3-85b4-0dd3f9ab9e86"
+              Name="ruleName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="f043abae-a864-4467-8129-ba76e6974fca">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the current active version of the supplied rule in the supplied rule set.
+
+ for (var rule in Context.Entity.RuleSets[ruleSetName].RuleElements)
+
+ {
+         if (rule.Name == ruleName)
+
+         {
+                   return rule.Name + "/" + rule.ActiveVersionName;
+         }             
+ }
+
+ return "";
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="aeb2e988-9cc0-470b-8619-416d0e995edb"
+          Name="ExecuteRuleSetbyRuleSetName">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5ad13d71-76a9-4448-9d58-23c72e88896f">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b8db62fb-8db0-4cb3-8854-86e1104ffaf4"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="cb9d01ac-c30a-411f-adce-699eb4a75995">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText> // Executes the supplied Explicit Entity Rule Set.
+ 
+ Context.Entity.ExecuteRuleSet(ruleSetName);     </FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="9db834f7-ade0-4117-bcf5-708238dc35d5"
+          Name="ExecuteRuleSetbyRuleSetNameWithParameters">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5ad13d71-76a9-4448-9d58-23c72e88896f">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b8db62fb-8db0-4cb3-8854-86e1104ffaf4"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="cb9d01ac-c30a-411f-adce-699eb4a75995">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="1d0eca7f-eed3-495b-b701-567c06ca3c92"
+              Name="param1Value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="6ea90c24-4990-45de-80ee-dca368202374">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="1d662a34-de9f-4ebc-8eb0-fdb9ee0aaded"
+              Name="param2Value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="e43bf6c0-2a83-4296-92c1-4615c9cdfd6f">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText> // Executes the supplied Explicit Entity Rule Set with parameters.
+ 
+ Context.Entity.ExecuteRuleSet(ruleSetName,param1Value,param2Value);     </FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="0e2ea86d-1b66-41c0-a5a5-48aa7a567c20"
+          Name="ExecuteIndependentRuleSetbyRuleSetName">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5ad13d71-76a9-4448-9d58-23c72e88896f">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b8db62fb-8db0-4cb3-8854-86e1104ffaf4"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="cb9d01ac-c30a-411f-adce-699eb4a75995">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText> // Executes the supplied Independent Rule Set.
+ 
+ Context.CreateIndependentRuleSet(ruleSetName).Execute();   </FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="37cc882c-e2ea-414a-8159-7c28b72e3408"
+          Name="ExecuteIndependentRuleSetbyRuleSetNameWithParameters">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5ad13d71-76a9-4448-9d58-23c72e88896f">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b8db62fb-8db0-4cb3-8854-86e1104ffaf4"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="cb9d01ac-c30a-411f-adce-699eb4a75995">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3ba903ec-d803-4c71-a19a-5719af85fb47"
+              Name="param1Value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="13f509e9-f8f0-45e2-8844-0e838fac2423">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="ecfd2e1f-aac7-49a3-a72f-b2b8404f90bd"
+              Name="param2Value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="df205a41-e1d3-40c4-8a6f-54608d1ce005">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText> // Executes the supplied Independent Rule Set with parameters.
+ 
+ Context.CreateIndependentRuleSet(ruleSetName).Execute(param1Value,param2Value);</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="0acd7a79-6deb-48c4-93ba-e2cf0f017072"
+          Name="ExecuteFireNotificationRuleSet">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="aa0750e5-8355-428f-815b-ec7c1a9ca7a1">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="e0a84ef2-2d3b-4e49-98c8-7301f11a3016"
+              Name="messageText">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="ea212b1c-914e-4310-baf9-9e4cb4fd4586">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>//  Executes a rule set containing only a Fire Notification. Built to allow notifications to be in-lined within UDFs. Rule set parameter includes the message text.
+ 
+ var mytestvar = 2;
+ 
+ Context.Entity.ExecuteRuleSet("FireNotificationRuleSet","I just set my variable to 2");
+ 
+ mytestvar = 4;
+ Context.Entity.ExecuteRuleSet("FireNotificationRuleSet","Now I set my variable to 4");
+ 
+ Context.Entity.ExecuteRuleSet("FireNotificationRuleSet","The next message will take the text passed in from a rule");
+ 
+ Context.Entity.ExecuteRuleSet("FireNotificationRuleSet",messageText);</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="e44ca244-ae4b-4487-8a5c-dbc76abc25d2"
+          Name="ActivateRuleSetbyRuleSetName">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5ad13d71-76a9-4448-9d58-23c72e88896f">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b8db62fb-8db0-4cb3-8854-86e1104ffaf4"
+              Name="ruleSetName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="cb9d01ac-c30a-411f-adce-699eb4a75995">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText> // Activates the supplied Rule Set
+ 
+ Context.Entity.ActivateRuleSet(ruleSetName);  </FormulaText>
+          </FunctionBody>
+        </UdfDef>
+      </UserDefinedFunctions>
+    </UdfLibraryDef>
+    <UdfLibraryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="75fab055-d802-4a48-96bb-6fa7b5ed30a7"
+      Name="SchemaLibrary">
+      <UserDefinedFunctions>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="17b5aa6e-fefb-4a05-ba92-0ea6f9ea98fe"
+          Name="IsFieldValid"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="ae886c52-8b65-4e69-bd61-5f8f5fbae165">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="c40ed5d2-3add-45a6-a8e3-00d450b3a505"
+              Name="fieldName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="bf1c321f-8881-4e70-81eb-3a2e76e943d5">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns true if the field is valid, and false if invalid.
+
+return Context.Entity.Fields[fieldName].IsValid;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="46e1f9ab-7468-454e-8289-3f3a86f9166d"
+          Name="SetFieldValue"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="9095b3f1-f500-4710-9d6c-dffc0e9b8165">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="4b8233c7-17ab-4b83-900e-a6629a9945d5"
+              Name="fieldName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="02229402-6675-45cf-8209-98491a30c721">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3ab9ec89-f78f-4ffa-bc07-1a4f092a3eb0"
+              Name="value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="4191e614-93cb-40a8-8b4e-0d07ec1a6007">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Sets the value of the supplied field with the supplied value.
+
+Context.Entity.Fields[fieldName].Value = value;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="35ed1972-a095-4d06-bc4d-670c530c7c6a"
+          Name="GetFieldValue"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="a3cc087c-71a8-4a07-ab41-9b72cb0d1131">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="998b13d3-8791-4265-8873-3982c87d80fd"
+              Name="fieldName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="f0776a23-8cf7-4f65-b661-76249500045b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the value of the supplied field.
+
+return Context.Entity.Fields[fieldName].Value;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="5a4d2902-d9f8-44bd-9ddf-d7e2263ece3e"
+          Name="GetFieldCountFromDef"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="3bfa0057-e613-445b-bf6d-52c43b7e9054">
+            <DataType>Integer</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the count of fields on the current entity.
+
+return Context.Entity.Fields.Count;
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a5aa2e2a-91ab-425e-97c8-53b179511f17"
+          Name="AllEntityFieldsAreValid"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="7ec111ab-11f8-4ebd-ad6e-35655053c86d">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns true if all of the fields on the entity are valid, and false if any are invalid.
+
+for (var field in Context.Entity.Fields){
+	if (field.IsValid== false)
+	return false;
+}
+return true;
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="e86ec25b-9fcf-4248-8a7e-9b3b95bfde7d"
+          Name="GetEntityRuleSetNames"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="7120c38f-dca0-4f26-b79b-f1efd7c271b8">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns a comma separated list of rule set names within the current entity.
+
+var ruleNames = "";
+for (var ruleSet in Context.Entity.RuleSets)
+{
+	if (ruleNames != ""){
+		ruleNames += ", ";
+	}
+	ruleNames += ruleSet.Name;	
+}
+return ruleNames;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="945fba49-d2a4-4f1b-a2ba-39a760f6e6a8"
+          Name="GetEntityFieldValues"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="02148390-f8a8-402d-8710-3a8c5e5a9a86">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments />
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns a list of field names and values for all fields within the current entity.
+
+var s = Context.Entity.Name + " Field Values: ";
+
+for(var field in Context.Entity.Fields)
+{
+	s = Util.String.Concat(s, field.Name, ": ", field.Value, " ");
+}
+
+return s;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="72ffb73d-0c02-48b6-9cb6-86bfef7bde77"
+          Name="SetCollectionMemberValues">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="39b4ea24-c1d7-4408-9e0b-8f0f30b523c2">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="37207e18-1ea8-4410-9fc2-90e7102033af"
+              Name="collectionName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="5960b99d-4892-40bf-991f-e1fdc3ea5da2">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3478dee4-cfed-4046-8efb-55be74a17aea"
+              Name="fieldName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="62e8a99b-4317-4fd8-a360-14d4ffb39213">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="33cc8331-9654-46e9-8421-a85482661be5"
+              Name="value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="9b3a9a0b-97c6-464c-a1da-db2fe332fdd4">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="f76f716a-ae5f-4926-b045-c27f1977ee58"
+              Name="index">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="36d41818-471c-40cd-9b30-5b4b8093dd5b">
+                <DataType>Integer</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Sets the value of the supplied collection field for the supplied member index with the supplied value. Returns string "success" if successful and "Could not update value" if unsuccessful.
+//The Engine is 1 based indexes and UDFs are 0 based, which is why the update needs to update the member at index - 1.
+
+var col = Context.Entity.Collections[collectionName];
+if(col.Count &gt;= index)
+	{
+	col[index-1].Fields[fieldName].Value = value;
+	return "Success";
+	}
+
+return "Could not update value";
+
+	
+
+
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="23082e1d-71f6-45c0-b735-3c494c67e74e"
+          Name="GetFieldProperty"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="c17462eb-945c-41e5-9a66-704543fcb773">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="260eeba1-090a-4244-9b51-a56cefce05ac"
+              Name="field">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="13eb11c3-f704-409c-b131-ffd60f56c3e1">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="0e017ff3-9d02-4025-9db3-a0331b4eb1c3"
+              Name="property">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="054f3c07-b8e8-4a97-a2db-c5795eed33c0">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the value of the supplied property from the supplied field.
+
+if (Context.Entity.Fields[field].ContextProperties.ContainsKey(property))
+{
+	return Context.Entity.Fields[field].ContextProperties[property];
+}
+else 
+{
+	return null;
+}</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a9fc3a5e-4062-4259-be33-30542ca9221d"
+          Name="SetFieldProperty"
+          AuthoringIsExpanded="false">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="4e1c14f1-c423-4139-a9eb-7c1ac5499256">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="0da49625-5904-40e0-9ff9-cc10acf80f25"
+              Name="field">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="73f6b365-e5d4-4abc-bb5e-81280d025e2b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="6f975d51-f1b9-407c-8929-134a79493221"
+              Name="property">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="b9de0245-31b6-4e9f-821a-2961c4f55674">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="75da75be-abef-4023-a86f-0ac19c103f53"
+              Name="value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="23d1b287-1663-47df-b3ef-7fcee7e37976">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Sets the value of the supplied property on the supplied field. If doesn't exist, creates the property.
+
+if (Context.Entity.Fields[field].ContextProperties.ContainsKey(property))
+{
+	// update property
+	Context.Entity.Fields[field].ContextProperties[property] = value;
+}
+else
+{
+	// create property
+	Context.Entity.Fields[field].ContextProperties.Add(property, value);
+}
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="cf137749-f151-454f-81de-abebf7459905"
+          Name="ListProperties">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="8bedd8bd-4025-44f7-b187-2c7d7e88bd8a">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="468511c3-98d0-494b-a5dd-565d026696c5"
+              Name="field">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="5306affd-df29-4471-92c0-cd8ed0889a9e">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns a list of properties and their values on the supplied field.
+
+var props = "";
+
+for(var key in Context.Entity.Fields[field].ContextProperties.Keys)
+{
+	props += key + " " + GetFieldProperty(field, key) + " - ";
+}
+
+return props;
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="1b25c4e6-3381-4858-91b8-bf77f04cbd4c"
+          Name="GetValueFromValueList">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="7826e3a0-7b35-44d8-b2e3-a45c9f85c3d8">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="f1acf81f-d37f-4fce-a8b3-b2bca26ba6d4"
+              Name="displayValue">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="8f797f7c-9de6-4b58-9458-bc705f43d79e">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="df1e9205-7825-46e7-bf67-aa196b9df06a"
+              Name="valueListName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="89fa68a4-4ac5-4d47-a7e1-ea485f7ac884">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the "value" column from the supplied value list and display value.
+
+function Lookup(DataElements)
+{
+	var retVal = "";
+	
+	for(var de in DataElements)
+	{
+		if(de.DataElementType.ToString() == "DataFolder")
+		{
+			retVal = Lookup(de.DataElements)
+			if(retVal != "Not Found")
+			{
+				return retVal;
+			}
+		}
+		if(de.Name == valueListName)
+		{
+			for(var i in de.Items)
+			{
+				if(displayValue == i.DisplayText)
+				{
+					return i.Value;
+				}
+			}
+		}
+	}
+	
+	return "Not found";
+}
+
+return Lookup(Context.RuleApplication.DataElements);</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="c70369a7-2359-4939-bf72-cc79b02936e9"
+          Name="LoopThroughCollection">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="514afb6f-715e-406b-b3ad-14d044e51880">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="762495cb-4c6c-49ae-b715-7058319de732"
+              Name="collectionName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="c6a0e82c-10e6-49b8-a2ab-2ec1a9c41133">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="06f42c6d-04b4-4a2b-829c-c4aa85d47f2f"
+              Name="fieldName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="f315bbe4-248f-46fb-9eed-627ca6bb96f4">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns a list of values for the supplied field on the supplied collection.
+
+var s = "";
+var collection = Context.Entity.Collections[collectionName];
+
+if(collection != null)
+{
+	for(var member in collection)
+	{
+		s = s + member.Fields[fieldName].Value.ToString() + " "; 
+	}
+}
+
+return s;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="2ad714f4-1651-4332-8b6f-c051dd1a3de1"
+          Name="GetEntityDisplayName">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="4c187032-5714-4d7d-a6ad-6589244ef0af">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="7b4a71e3-d3f0-4f16-835f-acc6e2f6ca5f"
+              Name="entityId">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="d6108d25-1b6d-470b-9a08-c4b7e41bc15c">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the entity display name for the supplied entity.
+
+return Context.GetEntity(entityId).GetDef().DisplayName;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="9f60da5e-b08b-49d7-a8c8-bf2f2dd50461"
+          Name="GetFieldAttributeValue">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="3d0b7ce8-76aa-4e52-bfdf-a4cb771816cc">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="e5b3c862-9b00-485c-8c32-1da1d2b27ee8"
+              Name="field">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="42543a87-13ac-4a7e-ac52-22e90c5a3b40">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="48a7ad93-19ed-4cf4-869a-42bfeeba4de0"
+              Name="key">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="b42b0960-2e60-42c3-965a-b0b0bcf9824b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the value of the supplied attribute key on the supplied field.
+
+return Context.Entity.Fields[field].GetDef().Attributes[key].ToString();
+
+
+
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="b1342e56-0ffa-4673-a298-cb4a9efa7ec5"
+          Name="CreateDictionary">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5a10c7e7-668c-464e-af7c-355616cf12de">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="4f364f64-64c3-46fa-bdb8-284c2fb8c7b0"
+              Name="dictionaryName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="63dd0131-7186-4455-9f3a-8f5ab401f57b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Creates and stores a dictionary with the supplied name for use in lookups
+
+var dictionary = Util.CreateDictionary();
+
+Context.ContextProperties.Add(dictionaryName,dictionary);</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a17d6e61-3607-4d5a-8878-cf226cc12d86"
+          Name="LoadDictionary">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="9f9a27c1-e517-4c14-8e36-c36cc43b8852">
+            <DataType>None</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="811fb34a-03f0-4f7d-b5c6-bf4b4297af96"
+              Name="key">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="db0a0ebb-2594-4d6b-a092-36d399570239">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="6873641b-74f9-44af-9b56-7a00b7043f8c"
+              Name="value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="bc053040-23ec-4c63-abed-7cbb97e5ba65">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="d6430de6-3f78-4596-ac36-61545fc9e7ea"
+              Name="dictionaryName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="1cd63cf6-3268-43b8-ab94-e4c8614592fa">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Gets supplied dictionary and adds supplied key and value pair to the lookup dictionary
+
+var dictionary = Context.ContextProperties[dictionaryName];
+
+dictionary.Add(key, value);
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="4d491889-426f-44ee-958b-a1eed0c4b870"
+          Name="GetDictionaryValue">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="90634a39-4ce0-4036-be6c-83f7d4232c05">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="d7ee342d-d2f9-464f-9170-05b684eeaf9a"
+              Name="dictionaryName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="d4c5981c-c046-4876-9c45-6e6134ae7fe8">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="334dd6a2-8749-41cd-88d7-684d2874d1d1"
+              Name="key">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="bc525f62-4abb-4358-b095-2b1e578b5513">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the value for the supplied dictionary key.
+
+var dictionary = Context.ContextProperties[dictionaryName];
+
+if (dictionary.ContainsKey(key))
+
+{
+return dictionary[key];
+}
+
+return "";
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="0db78d7b-6710-400c-a15a-b9d54c6ee3c7"
+          Name="CreateEntityandAssignValues">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="648a69e5-fd3f-473d-bc39-282086b7e996"
+            DataTypeEntityName="Entity2">
+            <DataType>Entity</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="5d85cb08-2e8d-407d-a654-abf7249ea58f"
+              Name="entityName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="9222c69a-f64e-4ec0-b5e5-218522f1f25c">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="3067ab2d-6ab7-47bb-b7d2-1332e0890bc4"
+              Name="fieldName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="93779efb-2c0b-4bc4-9184-8d605cfc782b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="b7744ac2-bda0-4538-90b3-23cafd104122"
+              Name="value">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="cb179167-27be-4397-b994-aba298e6d11b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Creates a new entity for the supplied entity name and sets the supplied value for the supplied field.
+
+ var entity = Context.CreateEntity(entityName);
+
+ entity.Fields[fieldName].Value = value;
+ 
+ return entity;
+
+ 
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="7c434118-f673-4265-8c99-3e0beffaad65"
+          Name="IsDaylightSavingTime">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="4c87a810-6ad5-487d-9338-f3fefd2bf149">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="9ab38af9-7ca2-4fe4-ac5d-2599bf1ad309"
+              Name="checkDate">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="00c09208-b56b-4a8b-9473-075e7fd7b6b1">
+                <DataType>DateTime</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns true if the supplied date falls within Daylight Savings Time.
+
+return checkDate.IsDaylightSavingTime();</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="4ab0c170-ec4e-4165-991a-82333bd7ff91"
+          Name="MapEntity">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="e744d465-8a15-44fe-8286-bf377d1daae4"
+            DataTypeEntityName="Target">
+            <DataType>Entity</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="6fa43e39-84b1-4bf1-ac92-d9bfddfb4c90"
+              Name="sourceEntity">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="fea7d6c3-da2b-446f-8c7b-5c492505899c"
+                DataTypeEntityName="Source">
+                <DataType>Entity</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>var newEntity = Context.CreateEntity("Target");
+var table = Context.RuleApplication.DataElements.FindElement("FieldMapping");
+for(var map in table.TableSettings.InlineDataTable.Rows)
+{
+	var sourceField = map["SourceField"];
+	var targetField = map["TargetField"];
+	var newValue = sourceEntity.Fields[sourceField].Value;
+	newEntity.Fields[targetField].Value = newValue;
+}
+return newEntity;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+      </UserDefinedFunctions>
+    </UdfLibraryDef>
+    <UdfLibraryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="d4eb8c50-fe5a-4786-8c9e-396cd1ece19b"
+      Name="IOLibrary">
+      <UserDefinedFunctions>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="930ece5b-c283-49e7-8659-2ba1d2f196be"
+          Name="GetValidPath">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5479127c-3fd2-48b6-840f-5c8cb473891d">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="f7234790-83ba-4a8d-91a3-9f31a95bc35f"
+              Name="path">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="24ceee81-3dc9-49fa-9699-9cf80fc57b3e">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+              <LanguageExpression>fileName</LanguageExpression>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the supplied file path with invalid characters stripped out and replaced with "_".
+// NOTE: The class name, "Path", below is the alias of the MsCorLib.NET Assembly Function Library's System.IO.Path Class found under "End Points."
+// NOTE: This is the Microsoft core library which was loaded from the .NET framework directory "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll". Clicking "Reload" for that assembly in "End Points" will reload the assembly.
+
+var validPath = path.Trim(); 
+var ret = "";
+var invalidChars = Context.FunctionLibraries.Path.GetInvalidPathChars();
+
+for (var c in invalidChars)
+{
+  validPath = validPath.Replace(c.ToString(), "_");
+}
+
+return validPath;
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="c5eaad66-90d5-4684-a6f7-1c9a3ab8610f"
+          Name="GetValidFileName">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5479127c-3fd2-48b6-840f-5c8cb473891d">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="f7234790-83ba-4a8d-91a3-9f31a95bc35f"
+              Name="fileName">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="24ceee81-3dc9-49fa-9699-9cf80fc57b3e">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns the supplied file name with invalid characters stripped out and replaced with "_".
+// NOTE: The class name, "Path", below is the alias of the MsCorLib.NET Assembly Function Library's System.IO.Path Class found under "End Points."
+// NOTE: This is the Microsoft core library which was loaded from the .NET framework directory "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll". Clicking "Reload" for that assembly in "End Points" will reload the assembly.
+
+var validPath = fileName.Trim(); 
+var ret = "";
+var invalidChars = Context.FunctionLibraries.Path.GetInvalidFileNameChars();
+
+for (var c in invalidChars)
+{
+  validPath = validPath.Replace(c.ToString(), "_");
+}
+
+return validPath;
+
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="1191efa3-dcaa-4c4d-b22a-ce554731efe6"
+          Name="LoadFileToText">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="b90bea6f-6a6c-421f-b26f-5adc4ce52a39">
+            <DataType>String</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="d03ed6ed-87ef-4088-923c-3d248d9b32cb"
+              Name="filePath">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="06bd11c8-a165-4529-b3b3-295c15c08f5b">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Returns a string with the text from the supplied file.
+// NOTE: The class name, "File", below is the alias of the MsCorLib.NET Assembly Function Library's System.IO.File Class found under "End Points."
+// NOTE: This is the Microsoft core library which was loaded from the .NET framework directory "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll". Clicking "Reload" for that assembly in "End Points" will reload the assembly.
+
+return Context.FunctionLibraries.File.ReadAllText(filePath);</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+      </UserDefinedFunctions>
+    </UdfLibraryDef>
+    <UdfLibraryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="4e9bbff0-aaf6-48f4-81e2-67226734f73a"
+      Name="FunctionLibrary">
+      <UserDefinedFunctions>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="4bb5ef0b-09e1-4c01-9ce5-c04637e7f717"
+          Name="CallExternalFunction">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="dd700144-af28-4498-8fa2-4a0c5ec68fc3">
+            <DataType>Number</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="95eb2ac8-dc22-4a4b-b39e-4bf4f82ad6ce"
+              Name="number1">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="2ea45806-87be-4bd7-a699-df186199c36d">
+                <DataType>Number</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="752d22eb-3622-4ce3-a86c-e874417b11c2"
+              Name="number2">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="a60ed22c-a019-461b-a7d5-370a598d8ff6">
+                <DataType>Number</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>// Calls a specific external function. This function adds the supplied numbers together and returns the result.
+// NOTE: The class name, "FunctLib", below is the alias of the InvoiceObjects.NET Assembly Function Library's InRule.Samples.InvoiceObjects.FunctLib Class found under "End Points."
+// NOTE: This is a sample assembly included with InRule Samples. You can find it in the Developer Samples/CommonBin directory.  Download this assembly and place it in your irAuthor\EndpointAssemblies directory and then click "Reload" for that assembly in "End Points".
+
+return Context.FunctionLibraries.FunctLib.AddTwoNumbers(number1,number2);
+</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+      </UserDefinedFunctions>
+    </UdfLibraryDef>
+  </UdfLibraries>
+</RuleApplicationDef>

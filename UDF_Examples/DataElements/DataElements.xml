@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="321c16c0-b153-40ff-a896-30718a3fc93a"
+    Name="321c16c0-b153-40ff-a896-30718a3fc93a">
+    <q1:SortDirection>Ascending</q1:SortDirection>
+    <q1:SortMode>None</q1:SortMode>
+    <q1:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:TableDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="2ac9c549-0986-4281-a0a8-f3354293d3a6"
+    Name="2ac9c549-0986-4281-a0a8-f3354293d3a6">
+    <q2:TableSettings
+      SourceTableName="">
+      <q2:InlineDataSet>
+        <xs:schema
+          id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element
+            name="NewDataSet"
+            msdata:IsDataSet="true"
+            msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice
+                minOccurs="0"
+                maxOccurs="unbounded" />
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+      </q2:InlineDataSet>
+      <q2:DatabaseEndPointName />
+      <q2:Filter />
+      <q2:TableSourceType>LinkedTable</q2:TableSourceType>
+    </q2:TableSettings>
+  </DataElementDef>
+</DataElementDefCollection>

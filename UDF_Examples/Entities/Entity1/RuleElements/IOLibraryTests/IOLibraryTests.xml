@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetFolderDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="64a5b3ff-83e8-4856-99b3-556472fd907b"
+  Name="IOLibraryTests">
+  <RuleSets xmlns="http://www.inrule.com/XmlSchema/Schema" />
+</RuleSetFolderDef>

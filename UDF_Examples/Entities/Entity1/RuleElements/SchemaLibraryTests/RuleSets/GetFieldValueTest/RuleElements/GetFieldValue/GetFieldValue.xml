@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecuteMethodActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="6ce41271-f609-4fd7-a311-e5634d663356"
+  Name="GetFieldValue">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="UDFUtils.UdfLibrary.SchemaLib.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="UDFUtils.UdfLibrary.SchemaLib.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="UDFUtils.UdfLibrary.SchemaLib.Udf.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="UDFUtils.UdfLibrary.StringLib.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.4"
+          Value="UDFUtils.UdfLibrary.SchemaLib.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.5"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.6"
+          Value="UDFUtils.UdfLibrary.StringLib.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <AliasName xmlns="http://www.inrule.com/XmlSchema/Schema">SchemaLibrary</AliasName>
+  <MethodName xmlns="http://www.inrule.com/XmlSchema/Schema">GetFieldValue</MethodName>
+  <MethodReturnAssignTo xmlns="http://www.inrule.com/XmlSchema/Schema">TextField3</MethodReturnAssignTo>
+  <ParameterValues xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ExecuteMethodActionParamDef
+      Name="fieldName">
+      <ArgName>fieldName</ArgName>
+      <FullTypeName>System.String</FullTypeName>
+      <IsOut>false</IsOut>
+      <ArgValue>
+        <FormulaText>"TextField1"</FormulaText>
+      </ArgValue>
+    </ExecuteMethodActionParamDef>
+  </ParameterValues>
+</ExecuteMethodActionDef>

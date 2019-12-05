@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetParameterDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleSetParameterDef
+    Guid="1ae856e0-c8e5-45ba-990c-76786d1addcd"
+    Name="1ae856e0-c8e5-45ba-990c-76786d1addcd"
+    DataType="String" />
+  <RuleSetParameterDef
+    Guid="bedf5d52-11b9-4a47-bd54-7d7c2a3b7755"
+    Name="bedf5d52-11b9-4a47-bd54-7d7c2a3b7755"
+    DataType="String" />
+</RuleSetParameterDefCollection>

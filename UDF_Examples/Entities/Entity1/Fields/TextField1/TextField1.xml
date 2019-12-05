@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="df8f3a1f-e7c2-496c-81d2-068d69123ef1"
+  Name="TextField1"
+  AuthoringIsExpanded="false"
+  DataType="String"
+  DisplayName="Text Field1">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>DefaultAttributeGroupKey</Name>
+        <Guid>20668515-70b1-4fb3-b80c-56fb72d34c17</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="mykeytest"
+          Value="mytestattributevalue" />
+      </Collection>
+    </anyType>
+  </Attributes>
+</FieldDef>
