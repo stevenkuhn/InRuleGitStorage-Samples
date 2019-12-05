@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DatabaseConnection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="ff27a783-10ec-496a-bc95-1f88753516c1"
+  Name="DatabaseSchema1"
+  DbConnectionTypeName="System.Data.OleDb.OleDbConnection, System.Data">
+  <ConnectionString xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <IsSchemaDefining xmlns="http://www.inrule.com/XmlSchema/Schema">true</IsSchemaDefining>
+  <SchemaIsActivated xmlns="http://www.inrule.com/XmlSchema/Schema">true</SchemaIsActivated>
+</DatabaseConnection>

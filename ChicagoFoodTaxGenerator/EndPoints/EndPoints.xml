@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EndPointDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EndPointDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:DatabaseConnection"
+    Revision="1"
+    PublicRevision="1"
+    Guid="ff27a783-10ec-496a-bc95-1f88753516c1"
+    Name="ff27a783-10ec-496a-bc95-1f88753516c1">
+    <q1:ConnectionString />
+    <q1:SchemaIsActivated>false</q1:SchemaIsActivated>
+  </EndPointDef>
+</EndPointDefCollection>

@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="3"
+  PublicRevision="3"
+  Guid="892ba509-4fd8-4f48-b8ad-5221fb3bd45c"
+  Name="ZIPCodeTable">
+  <TableSettings
+    SourceTableName="" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <InlineDataSet>
+      <xs:schema
+        id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xs:element
+          name="NewDataSet"
+          msdata:IsDataSet="true"
+          msdata:Locale="en-US">
+          <xs:complexType>
+            <xs:choice
+              minOccurs="0"
+              maxOccurs="unbounded">
+              <xs:element
+                name="Table1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element
+                      name="ZIPCode"
+                      type="xs:string"
+                      minOccurs="0" />
+                    <xs:element
+                      name="Notes"
+                      type="xs:string"
+                      minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:schema>
+      <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+        <NewDataSet xmlns="">
+          <Table1
+            diffgr:id="Table11"
+            msdata:rowOrder="0">
+            <ZIPCode>60601</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table12"
+            msdata:rowOrder="1">
+            <ZIPCode>60602</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table13"
+            msdata:rowOrder="2">
+            <ZIPCode>60603</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table14"
+            msdata:rowOrder="3">
+            <ZIPCode>60604</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table15"
+            msdata:rowOrder="4">
+            <ZIPCode>60605</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table16"
+            msdata:rowOrder="5">
+            <ZIPCode>60606</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table17"
+            msdata:rowOrder="6">
+            <ZIPCode>60607</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table18"
+            msdata:rowOrder="7">
+            <ZIPCode>60608</ZIPCode>
+            <Notes>Not all addresses in this ZIP are within MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table19"
+            msdata:rowOrder="8">
+            <ZIPCode>60610</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table110"
+            msdata:rowOrder="9">
+            <ZIPCode>60611</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table111"
+            msdata:rowOrder="10">
+            <ZIPCode>60614</ZIPCode>
+            <Notes>Not all addresses in this ZIP are within MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table112"
+            msdata:rowOrder="11">
+            <ZIPCode>60616</ZIPCode>
+            <Notes>Not all addresses in this ZIP are within MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table113"
+            msdata:rowOrder="12">
+            <ZIPCode>60622</ZIPCode>
+            <Notes>Not all addresses in this ZIP are within MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table114"
+            msdata:rowOrder="13">
+            <ZIPCode>60638</ZIPCode>
+            <Notes>Not all addresses in this ZIP are within MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table115"
+            msdata:rowOrder="14">
+            <ZIPCode>60642</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table116"
+            msdata:rowOrder="15">
+            <ZIPCode>60654</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table117"
+            msdata:rowOrder="16">
+            <ZIPCode>60657</ZIPCode>
+            <Notes>Not all addresses in this ZIP are within MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table118"
+            msdata:rowOrder="17">
+            <ZIPCode>60661</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table119"
+            msdata:rowOrder="18">
+            <ZIPCode>60663</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table120"
+            msdata:rowOrder="19">
+            <ZIPCode>60664</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table121"
+            msdata:rowOrder="20">
+            <ZIPCode>60665</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table122"
+            msdata:rowOrder="21">
+            <ZIPCode>60666</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table123"
+            msdata:rowOrder="22">
+            <ZIPCode>60668</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table124"
+            msdata:rowOrder="23">
+            <ZIPCode>60669</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table125"
+            msdata:rowOrder="24">
+            <ZIPCode>60670</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table126"
+            msdata:rowOrder="25">
+            <ZIPCode>60671</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table127"
+            msdata:rowOrder="26">
+            <ZIPCode>60672</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table128"
+            msdata:rowOrder="27">
+            <ZIPCode>60673</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table129"
+            msdata:rowOrder="28">
+            <ZIPCode>60674</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table130"
+            msdata:rowOrder="29">
+            <ZIPCode>60675</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table131"
+            msdata:rowOrder="30">
+            <ZIPCode>60678</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table132"
+            msdata:rowOrder="31">
+            <ZIPCode>60679</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table133"
+            msdata:rowOrder="32">
+            <ZIPCode>60680</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table134"
+            msdata:rowOrder="33">
+            <ZIPCode>60681</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table135"
+            msdata:rowOrder="34">
+            <ZIPCode>60682</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table136"
+            msdata:rowOrder="35">
+            <ZIPCode>60683</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table137"
+            msdata:rowOrder="36">
+            <ZIPCode>60684</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table138"
+            msdata:rowOrder="37">
+            <ZIPCode>60685</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table139"
+            msdata:rowOrder="38">
+            <ZIPCode>60686</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table140"
+            msdata:rowOrder="39">
+            <ZIPCode>60687</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table141"
+            msdata:rowOrder="40">
+            <ZIPCode>60688</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table142"
+            msdata:rowOrder="41">
+            <ZIPCode>60689</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table143"
+            msdata:rowOrder="42">
+            <ZIPCode>60690</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table144"
+            msdata:rowOrder="43">
+            <ZIPCode>60691</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table145"
+            msdata:rowOrder="44">
+            <ZIPCode>60692</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table146"
+            msdata:rowOrder="45">
+            <ZIPCode>60693</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table147"
+            msdata:rowOrder="46">
+            <ZIPCode>60694</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table148"
+            msdata:rowOrder="47">
+            <ZIPCode>60695</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table149"
+            msdata:rowOrder="48">
+            <ZIPCode>60696</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table150"
+            msdata:rowOrder="49">
+            <ZIPCode>60697</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table151"
+            msdata:rowOrder="50">
+            <ZIPCode>60698</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+          <Table1
+            diffgr:id="Table152"
+            msdata:rowOrder="51">
+            <ZIPCode>60699</ZIPCode>
+            <Notes>All addresses within this ZIP are within the MPEA tax zone</Notes>
+          </Table1>
+        </NewDataSet>
+      </diffgr:diffgram>
+    </InlineDataSet>
+    <DatabaseEndPointName />
+    <Filter />
+    <TableSourceType>Inline</TableSourceType>
+  </TableSettings>
+</TableDef>

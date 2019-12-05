@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TemplateDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TemplateDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:ExpressionTemplateDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="4abd0655-565d-4b3d-a7b4-a1262c62a552"
+    Name="4abd0655-565d-4b3d-a7b4-a1262c62a552">
+    <q1:DisplayName>4abd0655-565d-4b3d-a7b4-a1262c62a552</q1:DisplayName>
+    <q1:Placeholders />
+    <q1:TemplateScope>Local</q1:TemplateScope>
+    <q1:ExpressionPrototype />
+    <q1:FunctionName>4abd0655-565d-4b3d-a7b4-a1262c62a552</q1:FunctionName>
+    <q1:SelectionMode>Template</q1:SelectionMode>
+    <q1:Impersonates />
+  </TemplateDef>
+</TemplateDefCollection>
