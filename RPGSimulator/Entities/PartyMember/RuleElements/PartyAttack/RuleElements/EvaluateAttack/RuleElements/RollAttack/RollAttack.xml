@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="7c67d977-7602-4f24-9abb-17a7242f85f0"
+  Name="RollAttack">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="SetValueIntegerAssignableInteger" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="RPGSimulator.PartyMember.RuleSets.PartyAttack._nullVocabSurrogate.attackRoll.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.1"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.2"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.3"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.4"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.5"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1"
+          Value="SelectCaseElseDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.0"
+          Value="SelectCaseElseDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0"
+          Value="SelectCaseItemDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.0"
+          Value="SelectCaseItemDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.1"
+          Value="ConditionGroupTemplateSingleCondition" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.1.0"
+          Value="CompareNumber" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.1.0.0"
+          Value="RPGSimulator.PartyMember.RuleSets.PartyAttack._nullVocabSurrogate.attackRoll.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.1.0.1"
+          Value="Comparison_eq" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.1.0.2"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.2"
+          Value="SelectCaseItemDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0"
+          Value="SetValueIntegerAssignableInteger" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.1"
+          Value="RPGSimulator.Monster.HitPoints.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.1.0"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.1.0.0"
+          Value="PartyMember.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.1.0.1"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.1.1"
+          Value="RPGSimulator.Monster.HitPoints.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3"
+          Value="MinusDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.0"
+          Value="RPGSimulator.Monster.HitPoints.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.0.0"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.0.0.0"
+          Value="PartyMember.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.0.0.1"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.0.1"
+          Value="RPGSimulator.Monster.HitPoints.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.1"
+          Value="MinusDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.2"
+          Value="MultiplyDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.2.0"
+          Value="RPGSimulator.PartyMember.AttackDamage.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.2.1"
+          Value="MultiplyDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.0.3.2.2"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.0.0"
+          Value="RPGSimulator.PartyMember.Name.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.2"
+          Value="RPGSimulator.Monster.Type.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.2.0"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.2.0.0"
+          Value="PartyMember.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.2.0.1"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.0.2.1"
+          Value="RPGSimulator.Monster.Type.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.2"
+          Value="FormatNumberUserFormat" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.2.0"
+          Value="RPGSimulator.PartyMember.AttackDamage.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.2.1"
+          Value="FormatNumberSystemFormats" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.0.2.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.1.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.2"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.3.0"
+          Value="NotificationTypeTemplateNotificationType" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.3.0.0"
+          Value="NotificationTypeTemplateNotificationType" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.3.0.1"
+          Value="InformationalNotificationTypeTemplate" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.3.1.3.1"
+          Value="AllowMultipleNotificationsTemplate" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1"
+          Value="SelectCaseItemDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.0"
+          Value="SelectCaseItemDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1"
+          Value="ConditionGroupTemplateSingleCondition" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0"
+          Value="CompareNumber" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.0"
+          Value="PlusDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.0.0"
+          Value="RPGSimulator.PartyMember.RuleSets.PartyAttack._nullVocabSurrogate.attackRoll.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.0.1"
+          Value="PlusDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.0.2"
+          Value="RPGSimulator.PartyMember.AttackBonus.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.1"
+          Value="Comparison_gte" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.2"
+          Value="RPGSimulator.Monster.ArmorClass.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.2.0"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.2.0.0"
+          Value="PartyMember.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.2.0.1"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.1.0.2.1"
+          Value="RPGSimulator.Monster.ArmorClass.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.2"
+          Value="SelectCaseItemDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0"
+          Value="SetValueIntegerAssignableInteger" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.1"
+          Value="RPGSimulator.Monster.HitPoints.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.1.0"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.1.0.0"
+          Value="PartyMember.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.1.0.1"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.1.1"
+          Value="RPGSimulator.Monster.HitPoints.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.3"
+          Value="MinusDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.3.0"
+          Value="RPGSimulator.Monster.HitPoints.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.3.0.0"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.3.0.0.0"
+          Value="PartyMember.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.3.0.0.1"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.3.0.1"
+          Value="RPGSimulator.Monster.HitPoints.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.3.1"
+          Value="MinusDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.0.3.2"
+          Value="RPGSimulator.PartyMember.AttackDamage.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.0.0"
+          Value="RPGSimulator.PartyMember.Name.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.2"
+          Value="RPGSimulator.Monster.Type.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.2.0"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.2.0.0"
+          Value="PartyMember.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.2.0.1"
+          Value="RPGSimulator.Encounter.Monster.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.0.2.1"
+          Value="RPGSimulator.Monster.Type.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.2"
+          Value="FormatNumberUserFormat" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.2.0"
+          Value="RPGSimulator.PartyMember.AttackDamage.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.2.1"
+          Value="FormatNumberSystemFormats" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.0.2.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.1.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.2"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.3.0"
+          Value="NotificationTypeTemplateNotificationType" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.3.0.0"
+          Value="NotificationTypeTemplateNotificationType" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.3.0.1"
+          Value="InformationalNotificationTypeTemplate" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1.3.1.3.1"
+          Value="AllowMultipleNotificationsTemplate" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.2"
+          Value="IfThenElseDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.1.0"
+          Value="RPGSimulator.PartyMember.Name.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.1.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.2"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3.0"
+          Value="NotificationTypeTemplateNotificationType" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3.0.0"
+          Value="NotificationTypeTemplateNotificationType" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3.0.1"
+          Value="InformationalNotificationTypeTemplate" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3.1"
+          Value="AllowMultipleNotificationsTemplate" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="23959958-a37f-4fc6-a8c1-e96b6acf7cdb"
+    Name="RollAttack" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition>
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>true</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="4f7959cf-ac66-4ae5-9184-98b9cf4baa05"
+        Name="SetValue1">
+        <Element>
+          <FormulaText>attackRoll</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>Random(1, 20)</FormulaText>
+        </Value>
+      </RuleElementDef>
+      <RuleElementDef
+        xsi:type="ExclusiveRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="14fa1e45-835a-46ac-9441-0a7b41e9db30"
+        Name="Rule2">
+        <DefaultSubRulesRoot
+          Guid="c2dde61a-7c55-4aeb-9906-3260ba41a35a"
+          Name="Otherwise" />
+        <Conditions>
+          <SimpleRuleDef
+            Revision="1"
+            PublicRevision="1"
+            Guid="ce68e59d-0ca0-46fd-8196-2cd90e1ebc35"
+            Name="Rule1">
+            <Condition>
+              <ReturnType>Boolean</ReturnType>
+              <FormulaText>attackRoll = 20</FormulaText>
+            </Condition>
+            <SubRules>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="e5708a23-4cbd-4abe-ba9a-6dee76058873"
+                Name="Set_Value1">
+                <Element>
+                  <FormulaText>Encounter.Monster.HitPoints</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>Encounter.Monster.HitPoints - (AttackDamage * 2)</FormulaText>
+                </Value>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="FireNotificationActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="8730accc-f41a-43a8-8368-59aed085c60d"
+                Name="FireNotification2">
+                <NotificationType>Informational</NotificationType>
+                <NotificationMode>Multiple</NotificationMode>
+                <NotificationMessage>
+                  <FormulaParseFormat>Token</FormulaParseFormat>
+                  <FormulaText>&lt;%Name &amp; " has scored a critical hit against " &amp; Encounter.Monster.Type &amp; " and scored " &amp; Format(AttackDamage, "n") &amp; " damage!"%&gt;</FormulaText>
+                </NotificationMessage>
+              </RuleElementDef>
+            </SubRules>
+            <HasContextVersionSettings>false</HasContextVersionSettings>
+          </SimpleRuleDef>
+          <SimpleRuleDef
+            Revision="1"
+            PublicRevision="1"
+            Guid="d5af2496-304b-4dfc-8e59-d16dedd45e1d"
+            Name="If_Then1">
+            <Condition>
+              <ReturnType>Boolean</ReturnType>
+              <FormulaText>(attackRoll + AttackBonus) &gt;= Encounter.Monster.ArmorClass</FormulaText>
+            </Condition>
+            <SubRules>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="324fec5b-228a-4e72-92bf-76ee2f1f1c06"
+                Name="Set_Value2">
+                <Element>
+                  <FormulaText>Encounter.Monster.HitPoints</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>Encounter.Monster.HitPoints - AttackDamage</FormulaText>
+                </Value>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="FireNotificationActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="a679e0a3-ed73-42cf-b96e-5daeec2b951b"
+                Name="Fire_Notification1">
+                <NotificationType>Informational</NotificationType>
+                <NotificationMode>Multiple</NotificationMode>
+                <NotificationMessage>
+                  <FormulaParseFormat>Token</FormulaParseFormat>
+                  <FormulaText>&lt;%Name &amp; " has scored a hit against " &amp; Encounter.Monster.Type &amp; " and scored " &amp; Format(AttackDamage, "n") &amp; " damage!"%&gt;</FormulaText>
+                </NotificationMessage>
+              </RuleElementDef>
+            </SubRules>
+            <HasContextVersionSettings>false</HasContextVersionSettings>
+          </SimpleRuleDef>
+        </Conditions>
+        <DefaultSubRules>
+          <RuleElementDef
+            xsi:type="FireNotificationActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="71161a7a-ae65-40ee-9cf4-e8082be91e49"
+            Name="FireNotification1">
+            <NotificationType>Informational</NotificationType>
+            <NotificationMode>Multiple</NotificationMode>
+            <NotificationMessage>
+              <FormulaParseFormat>Token</FormulaParseFormat>
+              <FormulaText>&lt;%Name &amp; " missed!"%&gt;</FormulaText>
+            </NotificationMessage>
+          </RuleElementDef>
+        </DefaultSubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

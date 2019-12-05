@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SqlQueryDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="cfcceae8-9f31-4c45-ab08-bf83c10e349a"
+  Name="ReturnSavingThrowBySpell">
+  <SqlQuerySettings xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters>
+      <SqlQueryParmDef
+        Name="@spellName"
+        DataType="String" />
+    </Parameters>
+    <CommandType>SelectValue</CommandType>
+    <CommandReturnType>Rows</CommandReturnType>
+    <DatabaseEndPointName />
+    <SqlQuerySource>InlineTable</SqlQuerySource>
+    <QueryText>Select SavingThrow from SpellTable where SpellName = @spellName</QueryText>
+    <CacheDuration>0</CacheDuration>
+    <ReturnDataType>String</ReturnDataType>
+  </SqlQuerySettings>
+</SqlQueryDef>

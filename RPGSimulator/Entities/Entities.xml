@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="a6a07339-1766-400a-bf41-6db66368348f"
+    Name="a6a07339-1766-400a-bf41-6db66368348f">
+    <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+    <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  </EntityDef>
+  <EntityDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="18f77669-3afe-4713-a80d-51a4236d7eff"
+    Name="18f77669-3afe-4713-a80d-51a4236d7eff">
+    <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+    <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  </EntityDef>
+  <EntityDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="d0319885-e522-43af-9e0e-135c6b1bac50"
+    Name="d0319885-e522-43af-9e0e-135c6b1bac50">
+    <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+    <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  </EntityDef>
+</EntityDefCollection>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SqlQueryDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="e0dd26a8-986d-446f-9578-2cf885b4f992"
+  Name="ReturnBonus">
+  <SqlQuerySettings xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters>
+      <SqlQueryParmDef
+        Name="@attribute"
+        DataType="Integer" />
+    </Parameters>
+    <CommandType>SelectValue</CommandType>
+    <CommandReturnType>Rows</CommandReturnType>
+    <DatabaseEndPointName />
+    <SqlQuerySource>InlineTable</SqlQuerySource>
+    <QueryText>Select Bonus from AttributeBonus where @attribute = Attribute</QueryText>
+    <CacheDuration>0</CacheDuration>
+    <ReturnDataType>Integer</ReturnDataType>
+  </SqlQuerySettings>
+</SqlQueryDef>
