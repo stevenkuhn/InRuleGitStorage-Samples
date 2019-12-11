@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="0b428f08-ba1c-4175-b74a-9e5301ca3fff"
+  Name="Monster"
+  DataType="Entity"
+  DataTypeEntityName="Monster">
+  <DefaultValue xmlns="http://www.inrule.com/XmlSchema/Schema" />
+</FieldDef>

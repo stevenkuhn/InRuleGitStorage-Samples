@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeclareVariableActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="8df43877-b59a-4da2-bff8-edf08077a8d8"
+  Name="attackRoll"
+  DataType="Integer" />

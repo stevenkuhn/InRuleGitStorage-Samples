@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="f84ba8f5-0335-4dea-8e4a-440725ec4b23"
+  Name="ArmorClass"
+  DataType="Integer"
+  DisplayName="Armor Class" />

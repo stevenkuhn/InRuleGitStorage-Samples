@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="6b49b229-8005-446e-a6f8-de2551e7f38c"
+  Name="AttackBonus"
+  DataType="Integer"
+  DisplayName="Attack Bonus" />

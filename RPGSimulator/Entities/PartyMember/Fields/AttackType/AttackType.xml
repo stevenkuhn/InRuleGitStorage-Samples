@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4b637efd-90f0-47d3-963e-d697442c707f"
+  Name="AttackType"
+  DataType="String"
+  DisplayName="Attack Type">
+  <ValueList
+    Guid="736a883f-ec3f-425b-a651-b8b2f028723c" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters />
+    <SourceValueListName>PartyMember_AttackType_ValueList</SourceValueListName>
+  </ValueList>
+</FieldDef>

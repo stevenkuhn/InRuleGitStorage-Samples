@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:DeclareVariableActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="3823d53d-4483-4333-940d-8f68003c42a1"
+    Name="3823d53d-4483-4333-940d-8f68003c42a1"
+    DataType="String" />
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:ExecuteSqlQueryActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="238b5903-8d8b-48a3-ac06-83f931179e8c"
+    Name="238b5903-8d8b-48a3-ac06-83f931179e8c">
+    <q2:OutputParameterColumnMappings />
+    <q2:SqlQuery />
+    <q2:QueryReturnAssignTo />
+    <q2:ParameterValues />
+  </RuleElementDef>
+  <RuleElementDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="798251f8-638c-4637-aeba-f0cccba4e9ac"
+    Name="798251f8-638c-4637-aeba-f0cccba4e9ac">
+    <q3:HasContextVersionSettings>false</q3:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>

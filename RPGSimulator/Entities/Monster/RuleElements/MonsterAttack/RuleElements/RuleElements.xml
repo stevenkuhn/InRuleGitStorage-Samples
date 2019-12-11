@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:DeclareVariableActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="9a67a44d-1a12-4e3f-8a3d-3e03e155700d"
+    Name="9a67a44d-1a12-4e3f-8a3d-3e03e155700d"
+    DataType="String" />
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:DeclareVariableActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="cc1f6cb3-594b-41be-b0e3-afe5b1a7fd5b"
+    Name="cc1f6cb3-594b-41be-b0e3-afe5b1a7fd5b"
+    DataType="String" />
+  <RuleElementDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="f83ffd0c-0627-414e-9e71-65f5b3d7f600"
+    Name="f83ffd0c-0627-414e-9e71-65f5b3d7f600">
+    <q3:HasContextVersionSettings>false</q3:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q4="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q4:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="43bb6efa-c823-4268-9870-8b358e365ab2"
+    Name="43bb6efa-c823-4268-9870-8b358e365ab2">
+    <q4:HasContextVersionSettings>false</q4:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q5="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q5:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="91dc2533-448e-400f-9d00-dda67f3a02bc"
+    Name="91dc2533-448e-400f-9d00-dda67f3a02bc">
+    <q5:HasContextVersionSettings>false</q5:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="688f0127-7caa-4985-b31a-424724c6de5e"
+  Name="ClassValueList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="5f64780e-0f07-4933-a0e2-aa7b6946ba49">
+      <Value>Fighter</Value>
+      <DisplayText>Fighter</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="ed0e0c6b-5d85-45c4-8b3c-12f28cb1c5be">
+      <Value>Wizard</Value>
+      <DisplayText>Wizard</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="7de6b74d-81bf-478d-97c1-53f0fb3820dd">
+      <Value>Rogue</Value>
+      <DisplayText>Rogue</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="899a0121-58d2-4104-adee-2b4879cbd704">
+      <Value>Cleric</Value>
+      <DisplayText>Cleric</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="e3db2e85-fce4-4f69-8e79-a2fabf5a090a">
+      <Value>Bard</Value>
+      <DisplayText>Bard</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>
