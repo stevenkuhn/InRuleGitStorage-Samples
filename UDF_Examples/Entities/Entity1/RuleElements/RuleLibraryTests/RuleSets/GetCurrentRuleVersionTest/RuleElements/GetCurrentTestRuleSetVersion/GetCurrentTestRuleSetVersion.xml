@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="7cb1640e-727b-4d2f-83cb-13219c3a9e24"
+  Name="GetCurrentTestRuleSetVersion">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="FireNotificationTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="RuleLibrary.GetCurrentRuleVersion(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ruleName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="UDFUtils.UdfLibrary.RuleLibrary.Udf.GetCurrentRuleVersion(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ruleName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1"
+          Value="UDFUtils.UdfLibrary.RuleLibrary.Udf.AreAllRulesTrueByRuleSetName(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.3"
+          Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.4"
+          Value="UDFUtils.UdfLibrary.RuleLibrary.Udf.GetRuleCondtion(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ruleName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.5"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.6"
+          Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="FireNotificationActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="7026d463-ec6d-4f73-99a5-1100aeed8918"
+    Name="GetCurrentTestRuleSetVersion" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <NotificationType>Informational</NotificationType>
+    <NotificationMessage>
+      <FormulaParseFormat>Token</FormulaParseFormat>
+      <FormulaText>&lt;%RuleLibrary.GetCurrentRuleVersion("TestRuleSet", "testrule1")%&gt;</FormulaText>
+    </NotificationMessage>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EndPointDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EndPointDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:AssemblyDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="7e9a590b-02a6-4978-bbd8-c1d5c08357f2"
+    Name="7e9a590b-02a6-4978-bbd8-c1d5c08357f2">
+    <q1:DefaultImportDateTimeDataType>DateTime</q1:DefaultImportDateTimeDataType>
+    <q1:ClassInfos />
+    <q1:AssemblyName />
+    <q1:LastImportInfo>
+      <q1:Namespaces />
+      <q1:EntityDefInfos />
+      <q1:LastImportHashCode>0</q1:LastImportHashCode>
+      <q1:LastImportDateTime>0001-01-01T06:00:00Z</q1:LastImportDateTime>
+      <q1:LastSyncDateTime>0001-01-01T06:00:00Z</q1:LastSyncDateTime>
+      <q1:LastSyncImportDateTime>0001-01-01T06:00:00Z</q1:LastSyncImportDateTime>
+    </q1:LastImportInfo>
+  </EndPointDef>
+  <EndPointDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:AssemblyDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="72046c8c-5463-4eb4-a3ac-f6c60518e5ee"
+    Name="72046c8c-5463-4eb4-a3ac-f6c60518e5ee">
+    <q2:DefaultImportDateTimeDataType>DateTime</q2:DefaultImportDateTimeDataType>
+    <q2:ClassInfos />
+    <q2:AssemblyName />
+    <q2:LastImportInfo>
+      <q2:Namespaces />
+      <q2:EntityDefInfos />
+      <q2:LastImportHashCode>0</q2:LastImportHashCode>
+      <q2:LastImportDateTime>0001-01-01T06:00:00Z</q2:LastImportDateTime>
+      <q2:LastSyncDateTime>0001-01-01T06:00:00Z</q2:LastSyncDateTime>
+      <q2:LastSyncImportDateTime>0001-01-01T06:00:00Z</q2:LastSyncImportDateTime>
+    </q2:LastImportInfo>
+  </EndPointDef>
+</EndPointDefCollection>

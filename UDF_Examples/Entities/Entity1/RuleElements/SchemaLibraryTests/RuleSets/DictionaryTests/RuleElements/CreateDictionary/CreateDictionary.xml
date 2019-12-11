@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4258ca73-904e-4747-b19f-bfad2c1dd0d1"
+  Name="CreateDictionary">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="ExecuteMethodActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="f72d9aef-10b9-4708-850d-21b42bcb0114"
+    Name="CreateDictionary" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <AliasName>SchemaLibrary</AliasName>
+    <MethodName>CreateDictionary</MethodName>
+    <MethodReturnAssignTo />
+    <ParameterValues>
+      <ExecuteMethodActionParamDef
+        Name="dictionaryName">
+        <FullTypeName>System.String</FullTypeName>
+        <IsOut>false</IsOut>
+        <ArgValue>
+          <FormulaText>"MyDictionary"</FormulaText>
+        </ArgValue>
+      </ExecuteMethodActionParamDef>
+    </ParameterValues>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

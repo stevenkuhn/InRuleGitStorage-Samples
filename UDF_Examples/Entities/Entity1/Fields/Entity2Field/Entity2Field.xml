@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="6e4d336a-a117-476e-96d6-d8eedd48e7b5"
+  Name="Entity2Field"
+  DataType="Entity"
+  DataTypeEntityName="Entity2"
+  DisplayName="Entity2 Field">
+  <DefaultValue xmlns="http://www.inrule.com/XmlSchema/Schema">&lt;Entity2&gt;&lt;Field2&gt;er&lt;/Field2&gt;&lt;Field5&gt;er&lt;/Field5&gt;&lt;/Entity2&gt;</DefaultValue>
+</FieldDef>

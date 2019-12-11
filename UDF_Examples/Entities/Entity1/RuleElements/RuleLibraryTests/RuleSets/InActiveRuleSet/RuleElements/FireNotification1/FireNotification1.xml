@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FireNotificationActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="e5a6ead6-3fa2-4c2a-bdb3-e5501d6c05c0"
+  Name="FireNotification1">
+  <NotificationType xmlns="http://www.inrule.com/XmlSchema/Schema">Informational</NotificationType>
+  <NotificationMessage xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>This Rule set was inactive but now is not!!</FormulaText>
+  </NotificationMessage>
+</FireNotificationActionDef>

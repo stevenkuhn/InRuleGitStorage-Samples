@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4fd514a6-c03a-4321-9a71-c6e40ba8dc83"
+  Name="ParseDate">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="IfThenElseDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="ConditionGroupTemplateSingleCondition" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1.0"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1.0.0"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1.0.1"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1.0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0"
+          Value="SetValueStringAssignableString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.1"
+          Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.3"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.3.0"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.3.1"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.3.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.3.3"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.3.4"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.4"
+          Value="IfThenElseDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0"
+          Value="SetValueStringAssignableString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0.1"
+          Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0.3"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0.3.0"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0.3.1"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0.3.2"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.5.0.3.3"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1"
+          Value="ConditionGroupTemplateSingleCondition" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.0"
+          Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.1"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.2"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0"
+          Value="SetValueStringAssignableString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.1"
+          Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3.0"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3.1"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3.2"
+          Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3.3"
+          Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2"
+          Value="SetValueDateTimeAssignableDateTime" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2.1"
+          Value="UDFUtils.Entity1.DateField.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2.3"
+          Value="StringLib.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2.3.0"
+          Value="UDFUtils.UdfLibrary.StringLib.Udf.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2.3.1"
+          Value="StringLib.IsDateTime(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2.3.2"
+          Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.2.3.3"
+          Value="RuleLib.GetRuleEval(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ruleName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="1cf73bc8-4ee6-4775-b0ba-302f354b0ff1"
+    Name="ParseDate" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition>
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>true</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="ExclusiveRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="8ded15a6-e77d-4a16-a6e9-fdede61f87d5"
+        Name="Rule5">
+        <DefaultSubRulesRoot
+          Guid="e0ae4edf-ed28-43c4-b71d-edac1f358104"
+          Name="Otherwise" />
+        <Conditions>
+          <SimpleRuleDef
+            Revision="1"
+            PublicRevision="1"
+            Guid="0a097888-ec50-4e6d-84e9-df81a1d35e5c"
+            Name="Rule1">
+            <Condition>
+              <ReturnType>Boolean</ReturnType>
+              <FormulaText>Instr(TextField1, ".,") &gt; -1</FormulaText>
+            </Condition>
+            <SubRules>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="bb74a805-a6c4-4afc-9ce3-5aedcf932a5d"
+                Name="SetValue1">
+                <Element>
+                  <FormulaText>dateChunk</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>StringLibrary.GetTextBetween(".,", ",", TextField1)</FormulaText>
+                </Value>
+              </RuleElementDef>
+            </SubRules>
+            <HasContextVersionSettings>false</HasContextVersionSettings>
+          </SimpleRuleDef>
+        </Conditions>
+        <DefaultSubRules>
+          <RuleElementDef
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="0ead0a12-503f-4a64-8ebd-67bdb719256e"
+            Name="Set_Value1">
+            <Element>
+              <FormulaText>dateChunk</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>StringLibrary.GetTextBefore(",", TextField1)</FormulaText>
+            </Value>
+          </RuleElementDef>
+        </DefaultSubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElementDef>
+      <RuleElementDef
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="4513a560-9129-4175-a705-5e79a79acbed"
+        Name="Rule15">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>Instr(dateChunk, "-") &gt; -1</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="1a755f59-573b-42a2-95db-c02d6b810758"
+            Name="Set_Value4">
+            <Element>
+              <FormulaText>dateChunk</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>StringLibrary.GetTextBefore("-", dateChunk)</FormulaText>
+            </Value>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElementDef>
+      <RuleElementDef
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="2f9f2129-f6ba-42b5-8ed8-e2046ec3ad89"
+        Name="SetValue17">
+        <Element>
+          <FormulaText>DateField</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>StringLibrary.ParseDateString(dateChunk)</FormulaText>
+        </Value>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>
