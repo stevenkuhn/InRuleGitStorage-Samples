@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="fb0f41dc-db84-48ed-b72a-ae66179141b1"
+  Name="ComputeZIPTax">
+  <Comments xmlns="http://www.inrule.com/XmlSchema/Schema">Sets a 1% ZIPTax to Order Total if two conditions are true: a) the location has chairs (i.e. "Is a place for eating"), and b) the ZIP Code is within the MPEA geographic region. Both criteria must be true to engage the 1% MPEA tax.</Comments>
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="ConditionGroupTemplateSingleCondition" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="andMarkIIDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="Chicago_Food_Tax_Generator.Order.IsPlaceforEating.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="andMarkIIDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2"
+          Value="CompareString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.0"
+          Value="Chicago_Food_Tax_Generator.Order.ZIPCode.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.1"
+          Value="Comparison_eq" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2.0"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2.1"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2.2"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2.3"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2.4"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2.5.0"
+          Value="Chicago_Food_Tax_Generator.ZIPCodeTable_DataTable._SearchCriteria.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2.5.0.0"
+          Value="Chicago_Food_Tax_Generator.ZIPCodeTable_DataTable._SearchCriteria.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2.2.5.0.1"
+          Value="Chicago_Food_Tax_Generator.Order.ZIPCode.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0"
+          Value="SetValueNumberAssignableNumber" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1"
+          Value="Chicago_Food_Tax_Generator.Order.ZIPTax.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.3"
+          Value="PercentageDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.3.0"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.3.1"
+          Value="PercentageDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.3.2"
+          Value="Chicago_Food_Tax_Generator.Order.OrderTotal.Implicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="774b6770-c359-40ad-9aa0-d036eba3743d"
+    Name="ComputeZIPTax" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition
+      LastAuthoringView="BusinessLangauge">
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>IsPlaceforEating and MPEAZIPCheck()</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="51fa3a27-372a-4539-83f9-2b1927f007b2"
+        Name="SetValue1">
+        <Element>
+          <FormulaText>ZIPTax</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>Percent(OrderTotal, 1)</FormulaText>
+        </Value>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

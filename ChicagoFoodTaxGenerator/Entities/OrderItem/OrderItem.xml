@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="2"
+  PublicRevision="2"
+  Guid="7164735b-bf35-4e4e-aac6-dea0c592ac9f"
+  Name="OrderItem"
+  DisplayName="Order Item">
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  <CascadedReferences xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <CascadedReferenceDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="c1ac1a20-b3f7-42cf-ab2f-519315a6c076">
+      <ParentId>1fb86d8f-1e13-43f1-bbfc-aeefa2f382ce</ParentId>
+      <ChildId>7164735b-bf35-4e4e-aac6-dea0c592ac9f</ChildId>
+      <IsImplicit>true</IsImplicit>
+    </CascadedReferenceDef>
+  </CascadedReferences>
+</EntityDef>

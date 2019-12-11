@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="c6b9559d-e6e7-4caf-b507-15e58bc7b7d0"
+  Name="OrderTotal"
+  DataType="Number"
+  DisplayName="Order Total" />

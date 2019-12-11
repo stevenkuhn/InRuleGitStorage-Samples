@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="a1b06720-a910-49b7-9754-3486fd3f5a17"
+  Name="SetItemTax">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="SetValueNumberAssignableNumber" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="Chicago_Food_Tax_Generator.OrderItem.TaxRate.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="TableLookupChicago_Food_Tax_Generator.ItemListTable_DataTable.ItemTax" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1"
+          Value="TableLookupChicago_Food_Tax_Generator.ItemListTable_DataTable.ItemTax" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.2"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.3"
+          Value="TableLookupChicago_Food_Tax_Generator.ItemListTable_DataTable.FoodorBev" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.4"
+          Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.5.0"
+          Value="Chicago_Food_Tax_Generator.ItemListTable_DataTable._SearchCriteria.ItemName" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.5.0.0"
+          Value="Chicago_Food_Tax_Generator.ItemListTable_DataTable._SearchCriteria.ItemName" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.5.0.1"
+          Value="Chicago_Food_Tax_Generator.OrderItem.ItemType.Implicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SetValueActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="8311e11e-41a0-4768-a3ea-5d3e35c3988f"
+    Name="SetItemTax" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Element>
+      <FormulaText>TaxRate</FormulaText>
+    </Element>
+    <Value>
+      <FormulaText>TableLookup(ItemListTable, "ItemTax", "ItemName", ItemType)</FormulaText>
+    </Value>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>
