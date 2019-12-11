@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="bb283d68-db3a-41d2-b6f9-18c39c044aec"
+  Name="GenderList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="1d506ec5-22fc-4d09-aa6c-7b196471a7d0">
+      <Value>F</Value>
+      <DisplayText>Female</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="da2c089b-1086-4dcf-9b75-08d54f35c462">
+      <Value>M</Value>
+      <DisplayText>Male</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

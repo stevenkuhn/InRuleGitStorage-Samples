@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="06c40589-fd79-4f8e-b489-879b8bba8343"
+  Name="EntityID"
+  DataType="Integer"
+  DisplayName="Entity ID" />

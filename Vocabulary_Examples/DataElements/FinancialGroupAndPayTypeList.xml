@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="09b60695-a1dc-4195-8504-768292a4f64e"
+  Name="FinancialGroupAndPayTypeList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="57f49f74-f43b-412e-b191-1f4bf1aeaa87">
+      <Value>R1</Value>
+      <DisplayText>Reserved - Financial Group 1</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="c05d03ec-af06-404f-9050-f5a2376855d9">
+      <Value>R2</Value>
+      <DisplayText>Reserved - Financial Group 2</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="1a0d635b-5fe1-455e-b395-1061eb2ee351">
+      <Value>R3</Value>
+      <DisplayText>Reserved - Financial Group 3</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="da6d9544-2493-460b-abb9-b05f50509434">
+      <Value>R4</Value>
+      <DisplayText>Reserved - Financial Group 4</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="62aff09f-5766-4af6-ab7b-c3381b60f2d7">
+      <Value>P1</Value>
+      <DisplayText>Paid - Financial Group 1</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="8310e771-92c2-4ced-9697-35429514057b">
+      <Value>P2</Value>
+      <DisplayText>Paid - Financial Group 2</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="1078e899-b7b4-4c7f-b913-c441d2d9418f">
+      <Value>P3</Value>
+      <DisplayText>Paid - Financial Group 3</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="b245bf3e-8df8-49a0-a0da-9dc2c3d3d106">
+      <Value>P4</Value>
+      <DisplayText>Paid - Financial Group 4</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AddCollectionMemberTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="21aa3e97-c9cb-4aaa-83c2-23f9c4844577"
+  Name="InsertDenialRecord">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Insert Denial Record</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Record denial for id $RecordID$ and claimant $Claimant$ with a denial type of $DenialType$ and a denial reason of $DenialReason$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="be89c8fd-c1fd-4ebd-a250-ffab2aaa6a07"
+      Name="DenialType">
+      <DisplayText>[DenialType]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="ListValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="efc0bfac-cfec-4c5e-a342-d19fbc01cc94"
+          Name="ListValueDef1">
+          <ListName>DenialTypeList</ListName>
+          <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="69e4404b-133f-4a61-a6ca-9d2133c278c2"
+      Name="DenialReason">
+      <DisplayText>[DenialReason]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="ListValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="59f47a24-e483-44b4-a3db-9210cedcb005"
+          Name="ListValueDef1">
+          <ListName>DenialReasonList</ListName>
+          <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="11ec41b2-04f6-4093-9f52-5058d5f82614"
+      Name="RecordID">
+      <DisplayText>[RecordID]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="8a4eb44d-d5c7-4482-a3a0-cc39bfd9446a"
+          Name="DataTypeValueDef1">
+          <DataType>Integer</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="047825ba-b651-4f00-8da3-632362f0b330"
+      Name="Claimant">
+      <DisplayText>[Claimant]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="EntityValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="ecf3f5a4-ef95-4c03-bfaa-80a7980c4ff0"
+          Name="EntityValueDef1">
+          <EntityName>Claimant</EntityName>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <TargetCollectionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Denials</TargetCollectionPrototype>
+  <MemberValues xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="f64baac0-db02-4cb0-8293-f1de82c9a40d"
+      Name="CollectionMemberValueAssignmentDef1">
+      <MemberName>DenialType</MemberName>
+      <MemberValuePrototype>$DenialType$</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="03ecf42c-6b57-4f2a-b03e-9536566d6fdf"
+      Name="CollectionMemberValueAssignmentDef2">
+      <MemberName>DenialReason</MemberName>
+      <MemberValuePrototype>$DenialReason$</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="10dd2ad4-2ea1-4c24-b7d1-8cab0a1791f6"
+      Name="CollectionMemberValueAssignmentDef3">
+      <MemberName>EntityID</MemberName>
+      <MemberValuePrototype>$RecordID$</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="c3c5e578-2d48-47a5-897e-dddc6d0e00e0"
+      Name="CollectionMemberValueAssignmentDef4">
+      <MemberName>Claimant</MemberName>
+      <MemberValuePrototype>$Claimant$</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+  </MemberValues>
+  <CopyMode xmlns="http://www.inrule.com/XmlSchema/Schema">ByReference</CopyMode>
+</AddCollectionMemberTemplateDef>

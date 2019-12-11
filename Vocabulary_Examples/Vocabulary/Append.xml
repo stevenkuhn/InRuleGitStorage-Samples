@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="219a3374-1fb0-44ae-bbf1-141504a86635"
+  Name="Append">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Append</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">Text Functions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$value1$ &amp; $value2$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="58265797-a773-4225-bed4-dae41a2cf5bd"
+      Name="value1">
+      <DisplayText>[value1]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="dd58453d-c342-4788-9328-c0f983cb2ca7"
+          Name="DataTypeValueDef1">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1d1536ef-b946-4856-aa2f-10729772b5bc"
+      Name="value2">
+      <DisplayText>[value2]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="23b07635-6ec8-4ca2-9c87-7cfda3bd92ab"
+          Name="DataTypeValueDef1">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local</TemplateScope>
+  <ExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">concat($value1$, $value2$)</ExpressionPrototype>
+  <FunctionName xmlns="http://www.inrule.com/XmlSchema/Schema">Append</FunctionName>
+  <SelectionMode xmlns="http://www.inrule.com/XmlSchema/Schema">Template</SelectionMode>
+  <Impersonates xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ImpersonationDef
+      xsi:type="DataTypeImpersonationDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="0054fdf9-f6be-4314-a422-3eea62f6ccc0"
+      Name="DataTypeImpersonationDef2">
+      <DataType>String</DataType>
+    </ImpersonationDef>
+  </Impersonates>
+</ExpressionTemplateDef>

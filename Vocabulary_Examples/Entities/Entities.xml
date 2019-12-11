@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="7146e4fb-3597-4b83-9132-bef78bd2d814"
+    Name="7146e4fb-3597-4b83-9132-bef78bd2d814">
+    <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+    <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  </EntityDef>
+  <EntityDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="3ebdb990-cf5d-4bdc-8baf-a0e5c4e88240"
+    Name="3ebdb990-cf5d-4bdc-8baf-a0e5c4e88240">
+    <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+    <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  </EntityDef>
+  <EntityDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="19cd1290-4c97-46d9-8d4b-8deb88d6c2d7"
+    Name="19cd1290-4c97-46d9-8d4b-8deb88d6c2d7">
+    <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+    <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  </EntityDef>
+  <EntityDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="d73f4486-ef2a-4586-b878-d7bdb67e7bbc"
+    Name="d73f4486-ef2a-4586-b878-d7bdb67e7bbc">
+    <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+    <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  </EntityDef>
+  <EntityDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="23e567d9-0856-4632-8710-8464938c0210"
+    Name="23e567d9-0856-4632-8710-8464938c0210">
+    <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+    <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  </EntityDef>
+</EntityDefCollection>

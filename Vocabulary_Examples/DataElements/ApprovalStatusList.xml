@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="2eb6b6e4-d2a7-451f-8ae0-d2b330a76f02"
+  Name="ApprovalStatusList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="7d34966c-71a5-4134-95c6-06ae6abd109e">
+      <Value>D</Value>
+      <DisplayText>Denied</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="b844086d-75fe-4a7e-83b2-898830ce0f0e">
+      <Value>A</Value>
+      <DisplayText>Approved</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

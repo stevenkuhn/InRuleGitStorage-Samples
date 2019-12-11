@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="bbab4183-484e-4b8c-ac0c-11cd250349dd"
+  Name="TransactionCategory"
+  DataType="String"
+  DisplayName="Transaction Category" />

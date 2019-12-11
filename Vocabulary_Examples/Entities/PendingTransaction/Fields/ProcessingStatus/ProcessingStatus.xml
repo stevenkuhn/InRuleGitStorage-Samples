@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="8ee5cb0e-7718-4bce-bd2f-9b11618a0271"
+  Name="ProcessingStatus"
+  DataType="String"
+  DisplayName="Processing Status">
+  <ValueList
+    Guid="3b9c5a4f-d529-4ac1-8585-c05395816bc0" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters />
+    <SourceValueListName>ProcessingStatusList</SourceValueListName>
+  </ValueList>
+</FieldDef>

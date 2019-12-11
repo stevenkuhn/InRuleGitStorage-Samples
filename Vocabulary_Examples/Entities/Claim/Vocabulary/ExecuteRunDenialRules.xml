@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecuteRulesetTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="49b952bc-8015-46ab-b550-3eeda1276fe9"
+  Name="ExecuteRunDenialRules">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Execute Run Denial Rules</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Run the denial rules for $DenialTier$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="6c1a6f1d-13d5-4888-8653-40a0aaaba6df"
+      Name="DenialTier">
+      <DisplayText>[DenialTier]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="ListValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="5f69a1d2-d8e9-4402-8013-d3f3f80ba670"
+          Name="ListValueDef1">
+          <ListName>DenialTierList</ListName>
+          <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="509f5d54-ba7a-4077-99cc-1a4e3b8d6a26"
+          Name="DataTypeValueDef2">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <TargetRulesetName xmlns="http://www.inrule.com/XmlSchema/Schema">RunDenialRules</TargetRulesetName>
+  <Parameters xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ExecuteRulesetParameterDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="2332053e-fa19-4927-8840-b5c46e27ddcf"
+      Name="ExecuteRulesetParameterDef1">
+      <FieldName>PendingTransactionTier</FieldName>
+      <FieldValuePrototype>$DenialTier$</FieldValuePrototype>
+    </ExecuteRulesetParameterDef>
+  </Parameters>
+</ExecuteRulesetTemplateDef>

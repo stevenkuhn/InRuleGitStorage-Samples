@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssignmentTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="1ccc9886-837a-4459-8d48-2b371db881dd"
+  Name="Increment">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Increment</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">Math Functions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Increment $field$ by $value$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="7758e3b3-ec77-42f1-ae7c-83cc79ad9c4b"
+      Name="field">
+      <DisplayText>[field]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="d9ca84d7-4a21-4b6d-af3b-2eb83e4b5011"
+          Name="DataTypeValueDef1">
+          <DataType>Integer</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="3122de25-3b13-42e1-ad45-f478a1537400"
+          Name="DataTypeValueDef2">
+          <DataType>Number</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="cc446601-bc9c-479f-ac86-ddde7e6906d0"
+      Name="value">
+      <DisplayText>[value]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="05c676fc-1771-4d7e-b3ad-055fb9b87a2c"
+          Name="DataTypeValueDef1">
+          <DataType>Integer</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="7a563f80-48b4-49cc-b911-b571e10463e2"
+          Name="DataTypeValueDef2">
+          <DataType>Number</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local</TemplateScope>
+  <TargetExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$field$</TargetExpressionPrototype>
+  <ValueExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$field$ + $value$</ValueExpressionPrototype>
+</AssignmentTemplateDef>

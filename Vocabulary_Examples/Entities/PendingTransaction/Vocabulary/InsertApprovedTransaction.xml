@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AddCollectionMemberTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="89a4f4e6-2d4e-461c-9177-d88c7ce41e58"
+  Name="InsertApprovedTransaction">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Insert Approved Transaction</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Insert $pendingrecord$ as approved claim transaction.</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="3575cd1b-1314-4b1f-8d90-6edf4be4f5f9"
+      Name="pendingrecord">
+      <DisplayText>[pendingrecord]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="EntityValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="17a0a3c5-8ca3-4cc8-8773-4e0b6504f2de"
+          Name="EntityValueDef1">
+          <EntityName>PendingTransaction</EntityName>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <TargetCollectionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Claim.Transactions</TargetCollectionPrototype>
+  <MemberValues xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="1265d8b4-3877-4017-a275-21e3fc6aa6cd"
+      Name="CollectionMemberValueAssignmentDef1">
+      <MemberName>TransactionID</MemberName>
+      <MemberValuePrototype>Max(Claim.Transactions,TransactionID)+1</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="04ac69ed-f459-41cd-a571-4bf740079a1b"
+      Name="CollectionMemberValueAssignmentDef2">
+      <MemberName>Amount</MemberName>
+      <MemberValuePrototype>$pendingrecord$.Amount</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="5304e6da-3927-481b-9f94-c5c0d2488d9e"
+      Name="CollectionMemberValueAssignmentDef3">
+      <MemberName>ClaimID</MemberName>
+      <MemberValuePrototype>$pendingrecord$.ClaimID</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="ed90c7d4-6f8f-4970-b4bc-7de679f6ef67"
+      Name="CollectionMemberValueAssignmentDef4">
+      <MemberName>TransactionCategory</MemberName>
+      <MemberValuePrototype>$pendingrecord$.TransactionCategory</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+    <CollectionMemberValueAssignmentDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="ebf033dc-9c6a-45c0-990f-8b134aee029b"
+      Name="CollectionMemberValueAssignmentDef5">
+      <MemberName>TransactionDate</MemberName>
+      <MemberValuePrototype>$pendingrecord$.TransactionDate</MemberValuePrototype>
+    </CollectionMemberValueAssignmentDef>
+  </MemberValues>
+  <CopyMode xmlns="http://www.inrule.com/XmlSchema/Schema">ByReference</CopyMode>
+</AddCollectionMemberTemplateDef>

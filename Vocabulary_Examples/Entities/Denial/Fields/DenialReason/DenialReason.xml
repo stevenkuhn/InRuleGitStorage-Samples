@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="6cc00d65-fb06-4c23-801b-b841d8674e95"
+  Name="DenialReason"
+  DataType="String"
+  DisplayName="Denial Reason">
+  <ValueList
+    Guid="bb2b73b3-7108-4b0f-84f8-80195f07cb58" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters />
+    <SourceValueListName>DenialReasonList</SourceValueListName>
+  </ValueList>
+</FieldDef>

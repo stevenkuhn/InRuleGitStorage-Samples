@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="adeee019-5be3-4909-a3a3-d672921c3cb3"
+  Name="PendingTransactions"
+  DataType="Entity"
+  IsCollection="true"
+  DataTypeEntityName="PendingTransaction"
+  DisplayName="Pending Transactions" />

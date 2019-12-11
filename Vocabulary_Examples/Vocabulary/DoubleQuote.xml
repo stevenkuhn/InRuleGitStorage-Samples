@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="395c27e5-60a5-4907-b398-adf76d363683"
+  Name="DoubleQuote">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Double Quote</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">Text Functions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Return a double quote</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local</TemplateScope>
+  <ExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">""""</ExpressionPrototype>
+  <FunctionName xmlns="http://www.inrule.com/XmlSchema/Schema">DoubleQuote</FunctionName>
+  <SelectionMode xmlns="http://www.inrule.com/XmlSchema/Schema">Template</SelectionMode>
+  <Impersonates xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ImpersonationDef
+      xsi:type="DataTypeImpersonationDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="43026843-a3af-4194-b852-b7f8da69109b"
+      Name="DataTypeImpersonationDef2">
+      <DataType>String</DataType>
+    </ImpersonationDef>
+  </Impersonates>
+</ExpressionTemplateDef>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="461ad140-db94-4b21-b974-2be4d2b23a0e"
+  Name="DenialTypeList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="dadf4af1-389a-47a4-8d1b-4b18fe99c1b5">
+      <Value>C</Value>
+      <DisplayText>Claim</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="ab0a30a3-0831-4888-a30d-285bca1badd7">
+      <Value>I</Value>
+      <DisplayText>Incident</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="33fbd822-8618-4705-8015-0a450e433fde">
+      <Value>T</Value>
+      <DisplayText>Transaction</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>
