@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="94d9ca23-2aec-4559-8790-91b3e9a26c0e"
+  Name="Total"
+  AuthoringIsExpanded="false"
+  DataType="Number"
+  IsCalculated="true">
+  <Calc xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>SubTotal+Tax</FormulaText>
+  </Calc>
+</FieldDef>

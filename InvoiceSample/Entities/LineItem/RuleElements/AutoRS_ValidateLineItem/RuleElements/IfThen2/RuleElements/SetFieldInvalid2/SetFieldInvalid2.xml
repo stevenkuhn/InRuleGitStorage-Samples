@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetFieldInvalidActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="6961d40b-be16-410d-920a-3b2ece3c2503"
+  Name="SetFieldInvalid2">
+  <Message xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>The product id &lt;%ProductID%&gt; was not found.</FormulaText>
+  </Message>
+  <FieldName xmlns="http://www.inrule.com/XmlSchema/Schema">ProductID</FieldName>
+</SetFieldInvalidActionDef>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="24405df6-5841-4d32-99ab-49349b02d8ad"
+  Name="LineItems"
+  AuthoringIsExpanded="false"
+  DataType="Entity"
+  IsCollection="true"
+  DataTypeEntityName="LineItem" />
