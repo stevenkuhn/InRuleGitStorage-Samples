@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassificationDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ClassificationDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="e0b89aef-b4c6-407d-a9bc-aef4bacc0cfa"
+    Name="e0b89aef-b4c6-407d-a9bc-aef4bacc0cfa" />
+  <ClassificationDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="f8b41fc1-5ba9-457b-8dd2-d9063d50a868"
+    Name="f8b41fc1-5ba9-457b-8dd2-d9063d50a868" />
+</ClassificationDefCollection>
