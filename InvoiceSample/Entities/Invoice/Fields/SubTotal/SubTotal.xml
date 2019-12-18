@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="d8dc96a9-0a83-4ad2-aff5-98b35bc4265b"
+  Name="SubTotal"
+  AuthoringIsExpanded="false"
+  DataType="Number"
+  IsCalculated="true">
+  <Calc xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>sum(LineItems,LineItemTotal)</FormulaText>
+  </Calc>
+</FieldDef>

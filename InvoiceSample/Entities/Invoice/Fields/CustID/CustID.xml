@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="02faa9f8-bd19-47a0-9bc5-b891bffa4c53"
+  Name="CustID"
+  AuthoringIsExpanded="false"
+  DataType="Integer">
+  <DefaultValue xmlns="http://www.inrule.com/XmlSchema/Schema" />
+</FieldDef>
