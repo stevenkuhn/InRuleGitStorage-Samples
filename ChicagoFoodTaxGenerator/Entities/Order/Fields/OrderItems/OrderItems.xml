@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="a1407780-819e-4963-ba0f-1e7342759412"
+  Name="OrderItems"
+  DataType="Entity"
+  IsCollection="true"
+  DataTypeEntityName="OrderItem"
+  DisplayName="Order Items" />

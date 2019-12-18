@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SqlValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="2"
+  PublicRevision="2"
+  Guid="b3512591-eea2-4df4-bd2c-29b64133c4ed"
+  Name="OrderItem_ItemType_ValueList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <SourceDataElementName xmlns="http://www.inrule.com/XmlSchema/Schema">ItemListTable</SourceDataElementName>
+  <ValueColumnName xmlns="http://www.inrule.com/XmlSchema/Schema">ItemName</ValueColumnName>
+  <DisplayNameColumnName xmlns="http://www.inrule.com/XmlSchema/Schema">ItemName</DisplayNameColumnName>
+  <Parameters xmlns="http://www.inrule.com/XmlSchema/Schema" />
+</SqlValueListDef>

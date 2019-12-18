@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="3"
+  PublicRevision="3"
+  Guid="320cb7bf-6ad8-43bc-b9a1-05fb125a3f1d"
+  Name="ItemSummaryRules">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Auto</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">Sequential</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>
