@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="f277515c-7eee-4f35-927b-91e03cfe1e08"
+  Name="Outstanding_Group3"
+  DataType="Number"
+  IsCalculated="true"
+  DisplayName="Outstanding  Group3">
+  <Calc xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>Incurred_Group3 - Paid_Group3</FormulaText>
+  </Calc>
+</FieldDef>

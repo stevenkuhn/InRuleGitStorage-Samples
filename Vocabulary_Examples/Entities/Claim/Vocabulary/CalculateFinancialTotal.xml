@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="d0e2c138-ef55-4228-b0a0-6449cfc9fcb1"
+  Name="CalculateFinancialTotal">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Calculate Financial Total</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Calculate Financial Total for $FieldType$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="54b5567e-9870-4965-8a4e-0c536c91fafc"
+      Name="FieldType">
+      <DisplayText>[FieldType]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="1fcf8668-09db-4906-b558-5e2ee9d11298"
+          Name="DataTypeValueDef1">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="ListValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="5d4c861f-8126-4458-a542-eca5961e0e1b"
+          Name="ListValueDef2">
+          <ListName>ClaimFinancialTotalTypeList</ListName>
+          <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <ExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">If($FieldType$ = "Inc", (((Incurred_Group1 * FinancialFunctions.SummaryFormulaSign(1)) + (Incurred_Group2 * FinancialFunctions.SummaryFormulaSign(2))) + (Incurred_Group3 * FinancialFunctions.SummaryFormulaSign(3))) + (Incurred_Group4 * FinancialFunctions.SummaryFormulaSign(4)), If($FieldType$ = "Paid", (((Paid_Group1 * FinancialFunctions.SummaryFormulaSign(1)) + (Paid_Group2 * FinancialFunctions.SummaryFormulaSign(2))) + (Paid_Group3 * FinancialFunctions.SummaryFormulaSign(3))) + (Paid_Group4 * FinancialFunctions.SummaryFormulaSign(4)), (((Reserved_Group1 * FinancialFunctions.SummaryFormulaSign(1)) + (Reserved_Group2 * FinancialFunctions.SummaryFormulaSign(2))) + (Reserved_Group3 * FinancialFunctions.SummaryFormulaSign(3))) + (Reserved_Group4 * FinancialFunctions.SummaryFormulaSign(4))))</ExpressionPrototype>
+  <FunctionName xmlns="http://www.inrule.com/XmlSchema/Schema">CalculateFinancialTotal</FunctionName>
+  <SelectionMode xmlns="http://www.inrule.com/XmlSchema/Schema">Template</SelectionMode>
+  <Impersonates xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ImpersonationDef
+      xsi:type="DataTypeImpersonationDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1943a9da-f4ad-420d-9032-5faec3a42887"
+      Name="DataTypeImpersonationDef2">
+      <DataType>Number</DataType>
+    </ImpersonationDef>
+  </Impersonates>
+</ExpressionTemplateDef>

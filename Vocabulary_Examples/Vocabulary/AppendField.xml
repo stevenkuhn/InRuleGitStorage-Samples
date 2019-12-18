@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssignmentTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="28bfd182-bbcf-4669-ac93-22497bf808d5"
+  Name="AppendField">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Append Field</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">Text Functions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Append $field$ with $text$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="121d505a-98ca-4190-a1d1-b7cda6f3efb3"
+      Name="field">
+      <DisplayText>[field]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="f28b0da6-49d0-4608-aadb-0cba37a30cdf"
+          Name="DataTypeValueDef1">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="9e4f13b3-febc-4f2d-8965-6b12208e6df3"
+      Name="text">
+      <DisplayText>[text]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="0444286a-3322-4faf-9ee9-185d643ead89"
+          Name="DataTypeValueDef1">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local</TemplateScope>
+  <TargetExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$field$</TargetExpressionPrototype>
+  <ValueExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">$field$ &amp; $text$</ValueExpressionPrototype>
+</AssignmentTemplateDef>

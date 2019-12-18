@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="ed6023a7-229c-4b79-9037-4fbd2a19b2c6"
+    Name="ed6023a7-229c-4b79-9037-4fbd2a19b2c6">
+    <q1:SortDirection>Ascending</q1:SortDirection>
+    <q1:SortMode>None</q1:SortMode>
+    <q1:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="461ad140-db94-4b21-b974-2be4d2b23a0e"
+    Name="461ad140-db94-4b21-b974-2be4d2b23a0e">
+    <q2:SortDirection>Ascending</q2:SortDirection>
+    <q2:SortMode>None</q2:SortMode>
+    <q2:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="339fe8d0-1143-41a7-8c77-058f4f708840"
+    Name="339fe8d0-1143-41a7-8c77-058f4f708840">
+    <q3:SortDirection>Ascending</q3:SortDirection>
+    <q3:SortMode>None</q3:SortMode>
+    <q3:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q4="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q4:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="a3624be8-9e14-48c7-a6d0-59e2dd160b76"
+    Name="a3624be8-9e14-48c7-a6d0-59e2dd160b76">
+    <q4:SortDirection>Ascending</q4:SortDirection>
+    <q4:SortMode>None</q4:SortMode>
+    <q4:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q5="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q5:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="2aff34d3-b005-45ed-b092-30ec24bcae58"
+    Name="2aff34d3-b005-45ed-b092-30ec24bcae58">
+    <q5:SortDirection>Ascending</q5:SortDirection>
+    <q5:SortMode>None</q5:SortMode>
+    <q5:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q6="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q6:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="2eb6b6e4-d2a7-451f-8ae0-d2b330a76f02"
+    Name="2eb6b6e4-d2a7-451f-8ae0-d2b330a76f02">
+    <q6:SortDirection>Ascending</q6:SortDirection>
+    <q6:SortMode>None</q6:SortMode>
+    <q6:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q7="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q7:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="fcc30666-5b6c-46aa-b714-8568f16aeb89"
+    Name="fcc30666-5b6c-46aa-b714-8568f16aeb89">
+    <q7:SortDirection>Ascending</q7:SortDirection>
+    <q7:SortMode>None</q7:SortMode>
+    <q7:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q8="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q8:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="09b60695-a1dc-4195-8504-768292a4f64e"
+    Name="09b60695-a1dc-4195-8504-768292a4f64e">
+    <q8:SortDirection>Ascending</q8:SortDirection>
+    <q8:SortMode>None</q8:SortMode>
+    <q8:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q9="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q9:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="bb283d68-db3a-41d2-b6f9-18c39c044aec"
+    Name="bb283d68-db3a-41d2-b6f9-18c39c044aec">
+    <q9:SortDirection>Ascending</q9:SortDirection>
+    <q9:SortMode>None</q9:SortMode>
+    <q9:Items />
+  </DataElementDef>
+</DataElementDefCollection>

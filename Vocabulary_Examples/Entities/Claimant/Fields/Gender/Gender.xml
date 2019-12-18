@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="38fc4d52-1893-442a-89f0-ad3ac68c64d3"
+  Name="Gender"
+  DataType="String">
+  <ValueList
+    Guid="3aaafa8a-4222-483f-83af-645068d33e49" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters />
+    <SourceValueListName>GenderList</SourceValueListName>
+  </ValueList>
+</FieldDef>

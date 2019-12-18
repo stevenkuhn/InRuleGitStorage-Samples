@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="8886f3d6-57b5-4022-9345-f2f1974d6be6"
+  Name="TotalIncurred"
+  DataType="Number"
+  IsCalculated="true"
+  DisplayName="Total Incurred">
+  <Calc xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>If(FormulaNotValid = true, 0, Round(CalculateFinancialTotal("Inc"), 2))</FormulaText>
+  </Calc>
+</FieldDef>

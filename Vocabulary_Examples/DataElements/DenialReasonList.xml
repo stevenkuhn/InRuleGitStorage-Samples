@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="ed6023a7-229c-4b79-9037-4fbd2a19b2c6"
+  Name="DenialReasonList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="f6617571-f83d-4d2f-9c55-b2be9a919232">
+      <Value>1</Value>
+      <DisplayText>Loss Date is after Report Date</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="d22ed272-cf5f-4574-843f-21fc7dc6343e">
+      <Value>2</Value>
+      <DisplayText>Claimant Date of Birth is after Loss Date</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="14734d70-a239-4986-aa54-5369462b86cf">
+      <Value>3</Value>
+      <DisplayText>Request is fraudulant</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="296df69d-e60f-4138-8c7d-df19b507db2a">
+      <Value>4</Value>
+      <DisplayText>Claim is already closed. No additional transactions accepted.</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="a024ffb9-87a9-4d82-bae9-3a42599f5416">
+      <Value>5</Value>
+      <DisplayText>Transaction Date is before Loss Date</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="d1c22f12-f57f-449c-9184-9a71538b7382">
+      <Value>6</Value>
+      <DisplayText>Transaction Date is before Report Date</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="ba73096c-97ff-4da8-a488-8e0e012d6ee3">
+      <Value>7</Value>
+      <DisplayText>Reopened claims do not accept payments from financial category 4.</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

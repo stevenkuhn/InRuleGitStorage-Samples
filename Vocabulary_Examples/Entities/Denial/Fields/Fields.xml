@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="6e96b316-796c-4471-b06f-1eceeb01435e"
+    Name="6e96b316-796c-4471-b06f-1eceeb01435e"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="6cc00d65-fb06-4c23-801b-b841d8674e95"
+    Name="6cc00d65-fb06-4c23-801b-b841d8674e95"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="06c40589-fd79-4f8e-b489-879b8bba8343"
+    Name="06c40589-fd79-4f8e-b489-879b8bba8343"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="a5c6de79-8b0d-4535-b7b6-40bd73f2b071"
+    Name="a5c6de79-8b0d-4535-b7b6-40bd73f2b071"
+    DataType="String" />
+</FieldDefCollection>

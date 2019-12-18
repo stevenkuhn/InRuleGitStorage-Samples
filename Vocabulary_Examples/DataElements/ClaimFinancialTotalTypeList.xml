@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="fcc30666-5b6c-46aa-b714-8568f16aeb89"
+  Name="ClaimFinancialTotalTypeList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="a3220449-8bc6-48a9-9c5f-f8404fdc30e1">
+      <Value>Inc</Value>
+      <DisplayText>Incurred</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="633ef7ee-8906-4a96-873b-0ac0e89acaa7">
+      <Value>Paid</Value>
+      <DisplayText>Paid</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>
