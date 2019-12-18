@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="135ca0a3-84d0-4108-b256-c9699affd6c5"
+  Name="ExecuteFireNotificationUDF">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="UDF_Examples.UdfLibrary.RuleLibrary.Udf.FireNotification(&lt;Arg Name=&quot;messageText&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="UDF_Examples.UdfLibrary.RuleLibrary.Udf.FireNotification(&lt;Arg Name=&quot;messageText&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="UDF_Examples.UdfLibrary.RuleLibrary.Udf.FireNotification(&lt;Arg Name=&quot;messageText&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="UDF_Examples.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="ExecuteMethodActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="a3cafa07-a6c2-4bb7-aa88-e61dfeac0007"
+    Name="ExecuteFireNotificationUDF" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <AliasName>RuleLibrary</AliasName>
+    <MethodName>ExecuteFireNotificationRuleSet</MethodName>
+    <MethodReturnAssignTo />
+    <ParameterValues>
+      <ExecuteMethodActionParamDef
+        Name="messageText">
+        <FullTypeName>System.String</FullTypeName>
+        <IsOut>false</IsOut>
+        <ArgValue>
+          <FormulaText>"This is my Test Message"</FormulaText>
+        </ArgValue>
+      </ExecuteMethodActionParamDef>
+    </ParameterValues>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

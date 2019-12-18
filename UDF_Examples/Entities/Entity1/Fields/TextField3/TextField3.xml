@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="991f0a7b-94f1-4529-906f-10b016d4a7b1"
+  Name="TextField3"
+  AuthoringIsExpanded="false"
+  DataType="String"
+  DisplayName="Text Field3" />

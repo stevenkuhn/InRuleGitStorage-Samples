@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:FireNotificationActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="add89163-9694-4889-ae2c-f76f5e2e41a3"
+    Name="add89163-9694-4889-ae2c-f76f5e2e41a3">
+    <q1:NotificationType>Informational</q1:NotificationType>
+    <q1:NotificationMessage>
+      <q1:FormulaParseFormat>Token</q1:FormulaParseFormat>
+      <q1:FormulaText />
+    </q1:NotificationMessage>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:SetFieldInvalidActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="ae9a5927-8e17-41a9-a74a-8b88284e914e"
+    Name="ae9a5927-8e17-41a9-a74a-8b88284e914e">
+    <q2:Message>
+      <q2:FormulaParseFormat>Token</q2:FormulaParseFormat>
+      <q2:FormulaText />
+    </q2:Message>
+  </RuleElementDef>
+</RuleElementDefCollection>

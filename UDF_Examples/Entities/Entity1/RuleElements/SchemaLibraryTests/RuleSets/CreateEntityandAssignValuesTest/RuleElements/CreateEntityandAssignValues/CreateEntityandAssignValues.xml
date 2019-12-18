@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetValueActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="c223d945-a363-4428-ba13-9d102b7b44ff"
+  Name="CreateEntityandAssignValues">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="SchemaLibrary.CreateEntityandAssignValues(&lt;Arg Name=&quot;entityName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="SchemaLibrary.CreateEntityandAssignValues(&lt;Arg Name=&quot;entityName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="SchemaLibrary.CreateEntityandAssignValues(&lt;Arg Name=&quot;entityName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.4"
+          Value="SchemaLibrary.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.5"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.6"
+          Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.7"
+          Value="SchemaLibrary.SetCollectionMemberValues(&lt;Arg Name=&quot;collectionName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.8"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.9"
+          Value="StringLibrary.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <Element
+    LastAuthoringView="Syntax" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>Entity2Field</FormulaText>
+  </Element>
+  <Value
+    LastAuthoringView="BusinessLangauge" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>SchemaLibrary.CreateEntityandAssignValues("Entity2", "Field2", "MyTestValueForField2")</FormulaText>
+  </Value>
+</SetValueActionDef>

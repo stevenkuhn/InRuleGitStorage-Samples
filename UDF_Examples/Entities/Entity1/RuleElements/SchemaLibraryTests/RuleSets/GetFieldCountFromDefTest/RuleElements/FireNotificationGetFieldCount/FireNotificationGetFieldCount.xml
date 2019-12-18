@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FireNotificationActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="8016db83-3cf2-4794-81a4-a9256dfc1f8e"
+  Name="FireNotificationGetFieldCount">
+  <NotificationType xmlns="http://www.inrule.com/XmlSchema/Schema">Informational</NotificationType>
+  <NotificationMessage xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>&lt;%SchemaLibrary.GetFieldCountfromDef()%&gt;</FormulaText>
+  </NotificationMessage>
+</FireNotificationActionDef>

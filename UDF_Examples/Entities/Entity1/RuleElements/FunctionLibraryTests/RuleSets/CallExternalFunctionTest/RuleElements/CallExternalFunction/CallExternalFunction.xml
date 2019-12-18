@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="fd80a406-6967-4870-a4f4-f22488668458"
+  Name="CallExternalFunction">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="SetValueIntegerAssignableInteger" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="UDFUtils.Entity1.IntField.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="FunctionLibrary.CallExternalFunction(&lt;Arg Name=&quot;number1&quot; Type=&quot;System.Decimal&quot; /&gt;,&lt;Arg Name=&quot;number2&quot; Type=&quot;System.Decimal&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0"
+          Value="UDFUtils.UdfLibrary.FunctionLibrary.Udf.CallExternalFunction(&lt;Arg Name=&quot;number1&quot; Type=&quot;System.Decimal&quot; /&gt;,&lt;Arg Name=&quot;number2&quot; Type=&quot;System.Decimal&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1"
+          Value="FunctionLibrary.CallExternalFunction(&lt;Arg Name=&quot;number1&quot; Type=&quot;System.Decimal&quot; /&gt;,&lt;Arg Name=&quot;number2&quot; Type=&quot;System.Decimal&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.2"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.3"
+          Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.4"
+          Value="FunctionLibrary.CallExternalFunction(&lt;Arg Name=&quot;number1&quot; Type=&quot;System.Decimal&quot; /&gt;,&lt;Arg Name=&quot;number2&quot; Type=&quot;System.Decimal&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.5"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.6"
+          Value="StringLibrary.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SetValueActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="20f32304-f29a-45f1-8606-add653c1b7f3"
+    Name="CallExternalFunction" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Element>
+      <FormulaText>IntField</FormulaText>
+    </Element>
+    <Value>
+      <FormulaText>FunctionLibrary.CallExternalFunction(342, 432)</FormulaText>
+    </Value>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

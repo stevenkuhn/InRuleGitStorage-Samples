@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="77fcd8db-2574-4e3c-ba97-02c9e81a080e"
+    Name="77fcd8db-2574-4e3c-ba97-02c9e81a080e">
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="7cb1640e-727b-4d2f-83cb-13219c3a9e24"
+    Name="7cb1640e-727b-4d2f-83cb-13219c3a9e24">
+    <q2:HasContextVersionSettings>false</q2:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>

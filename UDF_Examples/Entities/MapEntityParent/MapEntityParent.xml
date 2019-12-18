@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="bd5d2f07-d8f6-4c75-89d0-a3cd8b0eed46"
+  Name="MapEntityParent"
+  DisplayName="Map Entity Parent">
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</EntityDef>

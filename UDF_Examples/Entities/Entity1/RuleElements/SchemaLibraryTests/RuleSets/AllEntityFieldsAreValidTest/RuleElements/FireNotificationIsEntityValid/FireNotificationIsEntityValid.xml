@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FireNotificationActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="add89163-9694-4889-ae2c-f76f5e2e41a3"
+  Name="FireNotificationIsEntityValid">
+  <NotificationType xmlns="http://www.inrule.com/XmlSchema/Schema">Informational</NotificationType>
+  <NotificationMessage xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>&lt;%SchemaLibrary.AllEntityFieldsAreValid()%&gt;</FormulaText>
+  </NotificationMessage>
+</FireNotificationActionDef>

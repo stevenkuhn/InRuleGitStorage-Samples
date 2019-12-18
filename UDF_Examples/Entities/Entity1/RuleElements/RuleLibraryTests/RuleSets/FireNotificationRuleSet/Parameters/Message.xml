@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetParameterDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Guid="07abd116-c067-4a84-adb6-1301e81d3a48"
+  Name="Message"
+  DataType="String" />

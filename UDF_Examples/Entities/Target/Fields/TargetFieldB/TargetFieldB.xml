@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="c2f69bfe-18e4-44b9-9643-de0440721989"
+  Name="TargetFieldB"
+  DataType="String"
+  DisplayName="Target Field B" />
