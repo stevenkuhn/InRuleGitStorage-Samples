@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="95618494-70af-4a38-9c22-b6d6d51b514a"
+  Name="Spell"
+  DataType="String">
+  <ValueList
+    Guid="a108d30d-a71a-4f91-a39d-b798a6528fd6" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters />
+    <SourceValueListName>Spell_ValueList</SourceValueListName>
+  </ValueList>
+</FieldDef>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:TableDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="b43c14a9-edc2-4823-8f0e-782eea5d41d9"
+    Name="b43c14a9-edc2-4823-8f0e-782eea5d41d9">
+    <q1:TableSettings
+      SourceTableName="">
+      <q1:InlineDataSet>
+        <xs:schema
+          id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element
+            name="NewDataSet"
+            msdata:IsDataSet="true"
+            msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice
+                minOccurs="0"
+                maxOccurs="unbounded" />
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+      </q1:InlineDataSet>
+      <q1:DatabaseEndPointName />
+      <q1:Filter />
+      <q1:TableSourceType>LinkedTable</q1:TableSourceType>
+    </q1:TableSettings>
+  </DataElementDef>
+  <DataElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:SqlQueryDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="e0dd26a8-986d-446f-9578-2cf885b4f992"
+    Name="e0dd26a8-986d-446f-9578-2cf885b4f992">
+    <q2:SqlQuerySettings>
+      <q2:Parameters />
+      <q2:CommandType>Select</q2:CommandType>
+      <q2:CommandReturnType>Rows</q2:CommandReturnType>
+      <q2:DatabaseEndPointName />
+      <q2:SqlQuerySource>DatabaseEndPoint</q2:SqlQuerySource>
+      <q2:QueryText />
+      <q2:CacheDuration>0</q2:CacheDuration>
+      <q2:ReturnDataType>String</q2:ReturnDataType>
+    </q2:SqlQuerySettings>
+  </DataElementDef>
+  <DataElementDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="688f0127-7caa-4985-b31a-424724c6de5e"
+    Name="688f0127-7caa-4985-b31a-424724c6de5e">
+    <q3:SortDirection>Ascending</q3:SortDirection>
+    <q3:SortMode>None</q3:SortMode>
+    <q3:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q4="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q4:InlineValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="4df8dec2-ac02-4c32-a5aa-9ac2a2431364"
+    Name="4df8dec2-ac02-4c32-a5aa-9ac2a2431364">
+    <q4:SortDirection>Ascending</q4:SortDirection>
+    <q4:SortMode>None</q4:SortMode>
+    <q4:Items />
+  </DataElementDef>
+  <DataElementDef xmlns:q5="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q5:TableDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="b17a08a7-424d-41ee-ac67-57730c5c1c76"
+    Name="b17a08a7-424d-41ee-ac67-57730c5c1c76">
+    <q5:TableSettings
+      SourceTableName="">
+      <q5:InlineDataSet>
+        <xs:schema
+          id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element
+            name="NewDataSet"
+            msdata:IsDataSet="true"
+            msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice
+                minOccurs="0"
+                maxOccurs="unbounded" />
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+      </q5:InlineDataSet>
+      <q5:DatabaseEndPointName />
+      <q5:Filter />
+      <q5:TableSourceType>LinkedTable</q5:TableSourceType>
+    </q5:TableSettings>
+  </DataElementDef>
+  <DataElementDef xmlns:q6="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q6:SqlQueryDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="cfcceae8-9f31-4c45-ab08-bf83c10e349a"
+    Name="cfcceae8-9f31-4c45-ab08-bf83c10e349a">
+    <q6:SqlQuerySettings>
+      <q6:Parameters />
+      <q6:CommandType>Select</q6:CommandType>
+      <q6:CommandReturnType>Rows</q6:CommandReturnType>
+      <q6:DatabaseEndPointName />
+      <q6:SqlQuerySource>DatabaseEndPoint</q6:SqlQuerySource>
+      <q6:QueryText />
+      <q6:CacheDuration>0</q6:CacheDuration>
+      <q6:ReturnDataType>String</q6:ReturnDataType>
+    </q6:SqlQuerySettings>
+  </DataElementDef>
+  <DataElementDef xmlns:q7="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q7:SqlValueListDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="359ecba1-3ccb-44b9-8f96-c78b605b9001"
+    Name="359ecba1-3ccb-44b9-8f96-c78b605b9001">
+    <q7:SortDirection>Ascending</q7:SortDirection>
+    <q7:SortMode>None</q7:SortMode>
+    <q7:Parameters />
+  </DataElementDef>
+</DataElementDefCollection>

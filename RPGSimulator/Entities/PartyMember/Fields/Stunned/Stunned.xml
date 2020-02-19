@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="e4fd7941-3600-44ed-a6b1-03a875df7fce"
+  Name="Stunned"
+  DataType="Boolean">
+  <DefaultValue xmlns="http://www.inrule.com/XmlSchema/Schema">false</DefaultValue>
+</FieldDef>

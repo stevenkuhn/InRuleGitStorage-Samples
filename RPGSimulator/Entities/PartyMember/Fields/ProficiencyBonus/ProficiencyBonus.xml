@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="5517dc1e-b3cc-4301-ac96-e26437590c14"
+  Name="ProficiencyBonus"
+  DataType="Integer"
+  DisplayName="Proficiency Bonus" />

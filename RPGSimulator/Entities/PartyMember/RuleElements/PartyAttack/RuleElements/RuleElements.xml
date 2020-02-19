@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:DeclareVariableActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="8df43877-b59a-4da2-bff8-edf08077a8d8"
+    Name="8df43877-b59a-4da2-bff8-edf08077a8d8"
+    DataType="String" />
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:DeclareVariableActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="3d762b66-4fb2-4879-942d-c89d657dff0b"
+    Name="3d762b66-4fb2-4879-942d-c89d657dff0b"
+    DataType="String" />
+  <RuleElementDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:DeclareVariableActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="b9a88c86-eadd-45f2-bcce-2a14d41a8783"
+    Name="b9a88c86-eadd-45f2-bcce-2a14d41a8783"
+    DataType="String" />
+  <RuleElementDef xmlns:q4="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q4:DecisionTableDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="53424387-1d39-4c1d-91ed-29e03fac8ee5"
+    Name="53424387-1d39-4c1d-91ed-29e03fac8ee5">
+    <q4:Conditions />
+    <q4:Actions />
+    <q4:Decisions />
+    <q4:HasContextVersionSettings>false</q4:HasContextVersionSettings>
+    <q4:UseCompatibilityMode>false</q4:UseCompatibilityMode>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q5="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q5:ExclusiveRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="3692fc5a-824c-4efe-b6c0-b0cf27a4e9da"
+    Name="3692fc5a-824c-4efe-b6c0-b0cf27a4e9da">
+    <q5:DefaultSubRulesRoot
+      Guid="f1a6d73f-a587-432c-b26c-588373faef14"
+      Name="Otherwise" />
+    <q5:Conditions />
+    <q5:DefaultSubRules />
+    <q5:HasContextVersionSettings>false</q5:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q6="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q6:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="c814fa57-2dba-4647-bc4b-fdb0b488fa26"
+    Name="c814fa57-2dba-4647-bc4b-fdb0b488fa26">
+    <q6:HasContextVersionSettings>false</q6:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>

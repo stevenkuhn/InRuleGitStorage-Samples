@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassificationDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="f8b41fc1-5ba9-457b-8dd2-d9063d50a868"
+  Name="Unconcious">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Unconcious</DisplayName>
+  <Expression xmlns="http://www.inrule.com/XmlSchema/Schema">HitPoints &lt;= 0</Expression>
+</ClassificationDef>

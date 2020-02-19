@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="91dc2533-448e-400f-9d00-dda67f3a02bc"
+  Name="IsPartyMemberDead">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="ConditionGroupTemplateSingleCondition" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="RPGSimulator.PartyMember.IsClassification" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="RPGSimulator.Encounter.PartyMembers.CollectionMember.ByIndexExplicit2" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0.0"
+          Value="Monster.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0.1"
+          Value="RPGSimulator.Encounter.PartyMembers.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0.2"
+          Value="RPGSimulator.Encounter.PartyMembers.CollectionMember.ByIndexExplicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0.3"
+          Value="RPGSimulator.Monster.RuleSets.MonsterAttack._nullVocabSurrogate.partyMemberToAttack.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="RPGSimulator.Monster.IsClassification" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2"
+          Value="RPGSimulator.PartyMember._Classification.Unconcious" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0"
+          Value="FireNotificationTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.0.0"
+          Value="RPGSimulator.Monster.Type.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.2"
+          Value="RPGSimulator.PartyMember.Name.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.2.0"
+          Value="RPGSimulator.Encounter.PartyMembers.CollectionMember.ByIndexExplicit2" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.2.0.0"
+          Value="Monster.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.2.0.1"
+          Value="RPGSimulator.Encounter.PartyMembers.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.2.0.2"
+          Value="RPGSimulator.Encounter.PartyMembers.CollectionMember.ByIndexExplicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.2.0.3"
+          Value="RPGSimulator.Monster.RuleSets.MonsterAttack._nullVocabSurrogate.partyMemberToAttack.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.0.2.1"
+          Value="RPGSimulator.PartyMember.Name.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0.1.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1"
+          Value="RemoveCollectionMemberDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1.0"
+          Value="RemoveCollectionMemberDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1.1"
+          Value="RPGSimulator.Monster.RuleSets.MonsterAttack._nullVocabSurrogate.partyMemberToAttack.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1.2"
+          Value="RemoveCollectionMemberDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1.3"
+          Value="RPGSimulator.Encounter.PartyMembers.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1.3.0"
+          Value="Monster.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1.3.1"
+          Value="RPGSimulator.Encounter.PartyMembers.Explicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="51189f27-4845-4097-a59d-f455bdb27953"
+    Name="IsPartyMemberDead" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition>
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>IsClassification(Encounter.PartyMembers(partyMemberToAttack), Unconcious)</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="FireNotificationActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="acbfbda0-19b3-4fb0-866f-d184854b6426"
+        Name="FireNotification1">
+        <NotificationType>Informational</NotificationType>
+        <NotificationMessage>
+          <FormulaParseFormat>Token</FormulaParseFormat>
+          <FormulaText>&lt;%Type &amp; " has killed " &amp; Encounter.PartyMembers(partyMemberToAttack).Name &amp; "!"%&gt;</FormulaText>
+        </NotificationMessage>
+      </RuleElementDef>
+      <RuleElementDef
+        xsi:type="RemoveCollectionMemberActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="68b7b541-96d8-4bee-92d6-9a468ca78235"
+        Name="RemoveCollectionMember2">
+        <Collection>
+          <FormulaText>Encounter.PartyMembers</FormulaText>
+        </Collection>
+        <MemberIndex>
+          <FormulaText>partyMemberToAttack</FormulaText>
+        </MemberIndex>
+        <MemberIndexExpression>partyMemberToAttack</MemberIndexExpression>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

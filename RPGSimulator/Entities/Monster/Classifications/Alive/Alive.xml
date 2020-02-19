@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassificationDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="01ce7882-42d9-4a11-b1c1-e9541760c22f"
+  Name="Alive">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Alive</DisplayName>
+  <Expression xmlns="http://www.inrule.com/XmlSchema/Schema">HitPoints &gt; 0</Expression>
+</ClassificationDef>

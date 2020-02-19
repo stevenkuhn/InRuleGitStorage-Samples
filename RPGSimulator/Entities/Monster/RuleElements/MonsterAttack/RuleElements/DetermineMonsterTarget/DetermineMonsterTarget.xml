@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="f83ffd0c-0627-414e-9e71-65f5b3d7f600"
+  Name="DetermineMonsterTarget">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="SetValueIntegerAssignableInteger" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="RPGSimulator.Monster.RuleSets.MonsterAttack._nullVocabSurrogate.partyMemberToAttack.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.1"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.2"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.3"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.4"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.5"
+          Value="ColCountNumber" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.5.0"
+          Value="ColCountWhereNumber" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.5.1"
+          Value="RPGSimulator.Encounter.PartyMembers.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.5.1.0"
+          Value="Monster.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.5.1.1"
+          Value="RPGSimulator.Encounter.PartyMembers.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1"
+          Value="FireNotificationTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.0"
+          Value="RPGSimulator.Monster.Type.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2"
+          Value="RPGSimulator.PartyMember.Name.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.0"
+          Value="RPGSimulator.Encounter.PartyMembers.CollectionMember.ByIndexExplicit2" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.0.0"
+          Value="Monster.ImplicitParentTemplate.Encounter" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.0.1"
+          Value="RPGSimulator.Encounter.PartyMembers.Explicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.0.2"
+          Value="RPGSimulator.Encounter.PartyMembers.CollectionMember.ByIndexExplicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.0.3"
+          Value="RPGSimulator.Monster.RuleSets.MonsterAttack._nullVocabSurrogate.partyMemberToAttack.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.1"
+          Value="RPGSimulator.PartyMember.Name.Explicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="d10f925f-f94d-4796-985c-b73dd55fffcc"
+    Name="DetermineMonsterTarget" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition>
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>true</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="39a1bbf9-0433-4394-adbb-f9fa57a8d109"
+        Name="SetValue1">
+        <Element>
+          <FormulaText>partyMemberToAttack</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>Random(1, Count(Encounter.PartyMembers))</FormulaText>
+        </Value>
+      </RuleElementDef>
+      <RuleElementDef
+        xsi:type="FireNotificationActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="1146236a-3250-4265-811c-6d36d3d5c79f"
+        Name="FireNotification2">
+        <NotificationType>Informational</NotificationType>
+        <NotificationMessage>
+          <FormulaParseFormat>Token</FormulaParseFormat>
+          <FormulaText>&lt;%Type &amp; " is attacking " &amp; Encounter.PartyMembers(partyMemberToAttack).Name%&gt;</FormulaText>
+        </NotificationMessage>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>
