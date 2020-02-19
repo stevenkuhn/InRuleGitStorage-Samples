@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FireNotificationActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="74f9dfdb-cacd-4bfe-97ae-d272b379cc82"
+  Name="FireNotification1">
+  <NotificationType xmlns="http://www.inrule.com/XmlSchema/Schema">Informational</NotificationType>
+  <NotificationMessage xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>This is my Independent Rule Set With Parameters. Here is my parameter 1 value:  &lt;%Parameter1%&gt;. Here is my parameter 2 value:  &lt;%Parameter2%&gt;</FormulaText>
+  </NotificationMessage>
+</FireNotificationActionDef>

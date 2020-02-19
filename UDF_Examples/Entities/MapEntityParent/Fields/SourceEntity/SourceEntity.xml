@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="d64567bb-0620-44ca-b8f6-210918c18ada"
+  Name="SourceEntity"
+  DataType="Entity"
+  DataTypeEntityName="Source"
+  DisplayName="Source Entity">
+  <DefaultValue xmlns="http://www.inrule.com/XmlSchema/Schema" />
+</FieldDef>

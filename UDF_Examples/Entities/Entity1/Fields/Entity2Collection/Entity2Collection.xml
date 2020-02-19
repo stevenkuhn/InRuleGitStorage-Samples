@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="ec9bb585-800b-4a31-92aa-4dec3646470a"
+  Name="Entity2Collection"
+  AuthoringIsExpanded="false"
+  DataType="Entity"
+  IsCollection="true"
+  DataTypeEntityName="Entity2"
+  DisplayName="Entity2 Collection" />

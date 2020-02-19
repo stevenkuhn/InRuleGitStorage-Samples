@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="c73a638c-1f3c-4a32-9b60-31bbb876a9ac"
+  Name="ThisIsMyLanguageRule2">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="SetValueStringAssignableString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3"
+          Value="UDFUtils.UdfLibrary.ContextRuleSetLib.Udf.GetParentLanguageRule.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.0"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1"
+          Value="ConditionGroupTemplateSingleCondition" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0"
+          Value="BooleanDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.2"
+          Value="IfThenDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0"
+          Value="SetValueStringAssignableString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.1"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0.3"
+          Value="UDFUtils.UdfLibrary.ContextRuleSetLib.Udf.GetParentLanguageRule.Implicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="6a751bbf-55c3-46da-b3cc-f3c49068722b"
+    Name="ThisIsMyLanguageRule2" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition>
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>true</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="a66b058d-db60-4607-a8b1-1417003b0493"
+        Name="SetValue1">
+        <Element>
+          <FormulaText>TextField1</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>RuleLibrary.GetParentRule()</FormulaText>
+        </Value>
+      </RuleElementDef>
+      <RuleElementDef
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="5a4c5ff2-0401-4186-a19c-68d04768075d"
+        Name="Rule2">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>true</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="e4f13731-cd54-450d-995b-e70efb2f75b7"
+            Name="Set_Value3">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>RuleLibrary.GetParentRule()</FormulaText>
+            </Value>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

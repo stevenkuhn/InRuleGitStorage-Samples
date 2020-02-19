@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FireNotificationActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="61b0fd5e-e12e-49b1-ba16-090ad80b6c34"
+  Name="FireNotificationGetEntityRuleSetNames">
+  <NotificationType xmlns="http://www.inrule.com/XmlSchema/Schema">Informational</NotificationType>
+  <NotificationMessage xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>&lt;%SchemaLibrary.GetEntityRuleSetNames()%&gt;</FormulaText>
+  </NotificationMessage>
+</FireNotificationActionDef>

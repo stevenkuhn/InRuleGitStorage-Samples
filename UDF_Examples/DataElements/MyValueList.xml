@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="321c16c0-b153-40ff-a896-30718a3fc93a"
+  Name="MyValueList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="cb051443-3db7-47e8-a897-336feab88f13">
+      <Value>Value1</Value>
+      <DisplayText>Value1Display</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="46645f21-f47b-4e07-94ce-467deba73dde">
+      <Value>Value2</Value>
+      <DisplayText>Value2Display</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="8e4014b2-c9a6-408f-b2f7-c19b0dde0f5e">
+      <Value>Value3</Value>
+      <DisplayText>Value3Display</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="611ab499-3443-4458-bbd7-e27022506df5">
+      <Value>Value4</Value>
+      <DisplayText>Value4Display</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDefBaseCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleSetDefBase xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="9096da17-c60e-4623-942a-f8ea3c5be111"
+    Name="9096da17-c60e-4623-942a-f8ea3c5be111">
+    <q1:FireMode>Auto</q1:FireMode>
+    <q1:RunMode>Sequential</q1:RunMode>
+    <q1:Rules />
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="5ccd614e-86d4-4cfe-b319-a5f54779b934"
+    Name="5ccd614e-86d4-4cfe-b319-a5f54779b934">
+    <q2:FireMode>Auto</q2:FireMode>
+    <q2:RunMode>Sequential</q2:RunMode>
+    <q2:Rules />
+    <q2:HasContextVersionSettings>false</q2:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="879f5608-59ce-4c79-b5c7-345073a335a8"
+    Name="879f5608-59ce-4c79-b5c7-345073a335a8">
+    <q3:FireMode>Auto</q3:FireMode>
+    <q3:RunMode>Sequential</q3:RunMode>
+    <q3:Rules />
+    <q3:HasContextVersionSettings>false</q3:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q4="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q4:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="4111ff37-bfea-4ca4-a27c-7c9b516a19d6"
+    Name="4111ff37-bfea-4ca4-a27c-7c9b516a19d6">
+    <q4:FireMode>Auto</q4:FireMode>
+    <q4:RunMode>Sequential</q4:RunMode>
+    <q4:Rules />
+    <q4:HasContextVersionSettings>false</q4:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q5="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q5:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="2300c628-f31d-4d30-9b53-328d27bd72af"
+    Name="2300c628-f31d-4d30-9b53-328d27bd72af">
+    <q5:FireMode>Auto</q5:FireMode>
+    <q5:RunMode>Sequential</q5:RunMode>
+    <q5:Rules />
+    <q5:HasContextVersionSettings>false</q5:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q6="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q6:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="130784ce-2692-4d2b-9d7d-e2ab65d4c172"
+    Name="130784ce-2692-4d2b-9d7d-e2ab65d4c172">
+    <q6:FireMode>Auto</q6:FireMode>
+    <q6:RunMode>Sequential</q6:RunMode>
+    <q6:Rules />
+    <q6:HasContextVersionSettings>false</q6:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q7="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q7:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="3428b13b-01c7-4177-ab33-f08b76155a24"
+    Name="3428b13b-01c7-4177-ab33-f08b76155a24">
+    <q7:FireMode>Auto</q7:FireMode>
+    <q7:RunMode>Sequential</q7:RunMode>
+    <q7:Rules />
+    <q7:HasContextVersionSettings>false</q7:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q8="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q8:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="3400c099-cf82-4c57-a603-3072d6312d26"
+    Name="3400c099-cf82-4c57-a603-3072d6312d26">
+    <q8:FireMode>Auto</q8:FireMode>
+    <q8:RunMode>Sequential</q8:RunMode>
+    <q8:Rules />
+    <q8:HasContextVersionSettings>false</q8:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q9="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q9:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="5bed0327-d1da-4d47-85e7-e49afd5780ba"
+    Name="5bed0327-d1da-4d47-85e7-e49afd5780ba">
+    <q9:FireMode>Auto</q9:FireMode>
+    <q9:RunMode>Sequential</q9:RunMode>
+    <q9:Rules />
+    <q9:HasContextVersionSettings>false</q9:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q10="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q10:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="c8992703-8df3-48f7-b61d-be46bf1eec36"
+    Name="c8992703-8df3-48f7-b61d-be46bf1eec36">
+    <q10:FireMode>Auto</q10:FireMode>
+    <q10:RunMode>Sequential</q10:RunMode>
+    <q10:Rules />
+    <q10:HasContextVersionSettings>false</q10:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q11="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q11:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="2393e809-64bf-4fdf-a2fc-c6379d601be3"
+    Name="2393e809-64bf-4fdf-a2fc-c6379d601be3">
+    <q11:FireMode>Auto</q11:FireMode>
+    <q11:RunMode>Sequential</q11:RunMode>
+    <q11:Rules />
+    <q11:HasContextVersionSettings>false</q11:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q12="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q12:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="281c986c-21f9-44d1-a3e7-eb247821d8dd"
+    Name="281c986c-21f9-44d1-a3e7-eb247821d8dd">
+    <q12:FireMode>Auto</q12:FireMode>
+    <q12:RunMode>Sequential</q12:RunMode>
+    <q12:Rules />
+    <q12:HasContextVersionSettings>false</q12:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q13="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q13:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="0d4e648b-2222-4136-b949-b21de3f16caf"
+    Name="0d4e648b-2222-4136-b949-b21de3f16caf">
+    <q13:FireMode>Auto</q13:FireMode>
+    <q13:RunMode>Sequential</q13:RunMode>
+    <q13:Rules />
+    <q13:HasContextVersionSettings>false</q13:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q14="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q14:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="bd86285a-3084-4009-a423-4a7c62dc553e"
+    Name="bd86285a-3084-4009-a423-4a7c62dc553e">
+    <q14:FireMode>Auto</q14:FireMode>
+    <q14:RunMode>Sequential</q14:RunMode>
+    <q14:Rules />
+    <q14:HasContextVersionSettings>false</q14:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q15="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q15:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="1eb7daf7-30bf-413a-ade8-10e0c16b6255"
+    Name="1eb7daf7-30bf-413a-ade8-10e0c16b6255">
+    <q15:FireMode>Auto</q15:FireMode>
+    <q15:RunMode>Sequential</q15:RunMode>
+    <q15:Rules />
+    <q15:HasContextVersionSettings>false</q15:HasContextVersionSettings>
+  </RuleSetDefBase>
+  <RuleSetDefBase xmlns:q16="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q16:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="b092b377-67d7-4da6-bf3a-abb152d427de"
+    Name="b092b377-67d7-4da6-bf3a-abb152d427de">
+    <q16:FireMode>Auto</q16:FireMode>
+    <q16:RunMode>Sequential</q16:RunMode>
+    <q16:Rules />
+    <q16:HasContextVersionSettings>false</q16:HasContextVersionSettings>
+  </RuleSetDefBase>
+</RuleSetDefBaseCollection>

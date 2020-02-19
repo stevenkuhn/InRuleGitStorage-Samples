@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="1e04b577-e53b-468a-bf86-937eb2039321"
+    Name="1e04b577-e53b-468a-bf86-937eb2039321">
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>

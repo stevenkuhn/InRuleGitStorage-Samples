@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="b1d06298-aff4-4540-9288-3befb4607e6c"
+  Name="GetValidPath">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="SetValueStringAssignableString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="IOLib.GetValidPath(&lt;Arg Name=&quot;path&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.0"
+          Value="UDFUtils.UdfLibrary.IOLib.Udf.GetValidPath(&lt;Arg Name=&quot;path&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.1"
+          Value="IOLib.GetValidPath(&lt;Arg Name=&quot;path&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.2"
+          Value="" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3.3"
+          Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SetValueActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="fd1cc2eb-3298-43e2-b5ca-805e7bc80088"
+    Name="GetValidPath" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Element>
+      <FormulaText>TextField3</FormulaText>
+    </Element>
+    <Value>
+      <FormulaText>IOLibrary.GetValidPath(TextField1)</FormulaText>
+    </Value>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>
