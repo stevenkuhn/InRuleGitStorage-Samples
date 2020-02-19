@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="eb3e1170-c19f-4d5a-a749-294d8d588da3"
+  Name="ProductTable">
+  <TableSettings
+    SourceTableName="" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <InlineDataSet>
+      <xs:schema
+        id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xs:element
+          name="NewDataSet"
+          msdata:IsDataSet="true"
+          msdata:UseCurrentLocale="true">
+          <xs:complexType>
+            <xs:choice
+              minOccurs="0"
+              maxOccurs="unbounded">
+              <xs:element
+                name="Table1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element
+                      name="ID"
+                      type="xs:int"
+                      minOccurs="0" />
+                    <xs:element
+                      name="Name"
+                      type="xs:string"
+                      minOccurs="0" />
+                    <xs:element
+                      name="Price"
+                      type="xs:decimal"
+                      minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:schema>
+      <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+        <NewDataSet xmlns="">
+          <Table1
+            diffgr:id="Table11"
+            msdata:rowOrder="0">
+            <ID>1</ID>
+            <Name>Garbage Bags</Name>
+            <Price>2.60</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table12"
+            msdata:rowOrder="1">
+            <ID>2</ID>
+            <Name>Golden Grahms</Name>
+            <Price>4.50</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table13"
+            msdata:rowOrder="2">
+            <ID>3</ID>
+            <Name>Coke 2 Liter Bottle</Name>
+            <Price>1.19</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table14"
+            msdata:rowOrder="3">
+            <ID>4</ID>
+            <Name>2% Milk 1 Gallon</Name>
+            <Price>3.78</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table15"
+            msdata:rowOrder="4">
+            <ID>5</ID>
+            <Name>Fish Sticks</Name>
+            <Price>3.43</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table16"
+            msdata:rowOrder="5">
+            <ID>6</ID>
+            <Name>Thinkpad Computer</Name>
+            <Price>3500.00</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table17"
+            msdata:rowOrder="6">
+            <ID>7</ID>
+            <Name>Television</Name>
+            <Price>200.00</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table18"
+            msdata:rowOrder="7">
+            <ID>8</ID>
+            <Name>DVD Player</Name>
+            <Price>119.00</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table19"
+            msdata:rowOrder="8">
+            <ID>9</ID>
+            <Name>MP3 Player</Name>
+            <Price>249.99</Price>
+          </Table1>
+          <Table1
+            diffgr:id="Table110"
+            msdata:rowOrder="9">
+            <ID>10</ID>
+            <Name>6pk Hot Dogs</Name>
+            <Price>3.49</Price>
+          </Table1>
+        </NewDataSet>
+      </diffgr:diffgram>
+    </InlineDataSet>
+    <DatabaseEndPointName />
+    <Filter />
+    <TableSourceType>Inline</TableSourceType>
+  </TableSettings>
+</TableDef>

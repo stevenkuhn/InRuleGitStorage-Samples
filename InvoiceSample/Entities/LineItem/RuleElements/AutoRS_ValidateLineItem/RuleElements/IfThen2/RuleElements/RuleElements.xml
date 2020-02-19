@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:SetFieldInvalidActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="6961d40b-be16-410d-920a-3b2ece3c2503"
+    Name="6961d40b-be16-410d-920a-3b2ece3c2503">
+    <q1:Message>
+      <q1:FormulaParseFormat>Token</q1:FormulaParseFormat>
+      <q1:FormulaText />
+    </q1:Message>
+  </RuleElementDef>
+</RuleElementDefCollection>

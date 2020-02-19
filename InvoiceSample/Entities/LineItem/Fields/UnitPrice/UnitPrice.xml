@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="10938b0b-dade-4772-be20-296148b80db4"
+  Name="UnitPrice"
+  AuthoringIsExpanded="false"
+  DataType="Number"
+  IsCalculated="true">
+  <Calc xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>Format(TableLookup(ProductTable,"Price","ID",ProductID),"#,##0.00")</FormulaText>
+  </Calc>
+</FieldDef>

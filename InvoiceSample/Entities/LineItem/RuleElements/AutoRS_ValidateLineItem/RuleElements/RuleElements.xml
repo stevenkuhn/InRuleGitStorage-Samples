@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="528c6118-7d9b-42c0-a886-33ac9c6b1877"
+    Name="528c6118-7d9b-42c0-a886-33ac9c6b1877">
+    <q1:Condition>
+      <q1:ReturnType>Boolean</q1:ReturnType>
+      <q1:FormulaText />
+    </q1:Condition>
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>
