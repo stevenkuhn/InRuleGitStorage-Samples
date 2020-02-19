@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="ffafb3be-b32f-482e-b40a-a4c2fdc539bb"
+    Name="ffafb3be-b32f-482e-b40a-a4c2fdc539bb">
+    <q1:FireMode>Auto</q1:FireMode>
+    <q1:RunMode>Sequential</q1:RunMode>
+    <q1:Rules />
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:RuleSetDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="349333c9-6123-42e4-907f-d85f002a22d2"
+    Name="349333c9-6123-42e4-907f-d85f002a22d2">
+    <q2:FireMode>Auto</q2:FireMode>
+    <q2:RunMode>Sequential</q2:RunMode>
+    <q2:Rules />
+    <q2:HasContextVersionSettings>false</q2:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>

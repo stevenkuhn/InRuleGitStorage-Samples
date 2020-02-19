@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="22ddc63b-2754-4673-b432-7133b06949dd"
+  Name="LossDate"
+  DataType="Date"
+  DisplayName="Loss Date" />

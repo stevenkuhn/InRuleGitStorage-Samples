@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="365c8610-14e3-49b9-a937-705fda31f9c8"
+  Name="Transactions"
+  DataType="Entity"
+  IsCollection="true"
+  DataTypeEntityName="Transaction" />

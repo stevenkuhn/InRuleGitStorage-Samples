@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleApplicationDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="3e796f0c-8374-4c3f-9798-7e055928e2b7"
+  Id="-1"
+  Name="Vocabulary_Examples"
+  RepositoryAssemblyFileVersion="5.4.3.211"
+  AuthoringIsExpanded="false"
+  LastValidateContentCode="-1794998785"
+  IsolatedTestDomain="false"
+  SchemaGuid="57ed2056-81ca-4d8f-bb15-dee643e9b29e"
+  SchemaRevision="1"
+  SchemaPublicRevision="1"
+  LastValidateDateTimeUtc="2016-01-12T21:56:22.7393106Z">
+  <UpgraderMessageList xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <RuntimeEngine xmlns="http://www.inrule.com/XmlSchema/Schema">InRule</RuntimeEngine>
+  <FeatureVersion xmlns="http://www.inrule.com/XmlSchema/Schema">106</FeatureVersion>
+  <CompatibilityVersion xmlns="http://www.inrule.com/XmlSchema/Schema">1</CompatibilityVersion>
+  <AuthoringSettings xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <SelectedAuthoringItemGuid>4c58df5d-c4c1-41e0-8535-77426cf258ad</SelectedAuthoringItemGuid>
+    <UseAdvancedXmlOptions>false</UseAdvancedXmlOptions>
+    <AllowAccessToParentsInLanguageRules>true</AllowAccessToParentsInLanguageRules>
+    <TreeRuleNameVisibility>HideReserved</TreeRuleNameVisibility>
+    <CreatedDateTime>2009-06-03T16:22:41.1554181-05:00</CreatedDateTime>
+    <ModifiedDateTime>2016-01-12T15:56:22.7640508-06:00</ModifiedDateTime>
+    <TargetPlatform>InRule</TargetPlatform>
+  </AuthoringSettings>
+  <IndentUnboundCollectionXml xmlns="http://www.inrule.com/XmlSchema/Schema">false</IndentUnboundCollectionXml>
+  <AllowRuleInactivation xmlns="http://www.inrule.com/XmlSchema/Schema">true</AllowRuleInactivation>
+  <UseRuleVersions xmlns="http://www.inrule.com/XmlSchema/Schema">false</UseRuleVersions>
+  <UseVersionCreationDates xmlns="http://www.inrule.com/XmlSchema/Schema">true</UseVersionCreationDates>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  <RunawayCycleCount xmlns="http://www.inrule.com/XmlSchema/Schema">100000</RunawayCycleCount>
+  <Timeout xmlns="http://www.inrule.com/XmlSchema/Schema">30000</Timeout>
+  <RuntimeErrorHandlingPolicy xmlns="http://www.inrule.com/XmlSchema/Schema">ContinueWithNextRule</RuntimeErrorHandlingPolicy>
+  <Entities xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <Categories xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <CategoryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="cbe380eb-c3ac-4f77-a899-155b7b715f27"
+      Name="xxxx" />
+    <CategoryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="f52ce4e9-2df3-4aa8-b403-3bec1b3c0812"
+      Name="yyyy" />
+  </Categories>
+  <UdfLibraries xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <UdfLibraryDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="3d29f23b-a4e2-4d81-97f3-73ec0d4d0468"
+      Name="FinancialFunctions">
+      <UserDefinedFunctions>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="8811f4e1-e6e6-40c1-bb76-5f1a03f95e78"
+          Name="SummaryFormulaIsValid">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="9aff2613-22c2-49ef-99a4-5f9c2b19213b">
+            <DataType>Boolean</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="da2b8f76-a48c-4915-8ab9-314e0867efe4"
+              Name="pFormula">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="0cb0387d-0bf8-4abc-b60d-29e8636a8a84">
+                <DataType>String</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>var characters = pFormula.ToCharArray();
+
+for(var c in characters)
+{
+                value = c.ToString();
+               
+                if(value != '+' &amp;&amp; value != '-' &amp;&amp; value != ' ')
+                {
+                                return false;
+                }
+}
+
+return true;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+        <UdfDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a681f956-5a75-43f3-8bb3-e6ec62d2a2a9"
+          Name="SummaryFormulaSign">
+          <ReturnTypeInfo
+            Revision="1"
+            PublicRevision="1"
+            Guid="5d8f7e11-cc2e-4c6e-8dc1-a4d9b79c3ba4">
+            <DataType>Integer</DataType>
+          </ReturnTypeInfo>
+          <Arguments>
+            <UdfArgumentDef
+              Revision="1"
+              PublicRevision="1"
+              Guid="525cd11e-fd65-4447-9b33-b3c918e4d7d0"
+              Name="pPosition">
+              <IsOutOrRef>false</IsOutOrRef>
+              <ArgumentTypeInfo
+                Revision="1"
+                PublicRevision="1"
+                Guid="78b90d98-4607-438a-8fb0-7ab19864adf9">
+                <DataType>Integer</DataType>
+              </ArgumentTypeInfo>
+            </UdfArgumentDef>
+          </Arguments>
+          <FunctionBody>
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>var formula = Context.Entity.Fields["SummaryFormula"].Value.ToString();
+
+var bucket = pPosition -1;
+
+if (formula.Substring(bucket,1) == '+')
+return 1;
+if (formula.Substring(bucket,1) == '-')
+return -1;
+return 0;</FormulaText>
+          </FunctionBody>
+        </UdfDef>
+      </UserDefinedFunctions>
+    </UdfLibraryDef>
+  </UdfLibraries>
+</RuleApplicationDef>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecuteMemberRulesetTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="8b7e2be3-7534-40d8-a11f-41535baac991"
+  Name="ExecuteTier1Rules">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Execute Tier1 Rules</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Execute Tier 1 Rules for all pending transactions.</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <TargetRulesetName xmlns="http://www.inrule.com/XmlSchema/Schema">Tier1Validations</TargetRulesetName>
+  <Parameters xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <TargetCollectionName xmlns="http://www.inrule.com/XmlSchema/Schema">PendingTransactions</TargetCollectionName>
+  <FilteredByPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">ProcessingStatus='P'</FilteredByPrototype>
+</ExecuteMemberRulesetTemplateDef>

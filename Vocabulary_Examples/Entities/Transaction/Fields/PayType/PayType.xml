@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="2dcf77d8-f33e-4556-b101-bf9e0d363ea7"
+  Name="PayType"
+  DataType="String"
+  IsCalculated="true"
+  DisplayName="Pay Type">
+  <Calc xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>Left(TransactionCategory, 1)</FormulaText>
+  </Calc>
+</FieldDef>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TemplateDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TemplateDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:ExpressionTemplateDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="47764ff4-d4b8-427e-9695-542fb1844012"
+    Name="47764ff4-d4b8-427e-9695-542fb1844012">
+    <q1:DisplayName>47764ff4-d4b8-427e-9695-542fb1844012</q1:DisplayName>
+    <q1:Placeholders />
+    <q1:TemplateScope>Local</q1:TemplateScope>
+    <q1:ExpressionPrototype />
+    <q1:FunctionName>47764ff4-d4b8-427e-9695-542fb1844012</q1:FunctionName>
+    <q1:SelectionMode>Template</q1:SelectionMode>
+    <q1:Impersonates />
+  </TemplateDef>
+  <TemplateDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:AssignmentTemplateDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="bebeb8c5-dd2d-4cce-8126-e91da71a4c5c"
+    Name="bebeb8c5-dd2d-4cce-8126-e91da71a4c5c">
+    <q2:DisplayName>bebeb8c5-dd2d-4cce-8126-e91da71a4c5c</q2:DisplayName>
+    <q2:Placeholders />
+    <q2:TemplateScope>Local</q2:TemplateScope>
+    <q2:TargetExpressionPrototype />
+    <q2:ValueExpressionPrototype />
+  </TemplateDef>
+  <TemplateDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:AddCollectionMemberTemplateDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="89a4f4e6-2d4e-461c-9177-d88c7ce41e58"
+    Name="89a4f4e6-2d4e-461c-9177-d88c7ce41e58">
+    <q3:DisplayName>89a4f4e6-2d4e-461c-9177-d88c7ce41e58</q3:DisplayName>
+    <q3:Placeholders />
+    <q3:TemplateScope>Local</q3:TemplateScope>
+    <q3:TargetCollectionPrototype />
+    <q3:MemberValues />
+    <q3:CopyMode>ByReference</q3:CopyMode>
+  </TemplateDef>
+  <TemplateDef xmlns:q4="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q4:AssignmentTemplateDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="2a9a6163-15d4-4f6a-909a-7bc66a563bd5"
+    Name="2a9a6163-15d4-4f6a-909a-7bc66a563bd5">
+    <q4:DisplayName>2a9a6163-15d4-4f6a-909a-7bc66a563bd5</q4:DisplayName>
+    <q4:Placeholders />
+    <q4:TemplateScope>Local</q4:TemplateScope>
+    <q4:TargetExpressionPrototype />
+    <q4:ValueExpressionPrototype />
+  </TemplateDef>
+  <TemplateDef xmlns:q5="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q5:AddCollectionMemberTemplateDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="21aa3e97-c9cb-4aaa-83c2-23f9c4844577"
+    Name="21aa3e97-c9cb-4aaa-83c2-23f9c4844577">
+    <q5:DisplayName>21aa3e97-c9cb-4aaa-83c2-23f9c4844577</q5:DisplayName>
+    <q5:Placeholders />
+    <q5:TemplateScope>Local</q5:TemplateScope>
+    <q5:TargetCollectionPrototype />
+    <q5:MemberValues />
+    <q5:CopyMode>ByReference</q5:CopyMode>
+  </TemplateDef>
+  <TemplateDef xmlns:q6="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q6:NotificationTemplateDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="7e4b8ed9-4d55-4e6e-a5d8-6dc320aeb929"
+    Name="7e4b8ed9-4d55-4e6e-a5d8-6dc320aeb929">
+    <q6:DisplayName>7e4b8ed9-4d55-4e6e-a5d8-6dc320aeb929</q6:DisplayName>
+    <q6:Placeholders />
+    <q6:TemplateScope>Local</q6:TemplateScope>
+    <q6:NotificationType>Informational</q6:NotificationType>
+    <q6:AllowMultipleNotifications>false</q6:AllowMultipleNotifications>
+    <q6:MessagePrototype />
+  </TemplateDef>
+</TemplateDefCollection>

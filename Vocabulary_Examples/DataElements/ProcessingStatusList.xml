@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="a3624be8-9e14-48c7-a6d0-59e2dd160b76"
+  Name="ProcessingStatusList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="c267f0af-3d41-48fc-9e77-c6ea67671bba">
+      <Value>P</Value>
+      <DisplayText>Pending</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="7030b393-fb6f-4e55-922d-1484dbe30b4a">
+      <Value>C</Value>
+      <DisplayText>Completed</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="6391e12e-7884-4665-bd0a-a524d0b0ae53"
+    Name="6391e12e-7884-4665-bd0a-a524d0b0ae53"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="e6f2cd96-b830-44b4-9d3b-9b85cf5414ba"
+    Name="e6f2cd96-b830-44b4-9d3b-9b85cf5414ba"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="be62bee8-09ba-4dad-977e-6562e75f61e3"
+    Name="be62bee8-09ba-4dad-977e-6562e75f61e3"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="70b2a981-5d7c-47b5-b873-5d6c5e06ce10"
+    Name="70b2a981-5d7c-47b5-b873-5d6c5e06ce10"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="38fc4d52-1893-442a-89f0-ad3ac68c64d3"
+    Name="38fc4d52-1893-442a-89f0-ad3ac68c64d3"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="8e54cab1-8ade-4712-a9b7-001333f48f9d"
+    Name="8e54cab1-8ade-4712-a9b7-001333f48f9d"
+    DataType="String" />
+</FieldDefCollection>

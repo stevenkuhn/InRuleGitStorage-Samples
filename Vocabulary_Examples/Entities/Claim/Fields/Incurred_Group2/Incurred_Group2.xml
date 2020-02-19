@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="f6502409-7840-4ed9-b214-7d2201c49685"
+  Name="Incurred_Group2"
+  DataType="Number"
+  IsCalculated="true"
+  DisplayName="Incurred  Group2">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="IntegerDesigner" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <Calc
+    LastAuthoringView="BusinessLangauge" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>GetIncurredByFinancialGroup(financialGroup:2)</FormulaText>
+  </Calc>
+</FieldDef>
