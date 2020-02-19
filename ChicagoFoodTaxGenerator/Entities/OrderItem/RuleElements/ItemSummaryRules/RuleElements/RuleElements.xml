@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="a1b06720-a910-49b7-9754-3486fd3f5a17"
+    Name="a1b06720-a910-49b7-9754-3486fd3f5a17">
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="226c3cb2-d319-4b11-abce-ce1e1c912976"
+    Name="226c3cb2-d319-4b11-abce-ce1e1c912976">
+    <q2:HasContextVersionSettings>false</q2:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="0638fe3f-60a1-4786-b4da-066553711ca4"
+    Name="0638fe3f-60a1-4786-b4da-066553711ca4">
+    <q3:HasContextVersionSettings>false</q3:HasContextVersionSettings>
+  </RuleElementDef>
+</RuleElementDefCollection>

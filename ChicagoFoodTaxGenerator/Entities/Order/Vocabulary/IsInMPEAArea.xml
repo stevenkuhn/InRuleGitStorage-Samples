@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4abd0655-565d-4b3d-a7b4-a1262c62a552"
+  Name="IsInMPEAArea">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Is In MPEA Area</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">Boolean</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">is in the MPEA area</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local</TemplateScope>
+  <ExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">isnotnullorempty(TableLookup(ZIPCodeTable, "ZIPCode", "ZIPCode", ZIPCode, null))</ExpressionPrototype>
+  <FunctionName xmlns="http://www.inrule.com/XmlSchema/Schema">MPEAZIPCheck</FunctionName>
+  <SelectionMode xmlns="http://www.inrule.com/XmlSchema/Schema">Template</SelectionMode>
+  <Impersonates xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ImpersonationDef
+      xsi:type="DataTypeImpersonationDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="774dee7d-5870-4049-a66c-aa57079c900a"
+      Name="DataTypeImpersonationDef1">
+      <DataType>Boolean</DataType>
+    </ImpersonationDef>
+  </Impersonates>
+</ExpressionTemplateDef>

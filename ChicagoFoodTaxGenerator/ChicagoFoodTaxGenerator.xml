@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleApplicationDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="9"
+  PublicRevision="9"
+  Guid="81e62d7f-a0a3-4314-b8b5-3c67500c53cb"
+  Id="-1"
+  Name="ChicagoFoodTaxGenerator"
+  RepositoryAssemblyFileVersion="5.4.3.211"
+  LastValidateContentCode="-1923165227"
+  IsolatedTestDomain="false"
+  SchemaGuid="d4540f38-ecf0-4d4d-9333-8d16d9dd547b"
+  SchemaRevision="3"
+  SchemaPublicRevision="3"
+  LastValidateDateTimeUtc="2014-07-17T15:48:20.1706299Z">
+  <Comments xmlns="http://www.inrule.com/XmlSchema/Schema">The Chicago Food Tax Generator rule application was created by InRule ROAD Team member Rob Eaman in July, 2014. Please email questions or comments about this sample to reaman@inrule.com.</Comments>
+  <UpgraderMessageList xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <RuntimeEngine xmlns="http://www.inrule.com/XmlSchema/Schema">InRule</RuntimeEngine>
+  <FeatureVersion xmlns="http://www.inrule.com/XmlSchema/Schema">106</FeatureVersion>
+  <CompatibilityVersion xmlns="http://www.inrule.com/XmlSchema/Schema">1</CompatibilityVersion>
+  <AuthoringSettings xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <SelectedAuthoringItemGuid>81e62d7f-a0a3-4314-b8b5-3c67500c53cb</SelectedAuthoringItemGuid>
+    <UseAdvancedXmlOptions>false</UseAdvancedXmlOptions>
+    <AllowAccessToParentsInLanguageRules>true</AllowAccessToParentsInLanguageRules>
+    <TreeRuleNameVisibility>HideReserved</TreeRuleNameVisibility>
+    <CreatedDateTime>2014-05-20T16:20:44.339073-05:00</CreatedDateTime>
+    <ModifiedDateTime>2014-07-17T10:48:20.1940604-05:00</ModifiedDateTime>
+    <TargetPlatform>InRule</TargetPlatform>
+  </AuthoringSettings>
+  <IndentUnboundCollectionXml xmlns="http://www.inrule.com/XmlSchema/Schema">true</IndentUnboundCollectionXml>
+  <AllowRuleInactivation xmlns="http://www.inrule.com/XmlSchema/Schema">true</AllowRuleInactivation>
+  <UseRuleVersions xmlns="http://www.inrule.com/XmlSchema/Schema">false</UseRuleVersions>
+  <UseVersionCreationDates xmlns="http://www.inrule.com/XmlSchema/Schema">true</UseVersionCreationDates>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  <RunawayCycleCount xmlns="http://www.inrule.com/XmlSchema/Schema">100000</RunawayCycleCount>
+  <Timeout xmlns="http://www.inrule.com/XmlSchema/Schema">30000</Timeout>
+  <RuntimeErrorHandlingPolicy xmlns="http://www.inrule.com/XmlSchema/Schema">ContinueWithNextRuleSet</RuntimeErrorHandlingPolicy>
+  <Entities xmlns="http://www.inrule.com/XmlSchema/Schema" />
+</RuleApplicationDef>
