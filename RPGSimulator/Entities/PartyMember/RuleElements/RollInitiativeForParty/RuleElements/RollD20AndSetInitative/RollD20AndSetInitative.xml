@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="1a79cddd-5117-4c81-975f-a651cfd5941b"
+  Name="RollD20AndSetInitative">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="SetValueIntegerAssignableInteger" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="NewRuleApplication.PartyMember.Initative.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.2"
+          Value="SetValueBooleanAssignableBoolean" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3"
+          Value="PlusDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.0"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.1"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.2"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.3"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.4"
+          Value="RandomIntegerDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.0.5"
+          Value="IntegerDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.1"
+          Value="PlusDecimal" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.3.2"
+          Value="NewRuleApplication.PartyMember.RuleSets.RollInitiativeForParty._nullVocabSurrogate.bonusScore.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.0"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.0"
+          Value="NewRuleApplication.PartyMember.Name.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.0"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.2"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.2.0"
+          Value="FormatNumberSystemFormats" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.2.0.0"
+          Value="NewRuleApplication.PartyMember.Initative.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.2.0.1"
+          Value="FormatNumberSystemFormats" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.2.0.2"
+          Value="FormatString_Number" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.2.1"
+          Value="ampStringTemplateString" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1.2.2.2"
+          Value="StringDesigner" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.2"
+          Value="FireNotificationWithSettingsTemplateDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.0"
+          Value="AllowMultipleNotificationsTemplate" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.1"
+          Value="NotificationTypeTemplateNotificationType" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.1.0"
+          Value="NotificationTypeTemplateNotificationType" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3.1.1"
+          Value="InformationalNotificationTypeTemplate" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="7b132305-1b5a-4607-b17b-aaf8b703325f"
+    Name="RollD20AndSetInitative" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition>
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>true</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="38ed3114-de44-4805-ac56-213242b3d447"
+        Name="SetValue1">
+        <Element>
+          <FormulaText>Initative</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>Random(1, 20) + bonusScore</FormulaText>
+        </Value>
+      </RuleElementDef>
+      <RuleElementDef
+        xsi:type="FireNotificationActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="0264e860-0bf9-41e7-81b2-6652003cd4c5"
+        Name="FireNotification2">
+        <NotificationType>Informational</NotificationType>
+        <NotificationMode>Multiple</NotificationMode>
+        <NotificationMessage>
+          <FormulaParseFormat>Token</FormulaParseFormat>
+          <FormulaText>&lt;%Name &amp; " has rolled " &amp; Format(Initative, "n") &amp; " for initative"%&gt;</FormulaText>
+        </NotificationMessage>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

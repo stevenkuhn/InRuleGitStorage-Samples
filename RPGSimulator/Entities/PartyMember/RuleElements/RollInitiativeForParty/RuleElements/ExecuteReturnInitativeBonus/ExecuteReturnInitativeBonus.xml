@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecuteSqlQueryActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4a8f7ae2-ae97-4821-8853-1fbc9538ac38"
+  Name="ExecuteReturnInitativeBonus">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="ExecuteSqlQueryDesigner" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <OutputParameterColumnMappings xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <SqlQuery xmlns="http://www.inrule.com/XmlSchema/Schema">ReturnBonus</SqlQuery>
+  <QueryReturnAssignTo xmlns="http://www.inrule.com/XmlSchema/Schema">bonusScore</QueryReturnAssignTo>
+  <ParameterValues xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ExecuteSqlQueryActionParameterValueDef
+      Name="@attribute">
+      <ArgName>@attribute</ArgName>
+      <ParamType>Integer</ParamType>
+      <ParameterDirection>Input</ParameterDirection>
+      <ArgValue>
+        <FormulaText>Dexterity</FormulaText>
+      </ArgValue>
+    </ExecuteSqlQueryActionParameterValueDef>
+  </ParameterValues>
+</ExecuteSqlQueryActionDef>

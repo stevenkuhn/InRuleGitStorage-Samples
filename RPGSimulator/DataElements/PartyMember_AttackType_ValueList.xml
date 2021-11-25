@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4df8dec2-ac02-4c32-a5aa-9ac2a2431364"
+  Name="PartyMember_AttackType_ValueList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="0fd32cb7-c420-4133-ad80-17523ef9bcac">
+      <Value>Weapon - Dexterity</Value>
+      <DisplayText>Weapon - Dexterity</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="331357d2-bca6-400f-8e3c-130d7d89b159">
+      <Value>Weapon - Strength</Value>
+      <DisplayText>Weapon - Strength</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="0ea045e3-60ff-4d83-a83c-a32908181a5a">
+      <Value>Spell Attack</Value>
+      <DisplayText>Spell Attack</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="8e0d8a32-fc1c-44fe-a083-4a586c79bf27">
+      <Value>Spell Saving Throw</Value>
+      <DisplayText>Spell Saving Throw</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

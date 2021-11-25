@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="30f17886-fd83-45bc-a0fc-fd79aa5fd055"
+  Name="PartyMembers"
+  DataType="Entity"
+  IsCollection="true"
+  DataTypeEntityName="PartyMember"
+  DisplayName="Party Members" />

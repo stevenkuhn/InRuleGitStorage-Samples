@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4718350e-4ddf-4e1e-994a-1886307cac55"
+  Name="CombatController">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Auto</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="465d8a7b-de25-48f4-a642-810768dd8436"
+      Name="ExecuteComabatRound">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="ExecuteRuleSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.0"
+              Value="ExecuteRuleSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.1"
+              Value="NewRuleApplication.Encounter.RuleSets.DetermineInitiative.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1"
+              Value="ExecuteRuleSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.0"
+              Value="ExecuteRuleSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.1"
+              Value="NewRuleApplication.Encounter.RuleSets.RollComabat.Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="b285e011-15b4-4505-b632-74e382ca3518"
+        Name="ExecuteComabatRound">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>true</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="ExecuteActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="de69bf13-a9bc-432a-beba-144cfc2bb3a5"
+            Name="ExecuteRuleSet1">
+            <Target>
+              <FormulaText>DetermineInitiative</FormulaText>
+            </Target>
+            <ParameterValues />
+          </RuleElementDef>
+          <RuleElementDef
+            xsi:type="ExecuteActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="2278d435-355b-4829-aa91-41e25aeca077"
+            Name="ExecuteRuleSet2">
+            <Target>
+              <FormulaText>RollComabat</FormulaText>
+            </Target>
+            <ParameterValues />
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

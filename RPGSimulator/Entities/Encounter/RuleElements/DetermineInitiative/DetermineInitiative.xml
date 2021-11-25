@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="b69a3b12-cdee-4735-b86f-dc855c1c7a7a"
+  Name="DetermineInitiative">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="359b8121-69a7-4a9d-b145-6aaf2d94cc58"
+      Name="RollInitative">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="ExecuteMemberRuleSetWhereDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.0"
+              Value="ExecuteMemberRuleSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.1"
+              Value="RPGSimulator.PartyMember.RuleSets.RollInitiativeForParty.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2"
+              Value="ExecuteMemberRuleSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.3"
+              Value="RPGSimulator.Encounter.PartyMembers.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.4"
+              Value="ExecuteMemberRuleSetWhereDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.5"
+              Value="NoneAreTrueDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.5.0"
+              Value="NoneAreTrueDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.5.1.0"
+              Value="RPGSimulator.PartyMember.Paralyzed.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.5.1.1"
+              Value="RPGSimulator.PartyMember.Stunned.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.5.1.2"
+              Value="RPGSimulator.PartyMember.IsClassification" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.5.1.2.0"
+              Value="RPGSimulator.PartyMember.ImplicitEntityTemplate" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.5.1.2.1"
+              Value="RPGSimulator.Monster.IsClassification" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.5.1.2.2"
+              Value="RPGSimulator.PartyMember._Classification.Unconcious" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1"
+              Value="ExecuteRuleSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.0"
+              Value="ExecuteRuleSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.1"
+              Value="RPGSimulator.Monster.RuleSets.RollInitiativeForMonster.Explicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.1.0"
+              Value="RPGSimulator.Encounter.Monster.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.1.1"
+              Value=" RollInitiativeForMonster" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.2"
+              Value="SortCollectionDesigner" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="69f10d8a-76cd-443e-9226-e3deee86ccfe"
+        Name="RollInitative">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>true</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="ExecuteMemberRuleSetActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="511d812a-f2bc-48ed-ab9f-98779a96cbc3"
+            Name="ExecuteMemberRuleSet1">
+            <Collection>
+              <FormulaText>PartyMembers</FormulaText>
+            </Collection>
+            <RuleSet>
+              <FormulaText>RollInitiativeForParty</FormulaText>
+            </RuleSet>
+            <FilteredBy>
+              <FormulaText>NoneAreTrue(Paralyzed, Stunned, IsClassification(PartyMember, Unconcious))</FormulaText>
+            </FilteredBy>
+          </RuleElementDef>
+          <RuleElementDef
+            xsi:type="ExecuteActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="66a9d922-d1ed-4959-b008-510236144cb6"
+            Name="ExecuteRuleSet2">
+            <Target>
+              <FormulaText>Monster.RollInitiativeForMonster</FormulaText>
+            </Target>
+            <ParameterValues />
+          </RuleElementDef>
+          <RuleElementDef
+            xsi:type="SortCollectionActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="41ccfb17-9bfc-4926-9250-60c14b650314"
+            Name="PartyByInitative">
+            <Attributes>
+              <anyType
+                xsi:type="CollectionItem">
+                <Key>
+                  <Name>ReservedAttributeTokenKey</Name>
+                  <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+                </Key>
+                <Collection>
+                  <anyType
+                    xsi:type="XmlSerializableStringDictionaryItem"
+                    Key="0"
+                    Value="NewRuleApplication.Encounter.PartyMembers.Implicit" />
+                </Collection>
+              </anyType>
+            </Attributes>
+            <CollectionToSort
+              LastAuthoringView="BusinessLangauge">
+              <FormulaText>PartyMembers</FormulaText>
+            </CollectionToSort>
+            <SortFields>
+              <NameSortOrderDef
+                Name="Initative">
+                <SortOrder>Descending</SortOrder>
+              </NameSortOrderDef>
+            </SortFields>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

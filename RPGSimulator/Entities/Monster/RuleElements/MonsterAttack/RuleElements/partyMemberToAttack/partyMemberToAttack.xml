@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeclareVariableActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="9a67a44d-1a12-4e3f-8a3d-3e03e155700d"
+  Name="partyMemberToAttack"
+  DataType="Integer" />

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="5aa65cc4-ea3e-4067-917d-412517502266"
+  Name="HitPoints"
+  DataType="Integer"
+  DisplayName="Hit Points" />
