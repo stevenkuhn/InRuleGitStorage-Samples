@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="8"
+  PublicRevision="8"
+  Guid="a2e85db0-0204-471e-9059-18cfb6d61b37"
+  Name="OrderSummaryRules">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Auto</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">Sequential</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="fb0f41dc-db84-48ed-b72a-ae66179141b1"
+      Name="ComputeZIPTax">
+      <Comments>Sets a 1% ZIPTax to Order Total if two conditions are true: a) the location has chairs (i.e. "Is a place for eating"), and b) the ZIP Code is within the MPEA geographic region. Both criteria must be true to engage the 1% MPEA tax.</Comments>
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="IfThenDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="IfThenDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="ConditionGroupTemplateSingleCondition" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="andMarkIIDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.0"
+              Value="Chicago_Food_Tax_Generator.Order.IsPlaceforEating.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.1"
+              Value="andMarkIIDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2"
+              Value="CompareString" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.0"
+              Value="Chicago_Food_Tax_Generator.Order.ZIPCode.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.1"
+              Value="Comparison_eq" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2"
+              Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2.0"
+              Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2.1"
+              Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2.2"
+              Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2.3"
+              Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2.4"
+              Value="TableLookupChicago_Food_Tax_Generator.ZIPCodeTable_DataTable.ZIPCode" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2.5.0"
+              Value="Chicago_Food_Tax_Generator.ZIPCodeTable_DataTable._SearchCriteria.ZIPCode" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2.5.0.0"
+              Value="Chicago_Food_Tax_Generator.ZIPCodeTable_DataTable._SearchCriteria.ZIPCode" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2.2.5.0.1"
+              Value="Chicago_Food_Tax_Generator.Order.ZIPCode.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="IfThenDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="SetValueNumberAssignableNumber" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.1"
+              Value="Chicago_Food_Tax_Generator.Order.ZIPTax.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.2"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.3"
+              Value="PercentageDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.3.0"
+              Value="IntegerDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.3.1"
+              Value="PercentageDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.3.2"
+              Value="Chicago_Food_Tax_Generator.Order.OrderTotal.Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="774b6770-c359-40ad-9aa0-d036eba3743d"
+        Name="ComputeZIPTax">
+        <Condition
+          LastAuthoringView="BusinessLangauge">
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>IsPlaceforEating and MPEAZIPCheck()</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="51fa3a27-372a-4539-83f9-2b1927f007b2"
+            Name="SetValue1">
+            <Element>
+              <FormulaText>ZIPTax</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>Percent(OrderTotal, 1)</FormulaText>
+            </Value>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="aa2a8e7a-c882-49e9-b7b7-a475cb09d493"
+      Name="SetOrderTotal">
+      <Comments>Note: the rounding function is changing the underlying data (reducing to 2 decimal places).</Comments>
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="SetValueNumberAssignableNumber" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="SetValueChicago_Food_Tax_Generator.OrderItem.ItemTypeValueListQuery" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Chicago_Food_Tax_Generator.Order.OrderTotal.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="SetValueChicago_Food_Tax_Generator.OrderItem.ItemTypeValueListQuery" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="PlusDecimal" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="ColAggNumber" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.0"
+              Value="AggMethod_Sum" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.1"
+              Value="Chicago_Food_Tax_Generator.OrderItem.ItemTotal.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.2"
+              Value="ColAggWhereNumber" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.3"
+              Value="Chicago_Food_Tax_Generator.Order.OrderItems.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1"
+              Value="PlusDecimal" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2"
+              Value="roundtoNumPlaces" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.0"
+              Value="Chicago_Food_Tax_Generator.Order.ZIPTax.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.1"
+              Value="roundtoNumPlaces" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.2"
+              Value="roundtoNumPlaces" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.3"
+              Value="NumDecimalPlaces_2" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.4"
+              Value="roundtoNumPlaces" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="cec1e568-a1f3-4413-ad83-40e93e8e4c32"
+        Name="SetOrderTotal">
+        <Element>
+          <FormulaText>OrderTotal</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>Sum(OrderItems, ItemTotal) + Round(ZIPTax, 2)</FormulaText>
+        </Value>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

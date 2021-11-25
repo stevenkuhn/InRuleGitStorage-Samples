@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="2eae24cd-47cb-438d-8892-7baf6e4bb60a"
+  Name="ZIPTax"
+  DataType="Number">
+  <DefaultValue xmlns="http://www.inrule.com/XmlSchema/Schema">0</DefaultValue>
+</FieldDef>
