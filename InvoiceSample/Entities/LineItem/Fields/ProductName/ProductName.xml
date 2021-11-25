@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="8029f5a3-bf05-4d6e-ba00-3313a627e794"
+  Name="ProductName"
+  AuthoringIsExpanded="false"
+  DataType="String"
+  IsCalculated="true">
+  <Calc
+    LastAuthoringView="Syntax" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>TableLookup(ProductTable,"Name","ID",ProductID)</FormulaText>
+  </Calc>
+</FieldDef>

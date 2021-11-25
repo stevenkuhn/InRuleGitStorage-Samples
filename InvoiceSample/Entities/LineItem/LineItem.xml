@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="ad23fc68-8722-47ee-804b-142a40be2221"
+  Name="LineItem">
+  <RuleElements xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="3289fb90-be00-4c4f-bb65-86621e8bb292"
+      Name="AutoRS_ValidateLineItem">
+      <FireMode>Auto</FireMode>
+      <RunMode>Sequential</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="SimpleRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="528c6118-7d9b-42c0-a886-33ac9c6b1877"
+          Name="IfThen2">
+          <Condition
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>ProductName = ""</FormulaText>
+          </Condition>
+          <SubRules>
+            <RuleElementDef
+              xsi:type="SetFieldInvalidActionDef"
+              Revision="1"
+              PublicRevision="1"
+              Guid="6961d40b-be16-410d-920a-3b2ece3c2503"
+              Name="SetFieldInvalid2">
+              <Message>
+                <FormulaParseFormat>Token</FormulaParseFormat>
+                <FormulaText>The product id &lt;%ProductID%&gt; was not found.</FormulaText>
+              </Message>
+              <FieldName>ProductID</FieldName>
+            </RuleElementDef>
+          </SubRules>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </RuleElements>
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="e2c49118-60b3-442f-9a29-6ec26a16c81e"
+      Name="ProductID"
+      AuthoringIsExpanded="false"
+      DataType="Integer">
+      <DefaultValue />
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="8029f5a3-bf05-4d6e-ba00-3313a627e794"
+      Name="ProductName"
+      AuthoringIsExpanded="false"
+      DataType="String"
+      IsCalculated="true">
+      <Calc
+        LastAuthoringView="Syntax">
+        <FormulaText>TableLookup(ProductTable,"Name","ID",ProductID)</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="d8857cb9-87a7-46a5-9322-52405e8ba78c"
+      Name="Quantity"
+      AuthoringIsExpanded="false"
+      DataType="Integer">
+      <DefaultValue />
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="10938b0b-dade-4772-be20-296148b80db4"
+      Name="UnitPrice"
+      AuthoringIsExpanded="false"
+      DataType="Number"
+      IsCalculated="true">
+      <Calc>
+        <FormulaText>Format(TableLookup(ProductTable,"Price","ID",ProductID),"#,##0.00")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="5402bbbc-dca7-41f8-87dd-0978166c509f"
+      Name="LineItemTotal"
+      AuthoringIsExpanded="false"
+      DataType="Number"
+      IsCalculated="true">
+      <Calc>
+        <FormulaText>Quantity*UnitPrice</FormulaText>
+      </Calc>
+    </FieldDef>
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  <CascadedReferences xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <CascadedReferenceDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="161ca4b3-a23a-4c37-9e0d-ccbb8cf297eb">
+      <ParentId>a1b29665-04f5-428f-89d5-fa4aed78f5cc</ParentId>
+      <ChildId>ad23fc68-8722-47ee-804b-142a40be2221</ChildId>
+      <IsImplicit>true</IsImplicit>
+    </CascadedReferenceDef>
+  </CascadedReferences>
+</EntityDef>

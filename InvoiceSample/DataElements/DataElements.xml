@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:TableDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="028311ca-285f-4fef-96df-8c8403f65af2"
+    Name="028311ca-285f-4fef-96df-8c8403f65af2">
+    <q1:TableSettings
+      SourceTableName="">
+      <q1:InlineDataSet>
+        <xs:schema
+          id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element
+            name="NewDataSet"
+            msdata:IsDataSet="true"
+            msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice
+                minOccurs="0"
+                maxOccurs="unbounded" />
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+      </q1:InlineDataSet>
+      <q1:DatabaseEndPointName />
+      <q1:Filter />
+      <q1:TableSourceType>LinkedTable</q1:TableSourceType>
+    </q1:TableSettings>
+  </DataElementDef>
+  <DataElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:TableDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="eb3e1170-c19f-4d5a-a749-294d8d588da3"
+    Name="eb3e1170-c19f-4d5a-a749-294d8d588da3">
+    <q2:TableSettings
+      SourceTableName="">
+      <q2:InlineDataSet>
+        <xs:schema
+          id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element
+            name="NewDataSet"
+            msdata:IsDataSet="true"
+            msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice
+                minOccurs="0"
+                maxOccurs="unbounded" />
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+      </q2:InlineDataSet>
+      <q2:DatabaseEndPointName />
+      <q2:Filter />
+      <q2:TableSourceType>LinkedTable</q2:TableSourceType>
+    </q2:TableSettings>
+  </DataElementDef>
+</DataElementDefCollection>

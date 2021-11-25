@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimpleRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="528c6118-7d9b-42c0-a886-33ac9c6b1877"
+  Name="IfThen2">
+  <Condition
+    LastAuthoringView="Syntax" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ReturnType>Boolean</ReturnType>
+    <FormulaText>ProductName = ""</FormulaText>
+  </Condition>
+  <SubRules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="SetFieldInvalidActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="6961d40b-be16-410d-920a-3b2ece3c2503"
+      Name="SetFieldInvalid2">
+      <Message>
+        <FormulaParseFormat>Token</FormulaParseFormat>
+        <FormulaText>The product id &lt;%ProductID%&gt; was not found.</FormulaText>
+      </Message>
+      <FieldName>ProductID</FieldName>
+    </RuleElementDef>
+  </SubRules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</SimpleRuleDef>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="c6749503-4faa-439b-9b72-d643c43038ee"
+  Name="AutoRS_Validation">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Auto</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">Sequential</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="SimpleRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="d40a24c3-303c-4c4e-8bff-c3859c11925f"
+      Name="IfThen1">
+      <Condition
+        LastAuthoringView="Syntax">
+        <ReturnType>Boolean</ReturnType>
+        <FormulaText>CustName = ""</FormulaText>
+      </Condition>
+      <SubRules>
+        <RuleElementDef
+          xsi:type="SetFieldInvalidActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="9bb88f2b-4d90-4c5a-96d2-b2a145b26e21"
+          Name="SetFieldInvalid1">
+          <Message>
+            <FormulaParseFormat>Token</FormulaParseFormat>
+            <FormulaText>The Customer ID &lt;%CustID%&gt; is not valid.</FormulaText>
+          </Message>
+          <FieldName>CustID</FieldName>
+        </RuleElementDef>
+      </SubRules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

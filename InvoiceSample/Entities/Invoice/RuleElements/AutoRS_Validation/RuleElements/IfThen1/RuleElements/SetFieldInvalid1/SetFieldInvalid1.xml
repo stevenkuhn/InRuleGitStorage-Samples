@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetFieldInvalidActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="9bb88f2b-4d90-4c5a-96d2-b2a145b26e21"
+  Name="SetFieldInvalid1">
+  <Message xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaParseFormat>Token</FormulaParseFormat>
+    <FormulaText>The Customer ID &lt;%CustID%&gt; is not valid.</FormulaText>
+  </Message>
+  <FieldName xmlns="http://www.inrule.com/XmlSchema/Schema">CustID</FieldName>
+</SetFieldInvalidActionDef>

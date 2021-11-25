@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleApplicationDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="7bed4737-b83f-4e62-b0ad-7f2af3b9344b"
+  Id="-1"
+  Name="InvoiceSample"
+  RepositoryAssemblyFileVersion="5.7.2.240"
+  AuthoringIsExpanded="false"
+  LastValidateContentCode="-696189797"
+  SchemaGuid="2a562932-cbec-4b78-b065-a4a94f6c6fb4"
+  SchemaRevision="1"
+  SchemaPublicRevision="1"
+  LastValidateDateTimeUtc="2018-03-29T18:32:05.6159872Z">
+  <UpgraderMessageList xmlns="http://www.inrule.com/XmlSchema/Schema" />
+  <RuntimeEngine xmlns="http://www.inrule.com/XmlSchema/Schema">InRule</RuntimeEngine>
+  <FeatureVersion xmlns="http://www.inrule.com/XmlSchema/Schema">106</FeatureVersion>
+  <CompatibilityVersion xmlns="http://www.inrule.com/XmlSchema/Schema">1</CompatibilityVersion>
+  <AuthoringSettings xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <SelectedAuthoringItemGuid>7bed4737-b83f-4e62-b0ad-7f2af3b9344b</SelectedAuthoringItemGuid>
+    <UseAdvancedXmlOptions>false</UseAdvancedXmlOptions>
+    <AllowAccessToParentsInLanguageRules>true</AllowAccessToParentsInLanguageRules>
+    <TreeRuleNameVisibility>HideReserved</TreeRuleNameVisibility>
+    <CreatedDateTime>2004-03-16T07:19:43.573764-06:00</CreatedDateTime>
+    <ModifiedDateTime>2018-03-29T13:32:10.8460712-05:00</ModifiedDateTime>
+    <TargetPlatform>InRule</TargetPlatform>
+  </AuthoringSettings>
+  <IndentUnboundCollectionXml xmlns="http://www.inrule.com/XmlSchema/Schema">false</IndentUnboundCollectionXml>
+  <AllowRuleInactivation xmlns="http://www.inrule.com/XmlSchema/Schema">true</AllowRuleInactivation>
+  <UseRuleVersions xmlns="http://www.inrule.com/XmlSchema/Schema">false</UseRuleVersions>
+  <UseVersionCreationDates xmlns="http://www.inrule.com/XmlSchema/Schema">false</UseVersionCreationDates>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  <RunawayCycleCount xmlns="http://www.inrule.com/XmlSchema/Schema">100000</RunawayCycleCount>
+  <Timeout xmlns="http://www.inrule.com/XmlSchema/Schema">30000</Timeout>
+  <RuntimeErrorHandlingPolicy xmlns="http://www.inrule.com/XmlSchema/Schema">ContinueWithNextRuleSet</RuntimeErrorHandlingPolicy>
+  <Entities xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <EntityDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="a1b29665-04f5-428f-89d5-fa4aed78f5cc"
+      Name="Invoice">
+      <RuleElements>
+        <RuleElementDef
+          xsi:type="RuleSetDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="c6749503-4faa-439b-9b72-d643c43038ee"
+          Name="AutoRS_Validation">
+          <FireMode>Auto</FireMode>
+          <RunMode>Sequential</RunMode>
+          <Rules>
+            <RuleElementDef
+              xsi:type="SimpleRuleDef"
+              Revision="1"
+              PublicRevision="1"
+              Guid="d40a24c3-303c-4c4e-8bff-c3859c11925f"
+              Name="IfThen1">
+              <Condition
+                LastAuthoringView="Syntax">
+                <ReturnType>Boolean</ReturnType>
+                <FormulaText>CustName = ""</FormulaText>
+              </Condition>
+              <SubRules>
+                <RuleElementDef
+                  xsi:type="SetFieldInvalidActionDef"
+                  Revision="1"
+                  PublicRevision="1"
+                  Guid="9bb88f2b-4d90-4c5a-96d2-b2a145b26e21"
+                  Name="SetFieldInvalid1">
+                  <Message>
+                    <FormulaParseFormat>Token</FormulaParseFormat>
+                    <FormulaText>The Customer ID &lt;%CustID%&gt; is not valid.</FormulaText>
+                  </Message>
+                  <FieldName>CustID</FieldName>
+                </RuleElementDef>
+              </SubRules>
+              <HasContextVersionSettings>false</HasContextVersionSettings>
+            </RuleElementDef>
+          </Rules>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </RuleElements>
+      <Fields>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="02faa9f8-bd19-47a0-9bc5-b891bffa4c53"
+          Name="CustID"
+          AuthoringIsExpanded="false"
+          DataType="Integer">
+          <DefaultValue />
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="a52f9ce9-cc97-401a-9f94-4f72b204bdca"
+          Name="CustName"
+          AuthoringIsExpanded="false"
+          DataType="String"
+          IsCalculated="true">
+          <Calc>
+            <FormulaText>TableLookup(CustomerTable, "Name","ID",CustID)</FormulaText>
+          </Calc>
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="d8dc96a9-0a83-4ad2-aff5-98b35bc4265b"
+          Name="SubTotal"
+          AuthoringIsExpanded="false"
+          DataType="Number"
+          IsCalculated="true">
+          <Calc>
+            <FormulaText>sum(LineItems,LineItemTotal)</FormulaText>
+          </Calc>
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="bf779904-c869-4e3a-8689-9929c9002c94"
+          Name="Tax"
+          AuthoringIsExpanded="false"
+          DataType="Number"
+          IsCalculated="true">
+          <Calc>
+            <FormulaText>.07 * SubTotal</FormulaText>
+          </Calc>
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="94d9ca23-2aec-4559-8790-91b3e9a26c0e"
+          Name="Total"
+          AuthoringIsExpanded="false"
+          DataType="Number"
+          IsCalculated="true">
+          <Calc>
+            <FormulaText>SubTotal+Tax</FormulaText>
+          </Calc>
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="24405df6-5841-4d32-99ab-49349b02d8ad"
+          Name="LineItems"
+          AuthoringIsExpanded="false"
+          DataType="Entity"
+          IsCollection="true"
+          DataTypeEntityName="LineItem" />
+      </Fields>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </EntityDef>
+    <EntityDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="ad23fc68-8722-47ee-804b-142a40be2221"
+      Name="LineItem">
+      <RuleElements>
+        <RuleElementDef
+          xsi:type="RuleSetDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="3289fb90-be00-4c4f-bb65-86621e8bb292"
+          Name="AutoRS_ValidateLineItem">
+          <FireMode>Auto</FireMode>
+          <RunMode>Sequential</RunMode>
+          <Rules>
+            <RuleElementDef
+              xsi:type="SimpleRuleDef"
+              Revision="1"
+              PublicRevision="1"
+              Guid="528c6118-7d9b-42c0-a886-33ac9c6b1877"
+              Name="IfThen2">
+              <Condition
+                LastAuthoringView="Syntax">
+                <ReturnType>Boolean</ReturnType>
+                <FormulaText>ProductName = ""</FormulaText>
+              </Condition>
+              <SubRules>
+                <RuleElementDef
+                  xsi:type="SetFieldInvalidActionDef"
+                  Revision="1"
+                  PublicRevision="1"
+                  Guid="6961d40b-be16-410d-920a-3b2ece3c2503"
+                  Name="SetFieldInvalid2">
+                  <Message>
+                    <FormulaParseFormat>Token</FormulaParseFormat>
+                    <FormulaText>The product id &lt;%ProductID%&gt; was not found.</FormulaText>
+                  </Message>
+                  <FieldName>ProductID</FieldName>
+                </RuleElementDef>
+              </SubRules>
+              <HasContextVersionSettings>false</HasContextVersionSettings>
+            </RuleElementDef>
+          </Rules>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </RuleElements>
+      <Fields>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="e2c49118-60b3-442f-9a29-6ec26a16c81e"
+          Name="ProductID"
+          AuthoringIsExpanded="false"
+          DataType="Integer">
+          <DefaultValue />
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="8029f5a3-bf05-4d6e-ba00-3313a627e794"
+          Name="ProductName"
+          AuthoringIsExpanded="false"
+          DataType="String"
+          IsCalculated="true">
+          <Calc
+            LastAuthoringView="Syntax">
+            <FormulaText>TableLookup(ProductTable,"Name","ID",ProductID)</FormulaText>
+          </Calc>
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="d8857cb9-87a7-46a5-9322-52405e8ba78c"
+          Name="Quantity"
+          AuthoringIsExpanded="false"
+          DataType="Integer">
+          <DefaultValue />
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="10938b0b-dade-4772-be20-296148b80db4"
+          Name="UnitPrice"
+          AuthoringIsExpanded="false"
+          DataType="Number"
+          IsCalculated="true">
+          <Calc>
+            <FormulaText>Format(TableLookup(ProductTable,"Price","ID",ProductID),"#,##0.00")</FormulaText>
+          </Calc>
+        </FieldDef>
+        <FieldDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="5402bbbc-dca7-41f8-87dd-0978166c509f"
+          Name="LineItemTotal"
+          AuthoringIsExpanded="false"
+          DataType="Number"
+          IsCalculated="true">
+          <Calc>
+            <FormulaText>Quantity*UnitPrice</FormulaText>
+          </Calc>
+        </FieldDef>
+      </Fields>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+      <CascadedReferences>
+        <CascadedReferenceDef
+          Revision="1"
+          PublicRevision="1"
+          Guid="161ca4b3-a23a-4c37-9e0d-ccbb8cf297eb">
+          <ParentId>a1b29665-04f5-428f-89d5-fa4aed78f5cc</ParentId>
+          <ChildId>ad23fc68-8722-47ee-804b-142a40be2221</ChildId>
+          <IsImplicit>true</IsImplicit>
+        </CascadedReferenceDef>
+      </CascadedReferences>
+    </EntityDef>
+  </Entities>
+  <DataElements xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <DataElementDef
+      xsi:type="TableDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="028311ca-285f-4fef-96df-8c8403f65af2"
+      Name="CustomerTable">
+      <TableSettings
+        SourceTableName="">
+        <InlineDataSet>
+          <xs:schema
+            id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element
+              name="NewDataSet"
+              msdata:IsDataSet="true"
+              msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+                  <xs:element
+                    name="Table1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element
+                          name="ID"
+                          type="xs:int"
+                          minOccurs="0" />
+                        <xs:element
+                          name="Name"
+                          type="xs:string"
+                          minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <NewDataSet xmlns="">
+              <Table1
+                diffgr:id="Table11"
+                msdata:rowOrder="0">
+                <ID>1</ID>
+                <Name>Alfred Futterkiste</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table12"
+                msdata:rowOrder="1">
+                <ID>2</ID>
+                <Name>Ana Trujillo Emparedados y helados</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table13"
+                msdata:rowOrder="2">
+                <ID>3</ID>
+                <Name>Antonio Moreno Taquería</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table14"
+                msdata:rowOrder="3">
+                <ID>4</ID>
+                <Name>Berglunds snabbköp</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table15"
+                msdata:rowOrder="4">
+                <ID>5</ID>
+                <Name>Blauer See Delikatessen</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table16"
+                msdata:rowOrder="5">
+                <ID>6</ID>
+                <Name>Blondel père et fils</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table17"
+                msdata:rowOrder="6">
+                <ID>7</ID>
+                <Name>Bottom-Dollar Markets</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table18"
+                msdata:rowOrder="7">
+                <ID>8</ID>
+                <Name>Cactus Comidas para llevar</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table19"
+                msdata:rowOrder="8">
+                <ID>9</ID>
+                <Name>Ernst Handel</Name>
+              </Table1>
+              <Table1
+                diffgr:id="Table110"
+                msdata:rowOrder="9">
+                <ID>10</ID>
+                <Name>Familia Arquibaldo</Name>
+              </Table1>
+            </NewDataSet>
+          </diffgr:diffgram>
+        </InlineDataSet>
+        <DatabaseEndPointName />
+        <Filter />
+        <TableSourceType>Inline</TableSourceType>
+      </TableSettings>
+    </DataElementDef>
+    <DataElementDef
+      xsi:type="TableDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="eb3e1170-c19f-4d5a-a749-294d8d588da3"
+      Name="ProductTable">
+      <TableSettings
+        SourceTableName="">
+        <InlineDataSet>
+          <xs:schema
+            id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element
+              name="NewDataSet"
+              msdata:IsDataSet="true"
+              msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+                  <xs:element
+                    name="Table1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element
+                          name="ID"
+                          type="xs:int"
+                          minOccurs="0" />
+                        <xs:element
+                          name="Name"
+                          type="xs:string"
+                          minOccurs="0" />
+                        <xs:element
+                          name="Price"
+                          type="xs:decimal"
+                          minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <NewDataSet xmlns="">
+              <Table1
+                diffgr:id="Table11"
+                msdata:rowOrder="0">
+                <ID>1</ID>
+                <Name>Garbage Bags</Name>
+                <Price>2.60</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table12"
+                msdata:rowOrder="1">
+                <ID>2</ID>
+                <Name>Golden Grahms</Name>
+                <Price>4.50</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table13"
+                msdata:rowOrder="2">
+                <ID>3</ID>
+                <Name>Coke 2 Liter Bottle</Name>
+                <Price>1.19</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table14"
+                msdata:rowOrder="3">
+                <ID>4</ID>
+                <Name>2% Milk 1 Gallon</Name>
+                <Price>3.78</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table15"
+                msdata:rowOrder="4">
+                <ID>5</ID>
+                <Name>Fish Sticks</Name>
+                <Price>3.43</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table16"
+                msdata:rowOrder="5">
+                <ID>6</ID>
+                <Name>Thinkpad Computer</Name>
+                <Price>3500.00</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table17"
+                msdata:rowOrder="6">
+                <ID>7</ID>
+                <Name>Television</Name>
+                <Price>200.00</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table18"
+                msdata:rowOrder="7">
+                <ID>8</ID>
+                <Name>DVD Player</Name>
+                <Price>119.00</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table19"
+                msdata:rowOrder="8">
+                <ID>9</ID>
+                <Name>MP3 Player</Name>
+                <Price>249.99</Price>
+              </Table1>
+              <Table1
+                diffgr:id="Table110"
+                msdata:rowOrder="9">
+                <ID>10</ID>
+                <Name>6pk Hot Dogs</Name>
+                <Price>3.49</Price>
+              </Table1>
+            </NewDataSet>
+          </diffgr:diffgram>
+        </InlineDataSet>
+        <DatabaseEndPointName />
+        <Filter />
+        <TableSourceType>Inline</TableSourceType>
+      </TableSettings>
+    </DataElementDef>
+  </DataElements>
+</RuleApplicationDef>

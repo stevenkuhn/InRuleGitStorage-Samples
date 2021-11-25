@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="a1b29665-04f5-428f-89d5-fa4aed78f5cc"
+  Name="Invoice">
+  <RuleElements xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="c6749503-4faa-439b-9b72-d643c43038ee"
+      Name="AutoRS_Validation">
+      <FireMode>Auto</FireMode>
+      <RunMode>Sequential</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="SimpleRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="d40a24c3-303c-4c4e-8bff-c3859c11925f"
+          Name="IfThen1">
+          <Condition
+            LastAuthoringView="Syntax">
+            <ReturnType>Boolean</ReturnType>
+            <FormulaText>CustName = ""</FormulaText>
+          </Condition>
+          <SubRules>
+            <RuleElementDef
+              xsi:type="SetFieldInvalidActionDef"
+              Revision="1"
+              PublicRevision="1"
+              Guid="9bb88f2b-4d90-4c5a-96d2-b2a145b26e21"
+              Name="SetFieldInvalid1">
+              <Message>
+                <FormulaParseFormat>Token</FormulaParseFormat>
+                <FormulaText>The Customer ID &lt;%CustID%&gt; is not valid.</FormulaText>
+              </Message>
+              <FieldName>CustID</FieldName>
+            </RuleElementDef>
+          </SubRules>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </RuleElements>
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="02faa9f8-bd19-47a0-9bc5-b891bffa4c53"
+      Name="CustID"
+      AuthoringIsExpanded="false"
+      DataType="Integer">
+      <DefaultValue />
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="a52f9ce9-cc97-401a-9f94-4f72b204bdca"
+      Name="CustName"
+      AuthoringIsExpanded="false"
+      DataType="String"
+      IsCalculated="true">
+      <Calc>
+        <FormulaText>TableLookup(CustomerTable, "Name","ID",CustID)</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="d8dc96a9-0a83-4ad2-aff5-98b35bc4265b"
+      Name="SubTotal"
+      AuthoringIsExpanded="false"
+      DataType="Number"
+      IsCalculated="true">
+      <Calc>
+        <FormulaText>sum(LineItems,LineItemTotal)</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="bf779904-c869-4e3a-8689-9929c9002c94"
+      Name="Tax"
+      AuthoringIsExpanded="false"
+      DataType="Number"
+      IsCalculated="true">
+      <Calc>
+        <FormulaText>.07 * SubTotal</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="94d9ca23-2aec-4559-8790-91b3e9a26c0e"
+      Name="Total"
+      AuthoringIsExpanded="false"
+      DataType="Number"
+      IsCalculated="true">
+      <Calc>
+        <FormulaText>SubTotal+Tax</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="24405df6-5841-4d32-99ab-49349b02d8ad"
+      Name="LineItems"
+      AuthoringIsExpanded="false"
+      DataType="Entity"
+      IsCollection="true"
+      DataTypeEntityName="LineItem" />
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</EntityDef>
