@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:SetValueActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="0c45e081-ca1a-4560-b85d-de293b729c9c"
+    Name="0c45e081-ca1a-4560-b85d-de293b729c9c">
+    <q1:Element>
+      <q1:FormulaText />
+    </q1:Element>
+    <q1:Value>
+      <q1:FormulaText />
+    </q1:Value>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:SetFieldInvalidActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="f8bbfd09-9e7c-408b-9cce-b3bea6e18d96"
+    Name="f8bbfd09-9e7c-408b-9cce-b3bea6e18d96">
+    <q2:Message>
+      <q2:FormulaParseFormat>Token</q2:FormulaParseFormat>
+      <q2:FormulaText />
+    </q2:Message>
+  </RuleElementDef>
+</RuleElementDefCollection>

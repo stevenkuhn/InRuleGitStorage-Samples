@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="0d4e648b-2222-4136-b949-b21de3f16caf"
+  Name="GetFieldAttributeValueTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="07701695-806c-4f2c-bd59-bcce8424a9ae"
+      Name="GetFieldAttributeValue">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="SetValueStringAssignableString" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDFUtils.Entity1.TextField2.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="SchemaLibrary.GetFieldAttributeValue(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldAttributeValue(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1"
+              Value="SchemaLibrary.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.3"
+              Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.4"
+              Value="StringLibrary.TestScriptObject(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.5"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.6"
+              Value="StringLibrary.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="a35f1a23-c86c-4bef-97d8-f7567953f39a"
+        Name="GetFieldAttributeValue">
+        <Element>
+          <FormulaText>TextField2</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>SchemaLibrary.GetFieldAttributeValue("TextField1", "mykeytest")</FormulaText>
+        </Value>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

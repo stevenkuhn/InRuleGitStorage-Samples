@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:RuleSetFolderDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="3d95cb3e-b082-4561-a317-59b8f1c85e53"
+    Name="3d95cb3e-b082-4561-a317-59b8f1c85e53">
+    <q1:RuleSets />
+  </RuleElementDef>
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:RuleSetFolderDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="98a32ce3-d634-4a24-86b2-2ac1012564d4"
+    Name="98a32ce3-d634-4a24-86b2-2ac1012564d4">
+    <q2:RuleSets />
+  </RuleElementDef>
+  <RuleElementDef xmlns:q3="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q3:RuleSetFolderDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="32b1b9a0-7899-4600-8297-2b2058193922"
+    Name="32b1b9a0-7899-4600-8297-2b2058193922">
+    <q3:RuleSets />
+  </RuleElementDef>
+  <RuleElementDef xmlns:q4="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q4:RuleSetFolderDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="64a5b3ff-83e8-4856-99b3-556472fd907b"
+    Name="64a5b3ff-83e8-4856-99b3-556472fd907b">
+    <q4:RuleSets />
+  </RuleElementDef>
+  <RuleElementDef xmlns:q5="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q5:RuleSetFolderDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="afaa35b0-d6a9-4e1e-a1ed-57e270744f9a"
+    Name="afaa35b0-d6a9-4e1e-a1ed-57e270744f9a">
+    <q5:RuleSets />
+  </RuleElementDef>
+</RuleElementDefCollection>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="a814bb48-4cd7-4d2c-b9cb-cb0743620b2b"
+  Name="GetMatchTextTest"
+  AuthoringIsExpanded="false">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1e04b577-e53b-468a-bf86-937eb2039321"
+      Name="GetMatchText">
+      <Comments>StringFunctionLib.GetMatchText(Field1, "^-?\d+([\.]{1}\d*)?$")</Comments>
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="SetValueStringAssignableString" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDFUtils.Entity1.TextField3.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="StringLib.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1"
+              Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2"
+              Value="UDFUtils.Entity1.TextField1.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.3"
+              Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.4"
+              Value="StringLib.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.5"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.6"
+              Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="af95c127-662a-49a6-b1d7-80e1400fee35"
+        Name="GetMatchText">
+        <Element
+          LastAuthoringView="Syntax">
+          <FormulaText>TextField3</FormulaText>
+        </Element>
+        <Value
+          LastAuthoringView="BusinessLangauge">
+          <FormulaText>StringLibrary.GetMatchText(TextField1, "\d+")</FormulaText>
+        </Value>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

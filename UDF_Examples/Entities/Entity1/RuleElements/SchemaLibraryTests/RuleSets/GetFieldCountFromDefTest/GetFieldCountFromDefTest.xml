@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="4111ff37-bfea-4ca4-a27c-7c9b516a19d6"
+  Name="GetFieldCountFromDefTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="FireNotificationActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="8016db83-3cf2-4794-81a4-a9256dfc1f8e"
+      Name="FireNotificationGetFieldCount">
+      <NotificationType>Informational</NotificationType>
+      <NotificationMessage>
+        <FormulaParseFormat>Token</FormulaParseFormat>
+        <FormulaText>&lt;%SchemaLibrary.GetFieldCountfromDef()%&gt;</FormulaText>
+      </NotificationMessage>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

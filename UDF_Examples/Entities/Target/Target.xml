@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="a41e2b9a-5022-403e-ad79-4aba564c293f"
+  Name="Target">
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="a1356787-80b1-43f8-9119-3c126d4dcd78"
+      Name="TargetFieldA"
+      DataType="String"
+      DisplayName="Target Field A" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="c2f69bfe-18e4-44b9-9643-de0440721989"
+      Name="TargetFieldB"
+      DataType="String"
+      DisplayName="Target Field B" />
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</EntityDef>

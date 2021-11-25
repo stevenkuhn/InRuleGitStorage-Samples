@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="36e1d327-a34d-4287-bc84-7b5da10c2778"
+    Name="36e1d327-a34d-4287-bc84-7b5da10c2778"
+    DataType="String" />
+  <FieldDef
+    Revision="1"
+    PublicRevision="1"
+    Guid="3563ad7e-0e9b-48ff-b5bb-f6c9269209b5"
+    Name="3563ad7e-0e9b-48ff-b5bb-f6c9269209b5"
+    DataType="String" />
+</FieldDefCollection>

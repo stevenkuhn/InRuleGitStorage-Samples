@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="5c3d2041-ae66-489a-a951-faaed12810c1"
+  Name="MapFields">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Auto</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">Sequential</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="ExecuteMethodActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="7a195f20-3ecd-409c-a48b-99339c0b1559"
+      Name="MapEntityData">
+      <AliasName>SchemaLibrary</AliasName>
+      <MethodName>MapEntity</MethodName>
+      <MethodReturnAssignTo>TargetEntity</MethodReturnAssignTo>
+      <ParameterValues>
+        <ExecuteMethodActionParamDef
+          Name="sourceEntity">
+          <ArgName>sourceEntity</ArgName>
+          <FullTypeName />
+          <IsOut>false</IsOut>
+          <ArgValue>
+            <FormulaText>SourceEntity</FormulaText>
+          </ArgValue>
+        </ExecuteMethodActionParamDef>
+      </ParameterValues>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

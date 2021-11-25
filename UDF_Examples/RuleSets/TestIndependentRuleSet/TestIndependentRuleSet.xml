@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="8a4ff025-2241-4dc1-ac71-5a10f23903e8"
+  Name="TestIndependentRuleSet">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="FireNotificationActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="eee0ca8a-43ee-45da-b0a7-2f620a8bfd91"
+      Name="FireNotification1">
+      <NotificationType>Informational</NotificationType>
+      <NotificationMessage>
+        <FormulaParseFormat>Token</FormulaParseFormat>
+        <FormulaText>This is my Independent Rule Set.</FormulaText>
+      </NotificationMessage>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

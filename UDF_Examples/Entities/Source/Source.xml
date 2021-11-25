@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="6731c03c-6ada-4e03-b932-bcb60afaf0cf"
+  Name="Source">
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="36e1d327-a34d-4287-bc84-7b5da10c2778"
+      Name="SourceFieldA"
+      DataType="String"
+      DisplayName="Source Field A">
+      <DefaultValue>"asdf"</DefaultValue>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="3563ad7e-0e9b-48ff-b5bb-f6c9269209b5"
+      Name="SourceFieldB"
+      DataType="String"
+      DisplayName="Source Field B">
+      <DefaultValue>"zxcv"</DefaultValue>
+    </FieldDef>
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</EntityDef>

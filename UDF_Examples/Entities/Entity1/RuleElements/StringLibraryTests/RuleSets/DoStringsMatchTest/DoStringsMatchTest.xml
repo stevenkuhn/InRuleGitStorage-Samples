@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="fe62bfa7-a2eb-4c44-b83d-aedf0f37e68e"
+  Name="DoStringsMatchTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="ef070707-d56e-48f3-848f-e58b5b2a5409"
+      Name="DoStringsMatch">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDFUtils.Entity1.BooleanField.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="StringLib.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="UDFUtils.UdfLibrary.StringLib.Udf.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1"
+              Value="StringLib.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2"
+              Value="UDFUtils.Entity1.TextField1.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.3"
+              Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.4"
+              Value="StringLib.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.5"
+              Value="UDFUtils.Entity1.TextField2.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.6"
+              Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.7"
+              Value="StringLib.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.8"
+              Value="FalseLiteral" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.9"
+              Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="ac1fec6e-6f72-4a48-9bd0-6227d13e94e8"
+        Name="DoStringsMatch">
+        <Element>
+          <FormulaText>BooleanField</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>StringLibrary.DoStringsMatch(TextField1, TextField2, false)</FormulaText>
+        </Value>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

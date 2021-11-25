@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimpleRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="39abf526-105c-4bca-b508-9e32d4fa3dfe"
+  Name="IfThen1">
+  <Condition xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ReturnType>Boolean</ReturnType>
+    <FormulaText>1=1</FormulaText>
+  </Condition>
+  <SubRules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="SetValueActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="3970721a-4406-48ad-80ef-3442456741d6"
+      Name="SetValue1">
+      <AssignedCategories>
+        <string>xxxx</string>
+      </AssignedCategories>
+      <Element>
+        <FormulaText>TextField1</FormulaText>
+      </Element>
+      <Value>
+        <FormulaText>RuleLibrary.AreAllRulesTrueInRuleSet()</FormulaText>
+      </Value>
+    </RuleElementDef>
+  </SubRules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</SimpleRuleDef>

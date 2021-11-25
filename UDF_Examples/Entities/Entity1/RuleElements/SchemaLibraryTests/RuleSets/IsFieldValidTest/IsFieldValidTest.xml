@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="9096da17-c60e-4623-942a-f8ea3c5be111"
+  Name="IsFieldValidTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="SetValueActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="0c45e081-ca1a-4560-b85d-de293b729c9c"
+      Name="IsFieldValid">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDFUtils.Entity1.BooleanField.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="SchemaLib.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="UDFUtils.UdfLibrary.SchemaLib.Udf.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1"
+              Value="SchemaLib.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2"
+              Value="UDFUtils.Entity1.Field3.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.3"
+              Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Element>
+        <FormulaText>BooleanField</FormulaText>
+      </Element>
+      <Value>
+        <FormulaText>SchemaLibrary.IsFieldValid("TextField3")</FormulaText>
+      </Value>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="SetFieldInvalidActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="f8bbfd09-9e7c-408b-9cce-b3bea6e18d96"
+      Name="SetTextField3Invalid">
+      <Message>
+        <FormulaParseFormat>Token</FormulaParseFormat>
+        <FormulaText>Field 3 is invalid</FormulaText>
+      </Message>
+      <FieldName>TextField3</FieldName>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

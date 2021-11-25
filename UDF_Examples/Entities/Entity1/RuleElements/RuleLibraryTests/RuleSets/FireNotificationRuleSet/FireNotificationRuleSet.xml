@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="9172df02-cafa-4033-881c-99cfb384aaf0"
+  Name="FireNotificationRuleSet">
+  <Parameters xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleSetParameterDef
+      Guid="07abd116-c067-4a84-adb6-1301e81d3a48"
+      Name="Message"
+      DataType="String" />
+  </Parameters>
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="01471ba8-7240-46a7-b1a3-e0d70d2bf248"
+      Name="FireNotificationWithMessageParameter">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="FireNotificationWithSettingsTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="FireNotificationWithSettingsTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDF_Examples.Entity1.RuleSets.FireNotificationRuleSet.Message.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="FireNotificationWithSettingsTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="AllowMultipleNotificationsTemplate" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="FireNotificationActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="7226b00f-8a51-4339-beab-c2d48925be1b"
+        Name="FireNotificationWithMessageParameter">
+        <NotificationType>Informational</NotificationType>
+        <NotificationMode>Multiple</NotificationMode>
+        <NotificationMessage>
+          <FormulaParseFormat>Token</FormulaParseFormat>
+          <FormulaText>&lt;%Message%&gt;</FormulaText>
+        </NotificationMessage>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

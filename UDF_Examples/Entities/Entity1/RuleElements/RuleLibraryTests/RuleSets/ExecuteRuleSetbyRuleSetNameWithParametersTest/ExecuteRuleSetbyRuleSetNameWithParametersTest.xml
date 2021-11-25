@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="b00aee85-dced-4c18-83a7-9c3c28136743"
+  Name="ExecuteRuleSetbyRuleSetNameWithParametersTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="13da167b-79be-41a9-8e9a-3a805a36482b"
+      Name="ExecuteTestRuleSet">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="UDF_Examples.UdfLibrary.RuleLibrary.Udf.ExecuteRuleSetbyRuleSetNameWithParameters(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;param1Value&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;param2Value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="UDF_Examples.UdfLibrary.RuleLibrary.Udf.ExecuteRuleSetbyRuleSetNameWithParameters(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;param1Value&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;param2Value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDF_Examples.UdfLibrary.RuleLibrary.Udf.AreAllRulesTrueByRuleSetName(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="UDF_Examples.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.4"
+              Value="UDF_Examples.UdfLibrary.RuleLibrary.Udf.ExecuteRuleSetbyRuleSetNameWithParameters(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;param1Value&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;param2Value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.5"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.6"
+              Value="UDF_Examples.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.7"
+              Value="UDF_Examples.UdfLibrary.RuleLibrary.Udf.ExecuteRuleSetbyRuleSetNameWithParameters(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;param1Value&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;param2Value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.8"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.9"
+              Value="UDF_Examples.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="ExecuteMethodActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="573da34d-f9ab-4d29-beaa-322d686b7be9"
+        Name="ExecuteTestRuleSet">
+        <AliasName>RuleLibrary</AliasName>
+        <MethodName>ExecuteRuleSetbyRuleSetNameWithParameters</MethodName>
+        <MethodReturnAssignTo />
+        <ParameterValues>
+          <ExecuteMethodActionParamDef
+            Name="ruleSetName">
+            <FullTypeName>System.String</FullTypeName>
+            <IsOut>false</IsOut>
+            <ArgValue>
+              <FormulaText>"TestRuleSetWithParameters"</FormulaText>
+            </ArgValue>
+          </ExecuteMethodActionParamDef>
+          <ExecuteMethodActionParamDef
+            Name="param1Value">
+            <FullTypeName>System.String</FullTypeName>
+            <IsOut>false</IsOut>
+            <ArgValue>
+              <FormulaText>"MyParameterOne"</FormulaText>
+            </ArgValue>
+          </ExecuteMethodActionParamDef>
+          <ExecuteMethodActionParamDef
+            Name="param2Value">
+            <FullTypeName>System.String</FullTypeName>
+            <IsOut>false</IsOut>
+            <ArgValue>
+              <FormulaText>"MyParameterTwo"</FormulaText>
+            </ArgValue>
+          </ExecuteMethodActionParamDef>
+        </ParameterValues>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

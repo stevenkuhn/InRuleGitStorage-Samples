@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimpleRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="a5f6869c-29b1-4d48-9c91-a60d8f1b222e"
+  Name="IfThen2">
+  <Condition
+    LastAuthoringView="BusinessLangauge" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ReturnType>Boolean</ReturnType>
+    <FormulaText>RuleLibrary.GetRuleEval("RuleEvalTest", "IfThen1")</FormulaText>
+  </Condition>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</SimpleRuleDef>

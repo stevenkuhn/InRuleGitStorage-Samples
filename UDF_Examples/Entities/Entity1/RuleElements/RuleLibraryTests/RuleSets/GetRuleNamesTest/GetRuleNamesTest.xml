@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="999db376-011d-4e90-87b8-acfad878acc7"
+  Name="GetRuleNamesTest"
+  AuthoringIsExpanded="false">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1ae6d1ba-b9a3-4259-a367-77883ba29e39"
+      Name="GetRuleNames"
+      AuthoringIsExpanded="false">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="SetValueStringAssignableString" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.1"
+              Value="" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.2"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.3"
+              Value="UDFUtils.UdfLibrary.RuleLib.Udf.GetRuleNames.Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="7ce93834-6bf5-4803-a259-8a650cedffe7"
+        Name="GetRuleNames">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>true</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="aab1cf77-1571-417f-af02-047825d6c1b5"
+            Name="SetValue1">
+            <Element>
+              <FormulaText>TextField1</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>RuleLibrary.GetRuleNames()</FormulaText>
+            </Value>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="f5906b08-7f7c-47fc-adaf-3a26387488cd"
+      Name="mrule2">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="FireNotificationTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.0"
+              Value="FireNotificationWithSettingsTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.1"
+              Value="StringDesigner" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="163855c8-e0d0-4fa0-a789-b51119e337e6"
+        Name="mrule2">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>true</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="FireNotificationActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="3a87da5c-a4a3-4166-bfea-d882f6a5eb46"
+            Name="FireNotification1">
+            <NotificationType>Informational</NotificationType>
+            <NotificationMessage>
+              <FormulaParseFormat>Literal</FormulaParseFormat>
+              <FormulaText>test</FormulaText>
+            </NotificationMessage>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="cc86603d-c9a9-4e40-a748-6cb3dedead97"
+      Name="myrule3">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="FireNotificationTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.0"
+              Value="FireNotificationWithSettingsTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.1"
+              Value="StringDesigner" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="1a804ca2-2830-473b-a988-2456976c49a8"
+        Name="myrule3">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>true</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="FireNotificationActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="55b3eecd-da6a-4ec7-bc66-21da1df82463"
+            Name="FireNotification1">
+            <NotificationType>Informational</NotificationType>
+            <NotificationMessage>
+              <FormulaParseFormat>Literal</FormulaParseFormat>
+              <FormulaText>anothertest</FormulaText>
+            </NotificationMessage>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

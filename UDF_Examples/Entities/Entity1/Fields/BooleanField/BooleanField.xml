@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="226c9cb9-594c-4d7f-a895-5d1fa6c9ef84"
+  Name="BooleanField"
+  AuthoringIsExpanded="false"
+  DataType="Boolean"
+  DisplayName="Boolean Field" />

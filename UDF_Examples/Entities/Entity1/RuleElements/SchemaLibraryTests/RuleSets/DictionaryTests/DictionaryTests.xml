@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="bd86285a-3084-4009-a423-4a7c62dc553e"
+  Name="DictionaryTests">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="4258ca73-904e-4747-b19f-bfad2c1dd0d1"
+      Name="CreateDictionary">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="ExecuteMethodActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="f72d9aef-10b9-4708-850d-21b42bcb0114"
+        Name="CreateDictionary">
+        <AliasName>SchemaLibrary</AliasName>
+        <MethodName>CreateDictionary</MethodName>
+        <MethodReturnAssignTo />
+        <ParameterValues>
+          <ExecuteMethodActionParamDef
+            Name="dictionaryName">
+            <FullTypeName>System.String</FullTypeName>
+            <IsOut>false</IsOut>
+            <ArgValue>
+              <FormulaText>"MyDictionary"</FormulaText>
+            </ArgValue>
+          </ExecuteMethodActionParamDef>
+        </ParameterValues>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="84a2611f-d04b-4b59-b598-c4d3194e59e4"
+      Name="LoadDictionary">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.LoadDictionary(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.LoadDictionary(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDFUtils.UdfLibrary.StringLibrary.Udf.TestScriptObject(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.4"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.5"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.6"
+              Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.7"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.8"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.9"
+              Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="ExecuteMethodActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="1b061d6c-6225-4f29-96cc-699e0d3efcba"
+        Name="LoadDictionary">
+        <AliasName>SchemaLibrary</AliasName>
+        <MethodName>LoadDictionary</MethodName>
+        <MethodReturnAssignTo />
+        <ParameterValues>
+          <ExecuteMethodActionParamDef
+            Name="key">
+            <FullTypeName>System.String</FullTypeName>
+            <IsOut>false</IsOut>
+            <ArgValue>
+              <FormulaText>"MyTestKey"</FormulaText>
+            </ArgValue>
+          </ExecuteMethodActionParamDef>
+          <ExecuteMethodActionParamDef
+            Name="value">
+            <FullTypeName>System.String</FullTypeName>
+            <IsOut>false</IsOut>
+            <ArgValue>
+              <FormulaText>"MyTestValue"</FormulaText>
+            </ArgValue>
+          </ExecuteMethodActionParamDef>
+          <ExecuteMethodActionParamDef
+            Name="dictionaryName">
+            <FullTypeName>System.String</FullTypeName>
+            <IsOut>false</IsOut>
+            <ArgValue>
+              <FormulaText>"MyDictionary"</FormulaText>
+            </ArgValue>
+          </ExecuteMethodActionParamDef>
+        </ParameterValues>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1fb8064b-11af-4b1b-bac9-7fdce780e0e4"
+      Name="GetValuesfromDictionary">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="FireNotificationTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="FireNotificationWithSettingsTemplateDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="SchemaLibrary.GetDictionaryValue(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetDictionaryValue(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1"
+              Value="SchemaLibrary.GetDictionaryValue(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.2"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.3"
+              Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.4"
+              Value="StringLibrary.TestScriptObject(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.5"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.6"
+              Value="StringLibrary.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="FireNotificationActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="ea387623-8fb0-4308-a276-38cedf4cdde3"
+        Name="GetValuesfromDictionary">
+        <NotificationType>Informational</NotificationType>
+        <NotificationMessage>
+          <FormulaParseFormat>Token</FormulaParseFormat>
+          <FormulaText>&lt;%SchemaLibrary.GetDictionaryValue("MyDictionary", "MyTestKey")%&gt;</FormulaText>
+        </NotificationMessage>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

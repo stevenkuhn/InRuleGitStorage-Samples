@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="3428b13b-01c7-4177-ab33-f08b76155a24"
+  Name="GetEntityFieldValuesTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="FireNotificationActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1461381f-19e9-438f-a010-a30dca93586c"
+      Name="FireNotificationGetEntityFieldValues">
+      <NotificationType>Informational</NotificationType>
+      <NotificationMessage>
+        <FormulaParseFormat>Token</FormulaParseFormat>
+        <FormulaText>&lt;%SchemaLibrary.GetEntityFieldValues()%&gt;</FormulaText>
+      </NotificationMessage>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

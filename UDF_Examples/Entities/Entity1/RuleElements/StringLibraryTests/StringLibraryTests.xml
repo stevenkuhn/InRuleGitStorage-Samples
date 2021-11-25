@@ -1,0 +1,2727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetFolderDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="3d95cb3e-b082-4561-a317-59b8f1c85e53"
+  Name="StringLibraryTests">
+  <RuleSets xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="93425d18-40a8-45e6-93ec-3304e940f4b8"
+      Name="GetElapsedTimeFromSecondsTest"
+      AuthoringIsExpanded="false">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="d800bba3-cfc7-41e3-8ad2-5e56259c19c1"
+          Name="GetElapsedTime"
+          AuthoringIsExpanded="false">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="ActionSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="ActionSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.1"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2"
+                  Value="secondDiffDateTimeAndDateTime" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.0"
+                  Value="secondDiffDateTimeAndDateTime" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.1"
+                  Value="minussecondsTemplateDateTime" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.1.0"
+                  Value="Now" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.1.1"
+                  Value="minusyearsTemplateString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.1.2"
+                  Value="NumberOfsecondsTemplate" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.1.2.0"
+                  Value="IntegerDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.1.2.1"
+                  Value="NumberOfsecondsTemplate" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.2"
+                  Value="yearDiffDateTimeAndDateTime" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.3"
+                  Value="plusminutesTemplateDateTime" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.3.0"
+                  Value="Now" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.3.1"
+                  Value="plusyearsTemplateString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.3.2"
+                  Value="NumberOfminutesTemplate" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.3.2.0"
+                  Value="IntegerDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2.3.2.1"
+                  Value="NumberOfminutesTemplate" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.3"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SimpleRuleDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="3ddf57dc-3318-4cd1-82c8-6487293fbe18"
+            Name="GetElapsedTime">
+            <Condition>
+              <ReturnType>Boolean</ReturnType>
+              <FormulaText>true</FormulaText>
+            </Condition>
+            <SubRules>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="ecc85d4e-ea8f-4396-b580-b9bb516a9fa4"
+                Name="SetValue1">
+                <Element>
+                  <FormulaText>TextField1</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>StringLibrary.GetElapsedTimeFromSeconds(SecondDiff(AddSeconds(Now(), 0 - 3), AddMinutes(Now(), 8)))</FormulaText>
+                </Value>
+              </RuleElementDef>
+            </SubRules>
+            <HasContextVersionSettings>false</HasContextVersionSettings>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="f132ea32-4019-4598-a8a8-7386500e6ba0"
+      Name="GetListItemByIndexTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="275e2eda-245c-406f-82f8-5da59de65fa5"
+          Name="GetListItemByIndex">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="IntegerDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="a41ef668-6e38-4981-b9a9-b5923a252f53"
+            Name="GetListItemByIndex">
+            <Element>
+              <FormulaText>TextField1</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>StringLibrary.GetListItemByIndex(TextField3, 4)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1f7c83d9-421e-40b0-9c21-941ac2d0c2fe"
+      Name="GetListItemCountTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="805ac4e1-80c2-45a4-98ca-8ed57c62192f"
+          Name="GetListItemCount">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetListItemCount(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetListItemCount(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="69ad539c-fbcb-4f66-87db-1e7d52a0752c"
+            Name="GetListItemCount">
+            <Element>
+              <FormulaText>TextField1</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>StringLibrary.GetListItemCount(TextField3)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="a814bb48-4cd7-4d2c-b9cb-cb0743620b2b"
+      Name="GetMatchTextTest"
+      AuthoringIsExpanded="false">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="1e04b577-e53b-468a-bf86-937eb2039321"
+          Name="GetMatchText">
+          <Comments>StringFunctionLib.GetMatchText(Field1, "^-?\d+([\.]{1}\d*)?$")</Comments>
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLib.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="af95c127-662a-49a6-b1d7-80e1400fee35"
+            Name="GetMatchText">
+            <Element
+              LastAuthoringView="Syntax">
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="BusinessLangauge">
+              <FormulaText>StringLibrary.GetMatchText(TextField1, "\d+")</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="98c351a9-445c-4db5-958b-c9286017b40a"
+      Name="GetNumberAfterMatchTextTest"
+      AuthoringIsExpanded="false">
+      <AssignedCategories>
+        <string>xxxx</string>
+      </AssignedCategories>
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="73bf3646-1c39-4e4d-ba0c-2fb5b9ef5783"
+          Name="GetNumberAfterMatchText">
+          <Comments>StringFunctionLib.GetMatchText(Field1, "^-?\d+([\.]{1}\d*)?$")</Comments>
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetNumberAfterMatchText(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetNumberAfterMatchText(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetNumberAfterMatchText(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="5987d637-2830-4dca-ad32-f00e6e7f8787"
+            Name="GetNumberAfterMatchText">
+            <Element
+              LastAuthoringView="Syntax">
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.GetNumberAfterMatchText("abc", TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="7a79ec81-afa1-4dcf-9d83-d56756d9e590"
+      Name="GetNumberInTest"
+      AuthoringIsExpanded="false">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="cb93e369-a41e-4f27-86d7-37a56c217701"
+          Name="GetNumberInString">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetNumberInText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetNumberInText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="d6f5dc83-dacc-4eb1-9b79-eba817bb7b52"
+            Name="GetNumberInString">
+            <Element
+              LastAuthoringView="Syntax">
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="BusinessLangauge">
+              <FormulaText>StringLibrary.GetNumberInText(TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="9fdd1933-716b-4110-a44e-c3bc09d39819"
+      Name="GetTextAfterTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="d9b9ef10-28a1-48de-b756-b443ec7412bf"
+          Name="GetTextAfter">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetTextAfter(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextAfter(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextAfter(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="396d6e17-af70-4e67-ad47-8836d8817e7d"
+            Name="GetTextAfter">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="BusinessLangauge">
+              <FormulaText>StringLibrary.GetTextAfter("abc", TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="6e4fb9bb-c69c-4649-bc95-dca6576e4575"
+      Name="GetTextAfterLastTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="56839385-afa8-43e5-9224-6c33b7291e83"
+          Name="GetTextAfterLast">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetTextAfterLast(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextAfterLast(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextAfter(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="144e653b-d482-4fd6-94c9-ea78e85b6f5b"
+            Name="GetTextAfterLast">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.GetTextAfterLast("abc", TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="e2ef5d95-b9ef-4651-9039-557065c3fc68"
+      Name="GetTextBeforeTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="8813d46d-106e-4026-97e1-9182d38c16bf"
+          Name="GetTextBefore">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetTextBefore(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextBefore(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextAfter(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="6443b4ad-53c0-4c10-955b-5cfa494e73f4"
+            Name="GetTextBefore">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.GetTextBefore("abc", TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="b22e1321-9587-44ce-8293-53281fb79afb"
+      Name="GetTextBeforeLastTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="6a6a7ede-17ce-4410-82ab-df3da6dbf433"
+          Name="GetTextBeforeLast">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetTextBeforeLast(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextBeforeLast(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextAfter(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="f70cc1ba-4267-43fa-a731-8321f19b6f91"
+            Name="GetTextBeforeLast">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.GetTextBeforeLast("abc", TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="5c2ba1cf-37bf-4c43-afcc-1d822816f339"
+      Name="GetTextBetweenTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="0dcdf288-13cb-492c-a2fe-ea4fc9a9f5eb"
+          Name="GetTextBetween">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetTextBetween(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;findEndText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextBetween(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;findEndText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetNumberAfterMatchText(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLib.GetTextBetween(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;findEndText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.7"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.8"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.9"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="9541a944-aacf-446f-9688-11f826cdfdf7"
+            Name="GetTextBetween">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.GetTextBetween("FirstName", "LastName", TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="d054e317-4719-4c72-907f-d3b1361642ce"
+      Name="GetTextBetweenInclusiveTest">
+      <AssignedCategories>
+        <string>xxxx</string>
+      </AssignedCategories>
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="b039541b-369a-4f4f-b375-0b804dcd4ca6"
+          Name="GetTextBetweenInclusive">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetTextBetweenInclusive(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;findEndText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextBetweenInclusive(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;findEndText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetNumberAfterMatchText(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLib.GetTextBetween(&lt;Arg Name=&quot;findStartText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;findEndText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.7"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.8"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.9"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="dafc87dc-0450-4425-8950-12ed4edd1341"
+            Name="GetTextBetweenInclusive">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.GetTextBetweenInclusive("FirstName", "LastName", TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="99e500d5-c66e-4eb7-958d-9b08ae9f407b"
+      Name="GetTextBetweenMatchedDelimitersTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="b67859a3-b2ce-4f1b-b3f8-d3bb9b6bd548"
+          Name="GetTextBetweenMatchedDels">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLib.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.7"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.8"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.9"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.10"
+                  Value="StringLib.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.11"
+                  Value="BooleanDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.12"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="e5c169aa-b5e9-4938-bbc3-4413385c05a6"
+            Name="GetTextBetweenMatchedDels">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.GetTextBetweenMatchedDelimiters("&lt;&lt;", "&gt;&gt;", TextField1, false)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="e9ddc0aa-d408-4597-a458-642df5c8829d"
+      Name="IsFoundInListTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="6a4a4597-caa3-4746-afbd-c3bbd3d80c6c"
+          Name="IsFoundInList">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.Field1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="UDFUtils.Entity1.Field3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="IntegerDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="46ec61a7-ee38-462c-a338-3ad209f0fc80"
+            Name="IsFoundInList">
+            <Element>
+              <FormulaText>TextField1</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.IsFoundInList("Test", TextField3)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="08ace7fb-10b2-4d9f-960c-ca2075019648"
+      Name="ParseDateStringTest"
+      AuthoringIsExpanded="false">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="70fccc6e-828a-45ce-9b8e-3e65c3bed8c5"
+          Name="ParseDateString">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueDateTimeAssignableDateTime" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.DateField.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="StringLib.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="e3e622c0-a971-44b6-b6f3-7f72ab7f8cad"
+            Name="ParseDateString">
+            <Element>
+              <FormulaText>DateField</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>StringLibrary.ParseDateString(TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="73ed57e7-3cdb-48cb-8251-e9efaedaad6e"
+      Name="DateParseTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="DeclareVariableActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="6684dd2c-4357-400f-aa33-0a914b5577ba"
+          Name="dateChunk"
+          DataType="String" />
+        <RuleElementDef
+          xsi:type="DeclareVariableActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="60e3366f-7917-42dc-9a86-e6b6e7e533a1"
+          Name="timeChunk"
+          DataType="String" />
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="4fd514a6-c03a-4321-9a71-c6e40ba8dc83"
+          Name="ParseDate">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="ActionSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="ActionSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0"
+                  Value="IfThenElseDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.0"
+                  Value="IfThenDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.1"
+                  Value="ConditionGroupTemplateSingleCondition" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.1.0"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.1.0.0"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.1.0.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.1.0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.2"
+                  Value="IfThenDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.1"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.3.0"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.3.1"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.3.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0.3.4"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.4"
+                  Value="IfThenElseDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0.1"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0.3.0"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0.3.1"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0.3.2"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5.0.3.3"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1"
+                  Value="IfThenDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.0"
+                  Value="IfThenDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.1"
+                  Value="ConditionGroupTemplateSingleCondition" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.1.0"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.1.0.0"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.1.0.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.1.0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.2"
+                  Value="IfThenDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0.1"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0.3.0"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0.3.1"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0.3.2"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0.3.3"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2"
+                  Value="SetValueDateTimeAssignableDateTime" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.1"
+                  Value="UDFUtils.Entity1.DateField.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3"
+                  Value="StringLib.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.1"
+                  Value="StringLib.IsDateTime(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.2"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.3"
+                  Value="RuleLib.GetRuleEval(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ruleName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SimpleRuleDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="1cf73bc8-4ee6-4775-b0ba-302f354b0ff1"
+            Name="ParseDate">
+            <Condition>
+              <ReturnType>Boolean</ReturnType>
+              <FormulaText>true</FormulaText>
+            </Condition>
+            <SubRules>
+              <RuleElementDef
+                xsi:type="ExclusiveRuleDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="8ded15a6-e77d-4a16-a6e9-fdede61f87d5"
+                Name="Rule5">
+                <DefaultSubRulesRoot
+                  Guid="e0ae4edf-ed28-43c4-b71d-edac1f358104"
+                  Name="Otherwise" />
+                <Conditions>
+                  <SimpleRuleDef
+                    Revision="1"
+                    PublicRevision="1"
+                    Guid="0a097888-ec50-4e6d-84e9-df81a1d35e5c"
+                    Name="Rule1">
+                    <Condition>
+                      <ReturnType>Boolean</ReturnType>
+                      <FormulaText>Instr(TextField1, ".,") &gt; -1</FormulaText>
+                    </Condition>
+                    <SubRules>
+                      <RuleElementDef
+                        xsi:type="SetValueActionDef"
+                        Revision="1"
+                        PublicRevision="1"
+                        Guid="bb74a805-a6c4-4afc-9ce3-5aedcf932a5d"
+                        Name="SetValue1">
+                        <Element>
+                          <FormulaText>dateChunk</FormulaText>
+                        </Element>
+                        <Value>
+                          <FormulaText>StringLibrary.GetTextBetween(".,", ",", TextField1)</FormulaText>
+                        </Value>
+                      </RuleElementDef>
+                    </SubRules>
+                    <HasContextVersionSettings>false</HasContextVersionSettings>
+                  </SimpleRuleDef>
+                </Conditions>
+                <DefaultSubRules>
+                  <RuleElementDef
+                    xsi:type="SetValueActionDef"
+                    Revision="1"
+                    PublicRevision="1"
+                    Guid="0ead0a12-503f-4a64-8ebd-67bdb719256e"
+                    Name="Set_Value1">
+                    <Element>
+                      <FormulaText>dateChunk</FormulaText>
+                    </Element>
+                    <Value>
+                      <FormulaText>StringLibrary.GetTextBefore(",", TextField1)</FormulaText>
+                    </Value>
+                  </RuleElementDef>
+                </DefaultSubRules>
+                <HasContextVersionSettings>false</HasContextVersionSettings>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="SimpleRuleDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="4513a560-9129-4175-a705-5e79a79acbed"
+                Name="Rule15">
+                <Condition>
+                  <ReturnType>Boolean</ReturnType>
+                  <FormulaText>Instr(dateChunk, "-") &gt; -1</FormulaText>
+                </Condition>
+                <SubRules>
+                  <RuleElementDef
+                    xsi:type="SetValueActionDef"
+                    Revision="1"
+                    PublicRevision="1"
+                    Guid="1a755f59-573b-42a2-95db-c02d6b810758"
+                    Name="Set_Value4">
+                    <Element>
+                      <FormulaText>dateChunk</FormulaText>
+                    </Element>
+                    <Value>
+                      <FormulaText>StringLibrary.GetTextBefore("-", dateChunk)</FormulaText>
+                    </Value>
+                  </RuleElementDef>
+                </SubRules>
+                <HasContextVersionSettings>false</HasContextVersionSettings>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="2f9f2129-f6ba-42b5-8ed8-e2046ec3ad89"
+                Name="SetValue17">
+                <Element>
+                  <FormulaText>DateField</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>StringLibrary.ParseDateString(dateChunk)</FormulaText>
+                </Value>
+              </RuleElementDef>
+            </SubRules>
+            <HasContextVersionSettings>false</HasContextVersionSettings>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="7918a366-a82e-4fdb-85f9-95f8aef63bec"
+          Name="ParseTime">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="ActionSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="ActionSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.1"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.0"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.1"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.dateChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.2"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3.3"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.1"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.0"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.1"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3.4"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2"
+                  Value="IfThenDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.0"
+                  Value="IfThenDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.1"
+                  Value="ConditionGroupTemplateSingleCondition" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.1.0"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.1.0.0"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.1.0.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.1.0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.2"
+                  Value="IfThenDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0.1"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0.3.0"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef5UDFUtils.VocabularyDef1.ExpressionTemplateDef50" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0.3.1"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0.3.2"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0.3.3"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.1"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3"
+                  Value="TrimDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3.0"
+                  Value="ReplaceDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3.0.0"
+                  Value="ReplaceDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3.0.1"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3.0.2"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef1UDFUtils.VocabularyDef1.ExpressionTemplateDef10" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3.0.3"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3.0.4"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef8UDFUtils.VocabularyDef1.ExpressionTemplateDef80" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3.0.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.3.1"
+                  Value="TrimDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3"
+                  Value="ConcatStringAndString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3.0"
+                  Value="ConcatStringAndString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3.1.0"
+                  Value="FormatDateSystemFormats" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3.1.0.0"
+                  Value="FormatDateSystemFormats" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3.1.0.1"
+                  Value="UDFUtils.Entity1.DateField.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3.1.0.2"
+                  Value="FormatDateSystemFormats" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3.1.0.3"
+                  Value="FormatString_Shortdate" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3.1.1"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4.3.1.2"
+                  Value="UDFUtils.Entity1.RuleSets.DateParseTest._nullVocabSurrogate.timeChunk.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5"
+                  Value="SetValueDateTimeAssignableDateTime" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5.1"
+                  Value="UDFUtils.Entity1.DateField.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5.3"
+                  Value="StringLib.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.ParseDateString(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5.3.1"
+                  Value="StringLib.IsDateTime(&lt;Arg Name=&quot;dateString&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5.3.2"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5.3.3"
+                  Value="RuleLib.GetRuleEval(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ruleName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SimpleRuleDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="d8269463-8b30-43ad-8b6e-e80c2a06edbd"
+            Name="ParseTime">
+            <Condition>
+              <ReturnType>Boolean</ReturnType>
+              <FormulaText>true</FormulaText>
+            </Condition>
+            <SubRules>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="4e10cf84-8eea-4131-b52a-1f46b1c0596e"
+                Name="SetValue7">
+                <Element>
+                  <FormulaText>timeChunk</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>StringLibrary.GetTextAfter(dateChunk, TextField1)</FormulaText>
+                </Value>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="3104db9e-3eed-4fae-b3b1-aa8ea938d2d6"
+                Name="SetValue8">
+                <Element>
+                  <FormulaText>timeChunk</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>StringLibrary.GetTextBetween(",", "-", timeChunk)</FormulaText>
+                </Value>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="SimpleRuleDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="197e4acc-5988-4538-95ab-ab593f5c5ef9"
+                Name="Rule8">
+                <Condition>
+                  <ReturnType>Boolean</ReturnType>
+                  <FormulaText>Instr(timeChunk, "and") &gt; -1</FormulaText>
+                </Condition>
+                <SubRules>
+                  <RuleElementDef
+                    xsi:type="SetValueActionDef"
+                    Revision="1"
+                    PublicRevision="1"
+                    Guid="e1a918c8-9f1a-4c1c-bd0d-44810d8224bb"
+                    Name="Set_Value2">
+                    <Element>
+                      <FormulaText>timeChunk</FormulaText>
+                    </Element>
+                    <Value>
+                      <FormulaText>StringLibrary.GetTextBefore("and", timeChunk)</FormulaText>
+                    </Value>
+                  </RuleElementDef>
+                </SubRules>
+                <HasContextVersionSettings>false</HasContextVersionSettings>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="cb3f14f0-62ff-4687-9335-c48c25d9f150"
+                Name="SetValue11">
+                <Element>
+                  <FormulaText>timeChunk</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>Trim(Replace(timeChunk, ".", ""))</FormulaText>
+                </Value>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="a071eba3-ffba-4fa3-9d36-5149b18200dc"
+                Name="SetValue12">
+                <Element>
+                  <FormulaText>TextField3</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>Concat(Format(DateField, "d"), " ", timeChunk)</FormulaText>
+                </Value>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="85687478-0182-41c5-a3f3-b6a16b1f5411"
+                Name="SetValue10">
+                <Element>
+                  <FormulaText>DateField</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>StringLibrary.ParseDateString(TextField3)</FormulaText>
+                </Value>
+              </RuleElementDef>
+            </SubRules>
+            <HasContextVersionSettings>false</HasContextVersionSettings>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="014272fc-818f-4881-b048-b2a0e9d954db"
+      Name="ReplaceTextBetweenMatchedDelimitersTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="1061ef0c-96f2-458f-8579-eed089ab232a"
+          Name="ReplaceTextBetweenMatchedDels">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.Field3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef11UDFUtils.VocabularyDef1.ExpressionTemplateDef110" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.Entity1.Field1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef11UDFUtils.VocabularyDef1.ExpressionTemplateDef110" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="UDFUtils.VocabularyDef1.ExpressionTemplateDef6UDFUtils.VocabularyDef1.ExpressionTemplateDef60" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringDesigner" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="c9c81e70-2fa4-4737-b2c7-6e5480d27455"
+            Name="ReplaceTextBetweenMatchedDels">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.ReplaceTextBetweenMatchedDelimiters("&lt;&lt;", "&gt;&gt;", TextField1, "abc", true)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="31d72180-61fb-4743-af27-8ee1eb4f137e"
+      Name="StripLeadingTextTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="ba44213c-54d8-4c90-842f-a8b30f98dd3d"
+          Name="StripLeadingText">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.StripLeadingText(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.StripLeadingText(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextAfter(&lt;Arg Name=&quot;findText&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="63ab73c2-1937-49e2-9b5c-fc2096d664a7"
+            Name="StripLeadingText">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>StringLibrary.StripLeadingText("abc", TextField1)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="12494038-4ebf-414c-be84-6ad4b2155b1b"
+      Name="LoadXmlToEntityTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="ExecuteMethodActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="6f442d64-add0-4b60-b32c-760f02f0699a"
+          Name="LoadXMLToEntity">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.TransformXmlToEntity(&lt;Arg Name=&quot;xml&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.TransformXmlToEntity(&lt;Arg Name=&quot;xml&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.TransformXmlToEntity(&lt;Arg Name=&quot;xml&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="UDFUtils.UdfLibrary.RuleLib.Udf.GetRuleEval(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ruleName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <AliasName>StringLibrary</AliasName>
+          <MethodName>LoadXmlToEntity</MethodName>
+          <MethodReturnAssignTo />
+          <ParameterValues>
+            <ExecuteMethodActionParamDef
+              Name="xml">
+              <ArgName>xml</ArgName>
+              <FullTypeName>System.String</FullTypeName>
+              <IsOut>false</IsOut>
+              <ArgValue>
+                <FormulaText>"&lt;TextField1&gt;data one&lt;/TextField1&gt;&lt;TextField3&gt;data two&lt;/TextField3&gt;"</FormulaText>
+              </ArgValue>
+            </ExecuteMethodActionParamDef>
+          </ParameterValues>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="74494146-dc56-47de-9d63-fd2cc7dea310"
+      Name="CountWordsTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="ef0b7b69-3f40-405f-bdc8-ef2cc756f408"
+          Name="CountWords">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.CountWords(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;word&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.CountWords(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;word&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="StringLib.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLib.CountWords(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;word&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="8a8780cc-afc7-44f7-9ee5-6a7b2e3874c5"
+            Name="CountWords">
+            <Element>
+              <FormulaText>TextField3</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>StringLibrary.CountWords(TextField1, "abc")</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="fe62bfa7-a2eb-4c44-b83d-aedf0f37e68e"
+      Name="DoStringsMatchTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="ef070707-d56e-48f3-848f-e58b5b2a5409"
+          Name="DoStringsMatch">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.BooleanField.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLib.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="StringLib.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLib.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="UDFUtils.Entity1.TextField2.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.7"
+                  Value="StringLib.DoStringsMatch(&lt;Arg Name=&quot;CompareText1&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CompareText2&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;CaseInsensitive&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.8"
+                  Value="FalseLiteral" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.9"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="ac1fec6e-6f72-4a48-9bd0-6227d13e94e8"
+            Name="DoStringsMatch">
+            <Element>
+              <FormulaText>BooleanField</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>StringLibrary.DoStringsMatch(TextField1, TextField2, false)</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+  </RuleSets>
+</RuleSetFolderDef>

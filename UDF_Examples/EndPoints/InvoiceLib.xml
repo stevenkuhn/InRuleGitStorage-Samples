@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssemblyDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="7e9a590b-02a6-4978-bbd8-c1d5c08357f2"
+  Name="InvoiceLib">
+  <DefaultImportDateTimeDataType xmlns="http://www.inrule.com/XmlSchema/Schema">DateTime</DefaultImportDateTimeDataType>
+  <ClassInfos xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ClassInfo>
+      <Name>FunctLib</Name>
+      <AssemblyName>InvoiceObjects</AssemblyName>
+      <HasDefaultConstructor>false</HasDefaultConstructor>
+      <FullName>InRule.Samples.InvoiceObjects.FunctLib</FullName>
+      <Methods>
+        <ClassMethodInfo>
+          <Name>AddTwoNumbers</Name>
+          <TypeName>Double</TypeName>
+          <FullTypeName>System.Double</FullTypeName>
+          <AssemblyName>mscorlib</AssemblyName>
+          <IsStatic>true</IsStatic>
+          <Parameters>
+            <ClassParameterInfo>
+              <Name>v1</Name>
+              <TypeName>Double</TypeName>
+              <FullTypeName>System.Double</FullTypeName>
+              <AssemblyName>mscorlib</AssemblyName>
+            </ClassParameterInfo>
+            <ClassParameterInfo>
+              <Name>v2</Name>
+              <TypeName>Double</TypeName>
+              <FullTypeName>System.Double</FullTypeName>
+              <AssemblyName>mscorlib</AssemblyName>
+            </ClassParameterInfo>
+          </Parameters>
+          <ParameterList>Double v1, Double v2</ParameterList>
+        </ClassMethodInfo>
+      </Methods>
+      <Properties />
+      <Fields />
+      <IsFunctionLibrary>true</IsFunctionLibrary>
+      <IsEntity>false</IsEntity>
+      <IncludeMethods>false</IncludeMethods>
+    </ClassInfo>
+  </ClassInfos>
+  <AssemblyName xmlns="http://www.inrule.com/XmlSchema/Schema">InvoiceObjects</AssemblyName>
+  <LastImportInfo xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Namespaces />
+    <EntityDefInfos />
+    <LastImportHashCode>0</LastImportHashCode>
+    <LastImportDateTime>2016-01-05T16:51:04.423062Z</LastImportDateTime>
+    <LastSyncDateTime>0001-01-01T06:00:00Z</LastSyncDateTime>
+    <LastSyncImportDateTime>0001-01-01T06:00:00Z</LastSyncImportDateTime>
+  </LastImportInfo>
+  <LastImportedFileName xmlns="http://www.inrule.com/XmlSchema/Schema">C:\Program Files (x86)\InRule\Samples\CommonBin\InvoiceObjects.dll</LastImportedFileName>
+</AssemblyDef>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="99e500d5-c66e-4eb7-958d-9b08ae9f407b"
+  Name="GetTextBetweenMatchedDelimitersTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="b67859a3-b2ce-4f1b-b3f8-d3bb9b6bd548"
+      Name="GetTextBetweenMatchedDels">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="SetValueStringAssignableString" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDFUtils.Entity1.TextField3.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="StringLib.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1"
+              Value="UDFUtils.UdfLibrary.StringLib.Udf.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.3"
+              Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.4"
+              Value="StringLib.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.5"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.6"
+              Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.7"
+              Value="UDFUtils.UdfLibrary.StringLib.Udf.GetMatchText(&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;regExPattern&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.8"
+              Value="UDFUtils.Entity1.TextField1.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.9"
+              Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.10"
+              Value="StringLib.GetTextBetweenMatchedDelimiters(&lt;Arg Name=&quot;startDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;endDelimiter&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;text&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;includeDelimiters&quot; Type=&quot;System.Boolean&quot; /&gt;)).Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.11"
+              Value="BooleanDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.12"
+              Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="e5c169aa-b5e9-4938-bbc3-4413385c05a6"
+        Name="GetTextBetweenMatchedDels">
+        <Element>
+          <FormulaText>TextField3</FormulaText>
+        </Element>
+        <Value
+          LastAuthoringView="Syntax">
+          <FormulaText>StringLibrary.GetTextBetweenMatchedDelimiters("&lt;&lt;", "&gt;&gt;", TextField1, false)</FormulaText>
+        </Value>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

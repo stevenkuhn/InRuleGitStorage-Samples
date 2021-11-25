@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetParameterDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Guid="c5b0cdc6-7842-462d-b479-aef595cabdc9"
+  Name="Parameter2"
+  DataType="String" />

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="9065c79e-91da-4efb-9f0e-88d20864c121"
+  Name="GetRuleNameTest"
+  AuthoringIsExpanded="false">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="7b1818f5-e53d-4c3c-b945-6895d5e47646"
+      Name="GetRuleName"
+      AuthoringIsExpanded="false">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="SetValueStringAssignableString" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.1"
+              Value="" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.3"
+              Value="UDFUtils.UdfLibrary.ContextRuleSetLib.Udf.GetRuleName.Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="3ddf57dc-3318-4cd1-82c8-6487293fbe18"
+        Name="GetRuleName">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>true</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="3806141f-f4af-4e47-9f1a-6e9b7f26b496"
+            Name="SetValue1">
+            <Element>
+              <FormulaText>TextField1</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>RuleLibrary.GetRuleName()</FormulaText>
+            </Value>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="FireNotificationActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="7b2df3a0-7981-47af-80bc-98f23e24abac"
+      Name="FireNotificationGetRuleName">
+      <NotificationType>Informational</NotificationType>
+      <NotificationMessage>
+        <FormulaParseFormat>Token</FormulaParseFormat>
+        <FormulaText>This is my test &lt;%RuleLibrary.GetRuleName()%&gt;</FormulaText>
+      </NotificationMessage>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

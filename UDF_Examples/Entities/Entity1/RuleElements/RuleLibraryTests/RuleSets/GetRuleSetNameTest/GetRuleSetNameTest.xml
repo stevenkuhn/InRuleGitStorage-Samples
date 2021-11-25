@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="db1ded7d-3b61-45f8-9564-e9052207fc9e"
+  Name="GetRuleSetNameTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="b7aa5de9-15d8-4f85-8e37-530fddc9ed02"
+      Name="GetRuleSetName">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="SetValueStringAssignableString" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="SetValueBooleanAssignableBoolean" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="UDFUtils.UdfLibrary.RuleLib.Udf.GetRuleSetName.Implicit" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SetValueActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="a4e549ba-f26e-4c71-ad9e-2936ff2b56a6"
+        Name="GetRuleSetName">
+        <Element>
+          <FormulaText>TextField1</FormulaText>
+        </Element>
+        <Value>
+          <FormulaText>RuleLibrary.GetRuleSetName()</FormulaText>
+        </Value>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="FireNotificationActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="414434df-f355-49ab-b497-8f9aee45fb36"
+      Name="FireNotificationGetRuleSetName">
+      <NotificationType>Informational</NotificationType>
+      <NotificationMessage>
+        <FormulaParseFormat>Token</FormulaParseFormat>
+        <FormulaText>This is a message under rule set &lt;%RuleLibrary.GetRuleSetName()%&gt;.</FormulaText>
+      </NotificationMessage>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

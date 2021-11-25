@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimpleRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="e3b55500-242e-4a24-bfd1-54fa2c38449e"
+  Name="IfThen1">
+  <Condition xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ReturnType>Boolean</ReturnType>
+    <FormulaText>false</FormulaText>
+  </Condition>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</SimpleRuleDef>

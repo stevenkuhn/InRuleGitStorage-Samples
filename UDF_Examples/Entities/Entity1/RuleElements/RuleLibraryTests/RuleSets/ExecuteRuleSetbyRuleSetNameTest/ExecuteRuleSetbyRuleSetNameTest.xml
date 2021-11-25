@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="512ceefb-206e-4e1c-a624-367dc6311321"
+  Name="ExecuteRuleSetbyRuleSetNameTest">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="fce128d0-9728-4164-ae0a-1ceea13a3284"
+      Name="ExecuteTestRuleSet">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="UDFUtils.UdfLibrary.RuleLibrary.Udf.ExecuteRuleSetbyRuleSetName(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="UDFUtils.UdfLibrary.RuleLibrary.Udf.ExecuteRuleSetbyRuleSetName(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="UDFUtils.UdfLibrary.RuleLibrary.Udf.AreAllRulesTrueByRuleSetName(&lt;Arg Name=&quot;ruleSetName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="StringDesigner" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3"
+              Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="ExecuteMethodActionDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="8ac6057a-182a-405d-a67d-e001da6a805c"
+        Name="ExecuteTestRuleSet">
+        <AliasName>RuleLibrary</AliasName>
+        <MethodName>ExecuteRuleSetbyRuleSetName</MethodName>
+        <MethodReturnAssignTo />
+        <ParameterValues>
+          <ExecuteMethodActionParamDef
+            Name="ruleSetName">
+            <FullTypeName>System.String</FullTypeName>
+            <IsOut>false</IsOut>
+            <ArgValue>
+              <FormulaText>"TestRuleSet"</FormulaText>
+            </ArgValue>
+          </ExecuteMethodActionParamDef>
+        </ParameterValues>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

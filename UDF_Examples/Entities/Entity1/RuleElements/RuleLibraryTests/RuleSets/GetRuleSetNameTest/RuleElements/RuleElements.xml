@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleElementDefCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleElementDef xmlns:q1="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q1:LanguageRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="b7aa5de9-15d8-4f85-8e37-530fddc9ed02"
+    Name="b7aa5de9-15d8-4f85-8e37-530fddc9ed02">
+    <q1:HasContextVersionSettings>false</q1:HasContextVersionSettings>
+  </RuleElementDef>
+  <RuleElementDef xmlns:q2="http://www.inrule.com/XmlSchema/Schema"
+    xsi:type="q2:FireNotificationActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="414434df-f355-49ab-b497-8f9aee45fb36"
+    Name="414434df-f355-49ab-b497-8f9aee45fb36">
+    <q2:NotificationType>Informational</q2:NotificationType>
+    <q2:NotificationMessage>
+      <q2:FormulaParseFormat>Token</q2:FormulaParseFormat>
+      <q2:FormulaText />
+    </q2:NotificationMessage>
+  </RuleElementDef>
+</RuleElementDefCollection>

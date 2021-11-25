@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetValueActionDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="6c705891-a2ba-4bcb-8584-e9597f9e8f38"
+  Name="SetValueGetEntityDisplayName">
+  <Element xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>Entity1.TextField1</FormulaText>
+  </Element>
+  <Value xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>SchemaLibrary.GetEntityDisplayName(ToString(GetEntityId(Entity2Field)))</FormulaText>
+  </Value>
+</SetValueActionDef>

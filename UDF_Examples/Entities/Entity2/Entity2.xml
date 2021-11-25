@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="50a18092-5cbb-419c-afcb-4fd003cb6ea2"
+  Name="Entity2"
+  DisplayName="Entity2 DisplayName">
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="946a9d10-f898-4972-8195-25f85eefeb02"
+      Name="Field2"
+      DataType="String">
+      <DefaultValue>"ble"</DefaultValue>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="4714a0af-f8c8-4f51-b7bd-ddd1eeea636f"
+      Name="Field5"
+      DataType="String">
+      <DefaultValue>"bla"</DefaultValue>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="f5f03fde-d9cf-4105-8d2e-688c46671773"
+      Name="Field1"
+      DataType="Integer" />
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</EntityDef>

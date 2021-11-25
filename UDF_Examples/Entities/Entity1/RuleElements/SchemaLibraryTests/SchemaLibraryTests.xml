@@ -1,0 +1,1421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetFolderDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="32b1b9a0-7899-4600-8297-2b2058193922"
+  Name="SchemaLibraryTests">
+  <RuleSets xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="9096da17-c60e-4623-942a-f8ea3c5be111"
+      Name="IsFieldValidTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="SetValueActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="0c45e081-ca1a-4560-b85d-de293b729c9c"
+          Name="IsFieldValid">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.BooleanField.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="SchemaLib.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLib.Udf.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="SchemaLib.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="UDFUtils.Entity1.Field3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <Element>
+            <FormulaText>BooleanField</FormulaText>
+          </Element>
+          <Value>
+            <FormulaText>SchemaLibrary.IsFieldValid("TextField3")</FormulaText>
+          </Value>
+        </RuleElementDef>
+        <RuleElementDef
+          xsi:type="SetFieldInvalidActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="f8bbfd09-9e7c-408b-9cce-b3bea6e18d96"
+          Name="SetTextField3Invalid">
+          <Message>
+            <FormulaParseFormat>Token</FormulaParseFormat>
+            <FormulaText>Field 3 is invalid</FormulaText>
+          </Message>
+          <FieldName>TextField3</FieldName>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="5ccd614e-86d4-4cfe-b319-a5f54779b934"
+      Name="SetFieldValueTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="c61cfdde-094e-40b2-8633-337587649cc3"
+          Name="SetFieldValue">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.4"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.6"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="ExecuteMethodActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="be657d31-8132-4998-a4bc-3e29ea9f8b90"
+            Name="SetFieldValue">
+            <AliasName>SchemaLibrary</AliasName>
+            <MethodName>SetFieldValue</MethodName>
+            <MethodReturnAssignTo />
+            <ParameterValues>
+              <ExecuteMethodActionParamDef
+                Name="fieldName">
+                <FullTypeName>System.String</FullTypeName>
+                <IsOut>false</IsOut>
+                <ArgValue>
+                  <FormulaText>"TextField1"</FormulaText>
+                </ArgValue>
+              </ExecuteMethodActionParamDef>
+              <ExecuteMethodActionParamDef
+                Name="value">
+                <FullTypeName>System.String</FullTypeName>
+                <IsOut>false</IsOut>
+                <ArgValue>
+                  <FormulaText>"MyFieldValueTest"</FormulaText>
+                </ArgValue>
+              </ExecuteMethodActionParamDef>
+            </ParameterValues>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="879f5608-59ce-4c79-b5c7-345073a335a8"
+      Name="GetFieldValueTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="ExecuteMethodActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="6ce41271-f609-4fd7-a311-e5634d663356"
+          Name="GetFieldValue">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="UDFUtils.UdfLibrary.SchemaLib.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLib.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLib.Udf.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.4"
+                  Value="UDFUtils.UdfLibrary.SchemaLib.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.6"
+                  Value="UDFUtils.UdfLibrary.StringLib.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <AliasName>SchemaLibrary</AliasName>
+          <MethodName>GetFieldValue</MethodName>
+          <MethodReturnAssignTo>TextField3</MethodReturnAssignTo>
+          <ParameterValues>
+            <ExecuteMethodActionParamDef
+              Name="fieldName">
+              <ArgName>fieldName</ArgName>
+              <FullTypeName>System.String</FullTypeName>
+              <IsOut>false</IsOut>
+              <ArgValue>
+                <FormulaText>"TextField1"</FormulaText>
+              </ArgValue>
+            </ExecuteMethodActionParamDef>
+          </ParameterValues>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="4111ff37-bfea-4ca4-a27c-7c9b516a19d6"
+      Name="GetFieldCountFromDefTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="FireNotificationActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="8016db83-3cf2-4794-81a4-a9256dfc1f8e"
+          Name="FireNotificationGetFieldCount">
+          <NotificationType>Informational</NotificationType>
+          <NotificationMessage>
+            <FormulaParseFormat>Token</FormulaParseFormat>
+            <FormulaText>&lt;%SchemaLibrary.GetFieldCountfromDef()%&gt;</FormulaText>
+          </NotificationMessage>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="2300c628-f31d-4d30-9b53-328d27bd72af"
+      Name="AllEntityFieldsAreValidTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="FireNotificationActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="add89163-9694-4889-ae2c-f76f5e2e41a3"
+          Name="FireNotificationIsEntityValid">
+          <NotificationType>Informational</NotificationType>
+          <NotificationMessage>
+            <FormulaParseFormat>Token</FormulaParseFormat>
+            <FormulaText>&lt;%SchemaLibrary.AllEntityFieldsAreValid()%&gt;</FormulaText>
+          </NotificationMessage>
+        </RuleElementDef>
+        <RuleElementDef
+          xsi:type="SetFieldInvalidActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="ae9a5927-8e17-41a9-a74a-8b88284e914e"
+          Name="SetTextField3Invalid">
+          <Message>
+            <FormulaParseFormat>Token</FormulaParseFormat>
+            <FormulaText>Field 3 is invalid</FormulaText>
+          </Message>
+          <FieldName>TextField3</FieldName>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="130784ce-2692-4d2b-9d7d-e2ab65d4c172"
+      Name="GetEntityRuleSetNamesTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="FireNotificationActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="61b0fd5e-e12e-49b1-ba16-090ad80b6c34"
+          Name="FireNotificationGetEntityRuleSetNames">
+          <NotificationType>Informational</NotificationType>
+          <NotificationMessage>
+            <FormulaParseFormat>Token</FormulaParseFormat>
+            <FormulaText>&lt;%SchemaLibrary.GetEntityRuleSetNames()%&gt;</FormulaText>
+          </NotificationMessage>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="3428b13b-01c7-4177-ab33-f08b76155a24"
+      Name="GetEntityFieldValuesTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="FireNotificationActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="1461381f-19e9-438f-a010-a30dca93586c"
+          Name="FireNotificationGetEntityFieldValues">
+          <NotificationType>Informational</NotificationType>
+          <NotificationMessage>
+            <FormulaParseFormat>Token</FormulaParseFormat>
+            <FormulaText>&lt;%SchemaLibrary.GetEntityFieldValues()%&gt;</FormulaText>
+          </NotificationMessage>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="3400c099-cf82-4c57-a603-3072d6312d26"
+      Name="SetCollectionMemberValuesTest"
+      AuthoringIsExpanded="false">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="ExecuteMethodActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="aa70408f-bd2b-4547-88ba-8a710fb5616c"
+          Name="SetCollectionMemberValues">
+          <AliasName>SchemaLibrary</AliasName>
+          <MethodName>SetCollectionMemberValues</MethodName>
+          <MethodReturnAssignTo>TextField1</MethodReturnAssignTo>
+          <ParameterValues>
+            <ExecuteMethodActionParamDef
+              Name="collectionName">
+              <ArgName>collectionName</ArgName>
+              <FullTypeName>System.String</FullTypeName>
+              <IsOut>false</IsOut>
+              <ArgValue>
+                <FormulaText>"Entity2Collection"</FormulaText>
+              </ArgValue>
+            </ExecuteMethodActionParamDef>
+            <ExecuteMethodActionParamDef
+              Name="fieldName">
+              <ArgName>fieldName</ArgName>
+              <FullTypeName>System.String</FullTypeName>
+              <IsOut>false</IsOut>
+              <ArgValue>
+                <FormulaText>"Field2"</FormulaText>
+              </ArgValue>
+            </ExecuteMethodActionParamDef>
+            <ExecuteMethodActionParamDef
+              Name="value">
+              <ArgName>value</ArgName>
+              <FullTypeName>System.String</FullTypeName>
+              <IsOut>false</IsOut>
+              <ArgValue>
+                <FormulaText>"This is my test collection field value"</FormulaText>
+              </ArgValue>
+            </ExecuteMethodActionParamDef>
+            <ExecuteMethodActionParamDef
+              Name="index">
+              <ArgName>index</ArgName>
+              <FullTypeName>System.String</FullTypeName>
+              <IsOut>false</IsOut>
+              <ArgValue>
+                <FormulaText>2</FormulaText>
+              </ArgValue>
+            </ExecuteMethodActionParamDef>
+          </ParameterValues>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="5bed0327-d1da-4d47-85e7-e49afd5780ba"
+      Name="GetSetandListPropertiesTests">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="a882598a-7bc9-4b72-a5c4-631670510d20"
+          Name="GetSetandListPropertiesRules">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="ActionSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="ActionSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.3"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.4"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.6"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.7"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.8"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0.9"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.3"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.4"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.6"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.7"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.8"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1.9"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.1"
+                  Value="UDFUtils.Entity1.TextField3.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3"
+                  Value="SchemaLibrary.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.3"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.4"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2.3.6"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3"
+                  Value="FireNotificationTemplateDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.0"
+                  Value="FireNotificationWithSettingsTemplateDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.1"
+                  Value="SchemaLibrary.ListProperties(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.1.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.ListProperties(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.1.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.1.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3.1.3"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SimpleRuleDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="f07f0ff6-d186-471f-a906-ccc9769afa36"
+            Name="GetSetandListPropertiesRules">
+            <Condition>
+              <ReturnType>Boolean</ReturnType>
+              <FormulaText>true</FormulaText>
+            </Condition>
+            <SubRules>
+              <RuleElementDef
+                xsi:type="ExecuteMethodActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="ecd2ca3f-9734-4676-91b4-7ed3d64ba5c7"
+                Name="ExecuteMethod1">
+                <AliasName>SchemaLibrary</AliasName>
+                <MethodName>SetFieldProperty</MethodName>
+                <MethodReturnAssignTo />
+                <ParameterValues>
+                  <ExecuteMethodActionParamDef
+                    Name="field">
+                    <FullTypeName>System.String</FullTypeName>
+                    <IsOut>false</IsOut>
+                    <ArgValue>
+                      <FormulaText>"TextField1"</FormulaText>
+                    </ArgValue>
+                  </ExecuteMethodActionParamDef>
+                  <ExecuteMethodActionParamDef
+                    Name="property">
+                    <FullTypeName>System.String</FullTypeName>
+                    <IsOut>false</IsOut>
+                    <ArgValue>
+                      <FormulaText>"aaa"</FormulaText>
+                    </ArgValue>
+                  </ExecuteMethodActionParamDef>
+                  <ExecuteMethodActionParamDef
+                    Name="value">
+                    <FullTypeName>System.String</FullTypeName>
+                    <IsOut>false</IsOut>
+                    <ArgValue>
+                      <FormulaText>"X"</FormulaText>
+                    </ArgValue>
+                  </ExecuteMethodActionParamDef>
+                </ParameterValues>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="ExecuteMethodActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="ad1bc71f-6308-4bfb-a834-f84640562bfa"
+                Name="ExecuteMethod2">
+                <AliasName>SchemaLibrary</AliasName>
+                <MethodName>SetFieldProperty</MethodName>
+                <MethodReturnAssignTo />
+                <ParameterValues>
+                  <ExecuteMethodActionParamDef
+                    Name="field">
+                    <FullTypeName>System.String</FullTypeName>
+                    <IsOut>false</IsOut>
+                    <ArgValue>
+                      <FormulaText>"TextField1"</FormulaText>
+                    </ArgValue>
+                  </ExecuteMethodActionParamDef>
+                  <ExecuteMethodActionParamDef
+                    Name="property">
+                    <FullTypeName>System.String</FullTypeName>
+                    <IsOut>false</IsOut>
+                    <ArgValue>
+                      <FormulaText>"bbb"</FormulaText>
+                    </ArgValue>
+                  </ExecuteMethodActionParamDef>
+                  <ExecuteMethodActionParamDef
+                    Name="value">
+                    <FullTypeName>System.String</FullTypeName>
+                    <IsOut>false</IsOut>
+                    <ArgValue>
+                      <FormulaText>"Z"</FormulaText>
+                    </ArgValue>
+                  </ExecuteMethodActionParamDef>
+                </ParameterValues>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="SetValueActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="e8f4520c-f935-485c-bc1c-a086f12cdef0"
+                Name="SetValue3">
+                <Element>
+                  <FormulaText>TextField3</FormulaText>
+                </Element>
+                <Value>
+                  <FormulaText>SchemaLibrary.GetFieldProperty("TextField1", "aaa")</FormulaText>
+                </Value>
+              </RuleElementDef>
+              <RuleElementDef
+                xsi:type="FireNotificationActionDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="20695db8-a278-4c1f-9ffd-63adee51e2cd"
+                Name="FireNotification1">
+                <NotificationType>Informational</NotificationType>
+                <NotificationMessage>
+                  <FormulaParseFormat>Token</FormulaParseFormat>
+                  <FormulaText>&lt;%SchemaLibrary.ListProperties("TextField1")%&gt;</FormulaText>
+                </NotificationMessage>
+              </RuleElementDef>
+            </SubRules>
+            <HasContextVersionSettings>false</HasContextVersionSettings>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="c8992703-8df3-48f7-b61d-be46bf1eec36"
+      Name="GetValueFromValueListTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="47e62e9c-4a1a-4037-880c-ff43f1a97761"
+          Name="GetValuefromValueList">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField1.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="SchemaLib.GetValueFromValueList(&lt;Arg Name=&quot;DisplayValue&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ValueListName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLib.Udf.GetValueFromValueList(&lt;Arg Name=&quot;DisplayValue&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ValueListName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLib.Udf.GetValueFromValueList(&lt;Arg Name=&quot;DisplayValue&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ValueListName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="SchemaLib.GetValueFromValueList(&lt;Arg Name=&quot;DisplayValue&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;ValueListName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="a9156bbd-fd3d-4167-8c6b-d14f0f03014b"
+            Name="GetValuefromValueList">
+            <Element>
+              <FormulaText>TextField1</FormulaText>
+            </Element>
+            <Value
+              LastAuthoringView="Syntax">
+              <FormulaText>SchemaLibrary.GetValueFromValueList("Value2Display", "MyValueList")</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="2393e809-64bf-4fdf-a2fc-c6379d601be3"
+      Name="LoopThroughCollectionTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="253ccb01-6546-4287-bf5b-67d2261fede3"
+          Name="LoopThroughCollection">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="SchemaLib.LoopThroughCollection(&lt;Arg Name=&quot;collectionName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLib.Udf.LoopThroughCollection(&lt;Arg Name=&quot;collectionName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="SchemaLib.LoopThroughCollection(&lt;Arg Name=&quot;collectionName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLib.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="SchemaLib.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLib.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="b3881781-5523-4477-b119-6eda8fca1d6c"
+            Name="LoopThroughCollection">
+            <Element>
+              <FormulaText>TextField1</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>SchemaLibrary.LoopThroughCollection("Entity2Collection", "Field2")</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="281c986c-21f9-44d1-a3e7-eb247821d8dd"
+      Name="GetEntityDislpayNameTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="SetValueActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="6c705891-a2ba-4bcb-8584-e9597f9e8f38"
+          Name="SetValueGetEntityDisplayName">
+          <Element>
+            <FormulaText>Entity1.TextField1</FormulaText>
+          </Element>
+          <Value>
+            <FormulaText>SchemaLibrary.GetEntityDisplayName(ToString(GetEntityId(Entity2Field)))</FormulaText>
+          </Value>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="0d4e648b-2222-4136-b949-b21de3f16caf"
+      Name="GetFieldAttributeValueTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="07701695-806c-4f2c-bd59-bcce8424a9ae"
+          Name="GetFieldAttributeValue">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SetValueStringAssignableString" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.Entity1.TextField2.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="SetValueBooleanAssignableBoolean" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="SchemaLibrary.GetFieldAttributeValue(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetFieldAttributeValue(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.1"
+                  Value="SchemaLibrary.GetFieldProperty(&lt;Arg Name=&quot;field&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;property&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.3"
+                  Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.4"
+                  Value="StringLibrary.TestScriptObject(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3.6"
+                  Value="StringLibrary.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="SetValueActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="a35f1a23-c86c-4bef-97d8-f7567953f39a"
+            Name="GetFieldAttributeValue">
+            <Element>
+              <FormulaText>TextField2</FormulaText>
+            </Element>
+            <Value>
+              <FormulaText>SchemaLibrary.GetFieldAttributeValue("TextField1", "mykeytest")</FormulaText>
+            </Value>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="bd86285a-3084-4009-a423-4a7c62dc553e"
+      Name="DictionaryTests">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="4258ca73-904e-4747-b19f-bfad2c1dd0d1"
+          Name="CreateDictionary">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="ExecuteMethodActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="f72d9aef-10b9-4708-850d-21b42bcb0114"
+            Name="CreateDictionary">
+            <AliasName>SchemaLibrary</AliasName>
+            <MethodName>CreateDictionary</MethodName>
+            <MethodReturnAssignTo />
+            <ParameterValues>
+              <ExecuteMethodActionParamDef
+                Name="dictionaryName">
+                <FullTypeName>System.String</FullTypeName>
+                <IsOut>false</IsOut>
+                <ArgValue>
+                  <FormulaText>"MyDictionary"</FormulaText>
+                </ArgValue>
+              </ExecuteMethodActionParamDef>
+            </ParameterValues>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="84a2611f-d04b-4b59-b598-c4d3194e59e4"
+          Name="LoadDictionary">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.LoadDictionary(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.LoadDictionary(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.TestScriptObject(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.4"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.SetFieldValue(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.6"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.7"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.CreateDictionary(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.8"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.9"
+                  Value="UDFUtils.UdfLibrary.StringLibrary.Udf.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;).StaticAction" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="ExecuteMethodActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="1b061d6c-6225-4f29-96cc-699e0d3efcba"
+            Name="LoadDictionary">
+            <AliasName>SchemaLibrary</AliasName>
+            <MethodName>LoadDictionary</MethodName>
+            <MethodReturnAssignTo />
+            <ParameterValues>
+              <ExecuteMethodActionParamDef
+                Name="key">
+                <FullTypeName>System.String</FullTypeName>
+                <IsOut>false</IsOut>
+                <ArgValue>
+                  <FormulaText>"MyTestKey"</FormulaText>
+                </ArgValue>
+              </ExecuteMethodActionParamDef>
+              <ExecuteMethodActionParamDef
+                Name="value">
+                <FullTypeName>System.String</FullTypeName>
+                <IsOut>false</IsOut>
+                <ArgValue>
+                  <FormulaText>"MyTestValue"</FormulaText>
+                </ArgValue>
+              </ExecuteMethodActionParamDef>
+              <ExecuteMethodActionParamDef
+                Name="dictionaryName">
+                <FullTypeName>System.String</FullTypeName>
+                <IsOut>false</IsOut>
+                <ArgValue>
+                  <FormulaText>"MyDictionary"</FormulaText>
+                </ArgValue>
+              </ExecuteMethodActionParamDef>
+            </ParameterValues>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="1fb8064b-11af-4b1b-bac9-7fdce780e0e4"
+          Name="GetValuesfromDictionary">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="FireNotificationTemplateDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="FireNotificationWithSettingsTemplateDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="SchemaLibrary.GetDictionaryValue(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.0"
+                  Value="UDFUtils.UdfLibrary.SchemaLibrary.Udf.GetDictionaryValue(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;).StaticAction" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.1"
+                  Value="SchemaLibrary.GetDictionaryValue(&lt;Arg Name=&quot;dictionaryName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.3"
+                  Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.4"
+                  Value="StringLibrary.TestScriptObject(&lt;Arg Name=&quot;key&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1.6"
+                  Value="StringLibrary.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="FireNotificationActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="ea387623-8fb0-4308-a276-38cedf4cdde3"
+            Name="GetValuesfromDictionary">
+            <NotificationType>Informational</NotificationType>
+            <NotificationMessage>
+              <FormulaParseFormat>Token</FormulaParseFormat>
+              <FormulaText>&lt;%SchemaLibrary.GetDictionaryValue("MyDictionary", "MyTestKey")%&gt;</FormulaText>
+            </NotificationMessage>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1eb7daf7-30bf-413a-ade8-10e0c16b6255"
+      Name="CreateEntityandAssignValuesTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="SetValueActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="c223d945-a363-4428-ba13-9d102b7b44ff"
+          Name="CreateEntityandAssignValues">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SchemaLibrary.CreateEntityandAssignValues(&lt;Arg Name=&quot;entityName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SchemaLibrary.CreateEntityandAssignValues(&lt;Arg Name=&quot;entityName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="SchemaLibrary.CreateEntityandAssignValues(&lt;Arg Name=&quot;entityName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.4"
+                  Value="SchemaLibrary.IsFieldValid(&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.5"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.6"
+                  Value="StringLibrary.GetListItemByIndex(&lt;Arg Name=&quot;list&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;index&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.7"
+                  Value="SchemaLibrary.SetCollectionMemberValues(&lt;Arg Name=&quot;collectionName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;fieldName&quot; Type=&quot;System.String&quot; /&gt;,&lt;Arg Name=&quot;value&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.8"
+                  Value="StringDesigner" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.9"
+                  Value="StringLibrary.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <Element
+            LastAuthoringView="Syntax">
+            <FormulaText>Entity2Field</FormulaText>
+          </Element>
+          <Value
+            LastAuthoringView="BusinessLangauge">
+            <FormulaText>SchemaLibrary.CreateEntityandAssignValues("Entity2", "Field2", "MyTestValueForField2")</FormulaText>
+          </Value>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+    <RuleSetDefBase
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="b092b377-67d7-4da6-bf3a-abb152d427de"
+      Name="IsDaylightSavingTimeTest">
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="SetValueActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="2ba5463a-c24c-44b9-8805-af5eb470806b"
+          Name="SetValue1">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="SchemaLibrary.IsDST(&lt;Arg Name=&quot;checkDate&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="SchemaLibrary.IsDST(&lt;Arg Name=&quot;checkDate&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="SchemaLibrary.IsDST(&lt;Arg Name=&quot;checkDate&quot; Type=&quot;System.String&quot; /&gt;)).Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="StringLibrary.GetElapsedTimeFromSeconds(&lt;Arg Name=&quot;seconds&quot; Type=&quot;System.Int32&quot; /&gt;)).Implicit" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <Element>
+            <FormulaText>BooleanField</FormulaText>
+          </Element>
+          <Value
+            LastAuthoringView="Syntax">
+            <FormulaText>SchemaLibrary.IsDaylightSavingTime(DateField)</FormulaText>
+          </Value>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleSetDefBase>
+  </RuleSets>
+</RuleSetFolderDef>

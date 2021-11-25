@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="bd5d2f07-d8f6-4c75-89d0-a3cd8b0eed46"
+  Name="MapEntityParent"
+  DisplayName="Map Entity Parent">
+  <RuleElements xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="5c3d2041-ae66-489a-a951-faaed12810c1"
+      Name="MapFields">
+      <FireMode>Auto</FireMode>
+      <RunMode>Sequential</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="ExecuteMethodActionDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="7a195f20-3ecd-409c-a48b-99339c0b1559"
+          Name="MapEntityData">
+          <AliasName>SchemaLibrary</AliasName>
+          <MethodName>MapEntity</MethodName>
+          <MethodReturnAssignTo>TargetEntity</MethodReturnAssignTo>
+          <ParameterValues>
+            <ExecuteMethodActionParamDef
+              Name="sourceEntity">
+              <ArgName>sourceEntity</ArgName>
+              <FullTypeName />
+              <IsOut>false</IsOut>
+              <ArgValue>
+                <FormulaText>SourceEntity</FormulaText>
+              </ArgValue>
+            </ExecuteMethodActionParamDef>
+          </ParameterValues>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </RuleElements>
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="d64567bb-0620-44ca-b8f6-210918c18ada"
+      Name="SourceEntity"
+      DataType="Entity"
+      DataTypeEntityName="Source"
+      DisplayName="Source Entity">
+      <DefaultValue />
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="03cb34c6-bf81-438d-b96c-7eb9b9bd290d"
+      Name="TargetEntity"
+      DataType="Entity"
+      DataTypeEntityName="Target"
+      DisplayName="Target Entity" />
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</EntityDef>

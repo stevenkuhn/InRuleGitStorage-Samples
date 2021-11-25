@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="d80c881c-dc0a-4d1c-917c-17459402c665"
+  Name="TestIndependentRuleSetWithParameters">
+  <Parameters xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleSetParameterDef
+      Guid="4b4111bc-a0f5-4cb7-aee6-aa07775e4a32"
+      Name="Parameter1"
+      DataType="String" />
+    <RuleSetParameterDef
+      Guid="c5b0cdc6-7842-462d-b479-aef595cabdc9"
+      Name="Parameter2"
+      DataType="String" />
+  </Parameters>
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="FireNotificationActionDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="74f9dfdb-cacd-4bfe-97ae-d272b379cc82"
+      Name="FireNotification1">
+      <NotificationType>Informational</NotificationType>
+      <NotificationMessage>
+        <FormulaParseFormat>Token</FormulaParseFormat>
+        <FormulaText>This is my Independent Rule Set With Parameters. Here is my parameter 1 value:  &lt;%Parameter1%&gt;. Here is my parameter 2 value:  &lt;%Parameter2%&gt;</FormulaText>
+      </NotificationMessage>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>
