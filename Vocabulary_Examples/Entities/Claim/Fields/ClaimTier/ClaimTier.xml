@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="2e84b396-0ae2-436e-a4e5-0409da3a6f96"
+  Name="ClaimTier"
+  DataType="String"
+  DisplayName="Claim Tier">
+  <ValueList
+    Guid="dbb3fe1b-3e0e-4198-9443-2eb588ef6f09" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Parameters />
+    <SourceValueListName>DenialTierList</SourceValueListName>
+  </ValueList>
+</FieldDef>

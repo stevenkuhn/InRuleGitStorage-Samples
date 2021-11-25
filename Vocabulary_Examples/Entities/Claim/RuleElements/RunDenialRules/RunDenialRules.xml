@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="349333c9-6123-42e4-907f-d85f002a22d2"
+  Name="RunDenialRules">
+  <Parameters xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleSetParameterDef
+      Guid="1691e2c8-a0a7-46d5-a184-5bdae42de217"
+      Name="PendingTransactionTier"
+      DataType="String"
+      AutoCreate="true" />
+  </Parameters>
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="DecisionTableDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="8d6581e9-0795-416e-9888-1a83e4674641"
+      Name="PendingTransactionDenialsbyTier">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ColumnWidths</Name>
+            <Guid>30321bef-a782-4c36-975e-25f034c9bf0d</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="Widths"
+              Value="PendingTransactionProcessingTier=120,ExecuteTierRuleSet=120" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Conditions>
+        <ConditionDimensionDef>
+          <DimensionID>9439f044-74d8-40bc-8698-a31850a1269e</DimensionID>
+          <Name>PendingTransactionProcessingTier</Name>
+          <TargetExpression>PendingTransactionTier</TargetExpression>
+          <TargetDataType>String</TargetDataType>
+          <ConditionValues>
+            <ConditionValueDef>
+              <ValueID>e2c2bbe7-fde7-4852-ac00-360124032df8</ValueID>
+              <Tokens>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="Value"
+                  Value="1" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="DisplayValue"
+                  Value="Tier 1" />
+              </Tokens>
+              <ConditionType>EqualTo</ConditionType>
+              <IsFromMasterList>true</IsFromMasterList>
+            </ConditionValueDef>
+            <ConditionValueDef>
+              <ValueID>7fc0ddef-1fea-4fbe-bdec-6266960e3df4</ValueID>
+              <Tokens>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="Value"
+                  Value="2" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="DisplayValue"
+                  Value="Tier 2" />
+              </Tokens>
+              <ConditionType>EqualTo</ConditionType>
+              <IsFromMasterList>true</IsFromMasterList>
+            </ConditionValueDef>
+            <ConditionValueDef>
+              <ValueID>f1d3022d-5f94-4f3a-a910-b8256dd6db1d</ValueID>
+              <Tokens>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="Value"
+                  Value="3" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="DisplayValue"
+                  Value="Tier 3" />
+              </Tokens>
+              <ConditionType>EqualTo</ConditionType>
+              <IsFromMasterList>true</IsFromMasterList>
+            </ConditionValueDef>
+          </ConditionValues>
+          <ValueList
+            Guid="ea68b9cd-2bfd-4108-8afc-5fbc52bb42dd">
+            <Parameters />
+            <SourceValueListName>DenialTierList</SourceValueListName>
+          </ValueList>
+          <UseFieldsValueList>false</UseFieldsValueList>
+        </ConditionDimensionDef>
+      </Conditions>
+      <Actions>
+        <ActionDimensionDef>
+          <DisplayName>ExecuteTierRuleSet</DisplayName>
+          <DimensionID>05739023-79fb-4c8b-9a19-45efe5739833</DimensionID>
+          <FieldName>ExecuteTierRuleSet</FieldName>
+          <ActionValues>
+            <ActionValueDef>
+              <ValueID>c29996f2-bcd1-4ad5-9c93-bebf18d37c1b</ValueID>
+              <Tokens>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="DisplayValue"
+                  Value="Tier1" />
+              </Tokens>
+              <IsFromMasterList>true</IsFromMasterList>
+              <RuleElement
+                xsi:type="TemplateValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="d2ad9046-5dda-47e9-be8b-6c34da3092bd">
+                <Attributes>
+                  <anyType
+                    xsi:type="CollectionItem">
+                    <Key>
+                      <Name>ReservedAttributeTokenKey</Name>
+                      <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+                    </Key>
+                    <Collection>
+                      <anyType
+                        xsi:type="XmlSerializableStringDictionaryItem"
+                        Key="0"
+                        Value="Vocabulary_Utils.Claim.VocabularyDef1.ExecuteTier1Rules" />
+                    </Collection>
+                  </anyType>
+                </Attributes>
+                <PlaceholderValues>
+                  <Dictionary />
+                </PlaceholderValues>
+                <SourceTemplateGuid>8b7e2be3-7534-40d8-a11f-41535baac991</SourceTemplateGuid>
+                <CompiledTypeName>InRule.Repository.RuleElements.ExecuteMemberRuleSetActionDef, InRule.Repository</CompiledTypeName>
+              </RuleElement>
+            </ActionValueDef>
+            <ActionValueDef>
+              <ValueID>83a4f4a5-8214-4109-9837-3dd79cdf2068</ValueID>
+              <Tokens>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="DisplayValue"
+                  Value="Tier2" />
+              </Tokens>
+              <IsFromMasterList>true</IsFromMasterList>
+              <RuleElement
+                xsi:type="TemplateValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="eadce35c-3ac7-4df3-a395-46abd083aeb2">
+                <Attributes>
+                  <anyType
+                    xsi:type="CollectionItem">
+                    <Key>
+                      <Name>ReservedAttributeTokenKey</Name>
+                      <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+                    </Key>
+                    <Collection>
+                      <anyType
+                        xsi:type="XmlSerializableStringDictionaryItem"
+                        Key="0"
+                        Value="Vocabulary_Utils.Claim.VocabularyDef1.ExecuteTier2Rules" />
+                    </Collection>
+                  </anyType>
+                </Attributes>
+                <PlaceholderValues>
+                  <Dictionary />
+                </PlaceholderValues>
+                <SourceTemplateGuid>708ed66d-adf2-4b21-846d-3d712008f63f</SourceTemplateGuid>
+                <CompiledTypeName>InRule.Repository.RuleElements.ExecuteMemberRuleSetActionDef, InRule.Repository</CompiledTypeName>
+              </RuleElement>
+            </ActionValueDef>
+            <ActionValueDef>
+              <ValueID>b481c37b-5ea0-4278-b209-89847fdc7e49</ValueID>
+              <Tokens>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="DisplayValue"
+                  Value="Tier3" />
+              </Tokens>
+              <IsFromMasterList>true</IsFromMasterList>
+              <RuleElement
+                xsi:type="TemplateValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="7145479f-f09c-4e1f-8805-cead5a2452dd">
+                <Attributes>
+                  <anyType
+                    xsi:type="CollectionItem">
+                    <Key>
+                      <Name>ReservedAttributeTokenKey</Name>
+                      <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+                    </Key>
+                    <Collection>
+                      <anyType
+                        xsi:type="XmlSerializableStringDictionaryItem"
+                        Key="0"
+                        Value="Vocabulary_Utils.Claim.VocabularyDef1.ExecuteTier3Rules" />
+                    </Collection>
+                  </anyType>
+                </Attributes>
+                <PlaceholderValues>
+                  <Dictionary />
+                </PlaceholderValues>
+                <SourceTemplateGuid>6e1c5788-88cb-491f-b1f8-180513914e4a</SourceTemplateGuid>
+                <CompiledTypeName>InRule.Repository.RuleElements.ExecuteMemberRuleSetActionDef, InRule.Repository</CompiledTypeName>
+              </RuleElement>
+            </ActionValueDef>
+          </ActionValues>
+          <UseLanguageRules>true</UseLanguageRules>
+          <UseFieldsValueList>false</UseFieldsValueList>
+        </ActionDimensionDef>
+      </Actions>
+      <Decisions>
+        <DecisionDef>
+          <DecisionID>a8d6b632-db10-4061-8dfb-1ab3b5a44db6</DecisionID>
+          <ConditionNodes>
+            <ConditionNodeDef>
+              <SourceDimensionID>9439f044-74d8-40bc-8698-a31850a1269e</SourceDimensionID>
+              <SourceValueID>e2c2bbe7-fde7-4852-ac00-360124032df8</SourceValueID>
+            </ConditionNodeDef>
+          </ConditionNodes>
+          <ActionNodes>
+            <ActionNodeDef>
+              <SourceDimensionID>05739023-79fb-4c8b-9a19-45efe5739833</SourceDimensionID>
+              <SourceValueID>c29996f2-bcd1-4ad5-9c93-bebf18d37c1b</SourceValueID>
+            </ActionNodeDef>
+          </ActionNodes>
+        </DecisionDef>
+        <DecisionDef>
+          <DecisionID>31238daa-25f7-4105-956d-34d079cd3aa2</DecisionID>
+          <ConditionNodes>
+            <ConditionNodeDef>
+              <SourceDimensionID>9439f044-74d8-40bc-8698-a31850a1269e</SourceDimensionID>
+              <SourceValueID>7fc0ddef-1fea-4fbe-bdec-6266960e3df4</SourceValueID>
+            </ConditionNodeDef>
+          </ConditionNodes>
+          <ActionNodes>
+            <ActionNodeDef>
+              <SourceDimensionID>05739023-79fb-4c8b-9a19-45efe5739833</SourceDimensionID>
+              <SourceValueID>83a4f4a5-8214-4109-9837-3dd79cdf2068</SourceValueID>
+            </ActionNodeDef>
+          </ActionNodes>
+        </DecisionDef>
+        <DecisionDef>
+          <DecisionID>cc150d06-1036-4061-adbd-4d1aa6291204</DecisionID>
+          <ConditionNodes>
+            <ConditionNodeDef>
+              <SourceDimensionID>9439f044-74d8-40bc-8698-a31850a1269e</SourceDimensionID>
+              <SourceValueID>f1d3022d-5f94-4f3a-a910-b8256dd6db1d</SourceValueID>
+            </ConditionNodeDef>
+          </ConditionNodes>
+          <ActionNodes>
+            <ActionNodeDef>
+              <SourceDimensionID>05739023-79fb-4c8b-9a19-45efe5739833</SourceDimensionID>
+              <SourceValueID>b481c37b-5ea0-4278-b209-89847fdc7e49</SourceValueID>
+            </ActionNodeDef>
+          </ActionNodes>
+        </DecisionDef>
+      </Decisions>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+      <UseCompatibilityMode>true</UseCompatibilityMode>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

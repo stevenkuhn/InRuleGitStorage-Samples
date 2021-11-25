@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="23e567d9-0856-4632-8710-8464938c0210"
+  Name="Denial">
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="6e96b316-796c-4471-b06f-1eceeb01435e"
+      Name="DenialType"
+      DataType="String"
+      DisplayName="Denial Type">
+      <ValueList
+        Guid="ed4932c2-c25c-44c4-84fe-fc704ed8140e">
+        <Parameters />
+        <SourceValueListName>DenialTypeList</SourceValueListName>
+      </ValueList>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="6cc00d65-fb06-4c23-801b-b841d8674e95"
+      Name="DenialReason"
+      DataType="String"
+      DisplayName="Denial Reason">
+      <ValueList
+        Guid="bb2b73b3-7108-4b0f-84f8-80195f07cb58">
+        <Parameters />
+        <SourceValueListName>DenialReasonList</SourceValueListName>
+      </ValueList>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="06c40589-fd79-4f8e-b489-879b8bba8343"
+      Name="EntityID"
+      DataType="Integer"
+      DisplayName="Entity ID" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="a5c6de79-8b0d-4535-b7b6-40bd73f2b071"
+      Name="Claimant"
+      DataType="Entity"
+      DataTypeEntityName="Claimant" />
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</EntityDef>

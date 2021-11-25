@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="5aefa775-f7a7-42fe-a1d4-4a581a04b6f3"
+  Name="GetIncurredByFinancialGroup">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Get Incurred By Financial Group</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Get incurred amount for group $financialGroup$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="04423017-df02-4d58-ade5-e22e7ba09432"
+      Name="financialGroup">
+      <DisplayText>[financialGroup]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="8adf1a8e-9ad7-45b4-8d10-716549bdbe75"
+          Name="DataTypeValueDef1">
+          <DataType>Integer</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <ExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">If(($financialGroup$ &lt; 1) or ($financialGroup$ &gt; 4), 0, If($financialGroup$ = 1, If(Claim.Status &lt;&gt; "C", Largest(Claim.Reserved_Group1, Claim.Paid_Group1), Claim.Paid_Group1), If($financialGroup$ = 2, If(Claim.Status &lt;&gt; "C", Largest(Claim.Reserved_Group2, Claim.Paid_Group2), Claim.Paid_Group2), If($financialGroup$ = 3, If(Claim.Status &lt;&gt; "C", Largest(Claim.Reserved_Group3, Claim.Paid_Group3), Claim.Paid_Group3), If($financialGroup$ = 4, If(Claim.Status &lt;&gt; "C", Largest(Claim.Reserved_Group4, Claim.Paid_Group4), Claim.Paid_Group4), 0)))))</ExpressionPrototype>
+  <FunctionName xmlns="http://www.inrule.com/XmlSchema/Schema">GetIncurredByFinancialGroup</FunctionName>
+  <SelectionMode xmlns="http://www.inrule.com/XmlSchema/Schema">Template</SelectionMode>
+  <Impersonates xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ImpersonationDef
+      xsi:type="DataTypeImpersonationDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="8696e116-0e2b-4c4c-b299-2199f9e5baf8"
+      Name="DataTypeImpersonationDef2">
+      <DataType>Number</DataType>
+    </ImpersonationDef>
+  </Impersonates>
+</ExpressionTemplateDef>

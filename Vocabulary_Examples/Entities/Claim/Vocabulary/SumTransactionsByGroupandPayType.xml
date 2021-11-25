@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="91d2f390-2277-460b-91f3-aafcf93e1c29"
+  Name="SumTransactionsByGroupandPayType">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Sum Transactions By Group and Pay Type</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Sum the claim transactions for the group and paytype of $GroupAndPayType$.</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="5549a26c-204a-435e-9031-3f615de8db30"
+      Name="GroupAndPayType">
+      <DisplayText>[GroupAndPayType]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="ListValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="e9740fb0-b3ad-4b62-b000-50c36666671f"
+          Name="ListValueDef1">
+          <ListName>FinancialGroupAndPayTypeList</ListName>
+          <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local Referenced</TemplateScope>
+  <ExpressionPrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Round(Sum(Claim.Transactions,Amount, GroupAndPayType = $GroupAndPayType$),2)
+</ExpressionPrototype>
+  <FunctionName xmlns="http://www.inrule.com/XmlSchema/Schema">SumTransactionsByGroupandPayType</FunctionName>
+  <SelectionMode xmlns="http://www.inrule.com/XmlSchema/Schema">Template</SelectionMode>
+  <Impersonates xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ImpersonationDef
+      xsi:type="DataTypeImpersonationDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="8db0f544-a623-40b3-bf9f-95748b19b7bf"
+      Name="DataTypeImpersonationDef2">
+      <DataType>Number</DataType>
+    </ImpersonationDef>
+  </Impersonates>
+</ExpressionTemplateDef>

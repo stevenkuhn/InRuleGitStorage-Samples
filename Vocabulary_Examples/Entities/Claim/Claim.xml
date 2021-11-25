@@ -1,0 +1,1351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="7146e4fb-3597-4b83-9132-bef78bd2d814"
+  Name="Claim">
+  <RuleElements xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="ffafb3be-b32f-482e-b40a-a4c2fdc539bb"
+      Name="Controller">
+      <FireMode>Auto</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="8188186c-50ab-4f67-b4d7-d874ca79a41e"
+          Name="RunDenialRulesforClaimTier">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="VocabUtils.Claim.VocabularyDef1.ExecuteRunDenialRulesVocabUtils.Claim.VocabularyDef1.ExecuteRunDenialRules1" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="VocabUtils.Claim.VocabularyDef1.ExecuteRunDenialRulesVocabUtils.Claim.VocabularyDef1.ExecuteRunDenialRules0" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="TemplateValueDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="32215335-dc9d-46b2-a1f8-5f47aaa48cf7"
+            Name="RunDenialRulesforClaimTier">
+            <PlaceholderValues>
+              <Dictionary>
+                <KeyValuePair>
+                  <Key>
+                    <string xmlns="">DenialTier</string>
+                  </Key>
+                  <Value>
+                    <string xmlns="">ClaimTier</string>
+                  </Value>
+                </KeyValuePair>
+              </Dictionary>
+            </PlaceholderValues>
+            <SourceTemplateGuid>49b952bc-8015-46ab-b550-3eeda1276fe9</SourceTemplateGuid>
+            <CompiledTypeName>InRule.Repository.RuleElements.ExecuteActionDef, InRule.Repository</CompiledTypeName>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+        <RuleElementDef
+          xsi:type="LanguageRuleDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="fca15e2e-891e-4bc2-9f76-aaf50336eb82"
+          Name="RunApprovalProcessingRules">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ReservedAttributeTokenKey</Name>
+                <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0"
+                  Value="ExecuteMemberRuleSetWhereDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.0"
+                  Value="ExecuteMemberRuleSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.1"
+                  Value="VocabUtils.PendingTransaction.RuleSets.ApprovalProcessing.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.2"
+                  Value="ExecuteMemberRuleSetDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.3"
+                  Value="VocabUtils.Claim.PendingTransactions.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.4"
+                  Value="ExecuteMemberRuleSetWhereDefault" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.5"
+                  Value="VocabUtils.PendingTransaction.ProcessingStatus_ValueListIs" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.5.0"
+                  Value="VocabUtils.PendingTransaction.ProcessingStatus.Implicit" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.5.1"
+                  Value="VocabUtils.Claim.Status_ValueListIs" />
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="0.5.2.0"
+                  Value="VocabUtils.PendingTransaction.ProcessingStatus.ValueListValue" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <RuleElement
+            xsi:type="ExecuteMemberRuleSetActionDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="3010090d-6ab3-400a-b3b8-445b3ac1ce48"
+            Name="RunApprovalProcessingRules">
+            <Collection>
+              <FormulaText>PendingTransactions</FormulaText>
+            </Collection>
+            <RuleSet>
+              <FormulaText>ApprovalProcessing</FormulaText>
+            </RuleSet>
+            <FilteredBy>
+              <FormulaText>IsInValueList(ToValueList("P"), ProcessingStatus)</FormulaText>
+            </FilteredBy>
+          </RuleElement>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="RuleSetDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="349333c9-6123-42e4-907f-d85f002a22d2"
+      Name="RunDenialRules">
+      <Parameters>
+        <RuleSetParameterDef
+          Guid="1691e2c8-a0a7-46d5-a184-5bdae42de217"
+          Name="PendingTransactionTier"
+          DataType="String"
+          AutoCreate="true" />
+      </Parameters>
+      <FireMode>Explicit</FireMode>
+      <RunMode>SequentialRunOnce</RunMode>
+      <Rules>
+        <RuleElementDef
+          xsi:type="DecisionTableDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="8d6581e9-0795-416e-9888-1a83e4674641"
+          Name="PendingTransactionDenialsbyTier">
+          <Attributes>
+            <anyType
+              xsi:type="CollectionItem">
+              <Key>
+                <Name>ColumnWidths</Name>
+                <Guid>30321bef-a782-4c36-975e-25f034c9bf0d</Guid>
+              </Key>
+              <Collection>
+                <anyType
+                  xsi:type="XmlSerializableStringDictionaryItem"
+                  Key="Widths"
+                  Value="PendingTransactionProcessingTier=120,ExecuteTierRuleSet=120" />
+              </Collection>
+            </anyType>
+          </Attributes>
+          <Conditions>
+            <ConditionDimensionDef>
+              <DimensionID>9439f044-74d8-40bc-8698-a31850a1269e</DimensionID>
+              <Name>PendingTransactionProcessingTier</Name>
+              <TargetExpression>PendingTransactionTier</TargetExpression>
+              <TargetDataType>String</TargetDataType>
+              <ConditionValues>
+                <ConditionValueDef>
+                  <ValueID>e2c2bbe7-fde7-4852-ac00-360124032df8</ValueID>
+                  <Tokens>
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="Value"
+                      Value="1" />
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="DisplayValue"
+                      Value="Tier 1" />
+                  </Tokens>
+                  <ConditionType>EqualTo</ConditionType>
+                  <IsFromMasterList>true</IsFromMasterList>
+                </ConditionValueDef>
+                <ConditionValueDef>
+                  <ValueID>7fc0ddef-1fea-4fbe-bdec-6266960e3df4</ValueID>
+                  <Tokens>
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="Value"
+                      Value="2" />
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="DisplayValue"
+                      Value="Tier 2" />
+                  </Tokens>
+                  <ConditionType>EqualTo</ConditionType>
+                  <IsFromMasterList>true</IsFromMasterList>
+                </ConditionValueDef>
+                <ConditionValueDef>
+                  <ValueID>f1d3022d-5f94-4f3a-a910-b8256dd6db1d</ValueID>
+                  <Tokens>
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="Value"
+                      Value="3" />
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="DisplayValue"
+                      Value="Tier 3" />
+                  </Tokens>
+                  <ConditionType>EqualTo</ConditionType>
+                  <IsFromMasterList>true</IsFromMasterList>
+                </ConditionValueDef>
+              </ConditionValues>
+              <ValueList
+                Guid="ea68b9cd-2bfd-4108-8afc-5fbc52bb42dd">
+                <Parameters />
+                <SourceValueListName>DenialTierList</SourceValueListName>
+              </ValueList>
+              <UseFieldsValueList>false</UseFieldsValueList>
+            </ConditionDimensionDef>
+          </Conditions>
+          <Actions>
+            <ActionDimensionDef>
+              <DisplayName>ExecuteTierRuleSet</DisplayName>
+              <DimensionID>05739023-79fb-4c8b-9a19-45efe5739833</DimensionID>
+              <FieldName>ExecuteTierRuleSet</FieldName>
+              <ActionValues>
+                <ActionValueDef>
+                  <ValueID>c29996f2-bcd1-4ad5-9c93-bebf18d37c1b</ValueID>
+                  <Tokens>
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="DisplayValue"
+                      Value="Tier1" />
+                  </Tokens>
+                  <IsFromMasterList>true</IsFromMasterList>
+                  <RuleElement
+                    xsi:type="TemplateValueDef"
+                    Revision="1"
+                    PublicRevision="1"
+                    Guid="d2ad9046-5dda-47e9-be8b-6c34da3092bd">
+                    <Attributes>
+                      <anyType
+                        xsi:type="CollectionItem">
+                        <Key>
+                          <Name>ReservedAttributeTokenKey</Name>
+                          <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+                        </Key>
+                        <Collection>
+                          <anyType
+                            xsi:type="XmlSerializableStringDictionaryItem"
+                            Key="0"
+                            Value="Vocabulary_Utils.Claim.VocabularyDef1.ExecuteTier1Rules" />
+                        </Collection>
+                      </anyType>
+                    </Attributes>
+                    <PlaceholderValues>
+                      <Dictionary />
+                    </PlaceholderValues>
+                    <SourceTemplateGuid>8b7e2be3-7534-40d8-a11f-41535baac991</SourceTemplateGuid>
+                    <CompiledTypeName>InRule.Repository.RuleElements.ExecuteMemberRuleSetActionDef, InRule.Repository</CompiledTypeName>
+                  </RuleElement>
+                </ActionValueDef>
+                <ActionValueDef>
+                  <ValueID>83a4f4a5-8214-4109-9837-3dd79cdf2068</ValueID>
+                  <Tokens>
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="DisplayValue"
+                      Value="Tier2" />
+                  </Tokens>
+                  <IsFromMasterList>true</IsFromMasterList>
+                  <RuleElement
+                    xsi:type="TemplateValueDef"
+                    Revision="1"
+                    PublicRevision="1"
+                    Guid="eadce35c-3ac7-4df3-a395-46abd083aeb2">
+                    <Attributes>
+                      <anyType
+                        xsi:type="CollectionItem">
+                        <Key>
+                          <Name>ReservedAttributeTokenKey</Name>
+                          <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+                        </Key>
+                        <Collection>
+                          <anyType
+                            xsi:type="XmlSerializableStringDictionaryItem"
+                            Key="0"
+                            Value="Vocabulary_Utils.Claim.VocabularyDef1.ExecuteTier2Rules" />
+                        </Collection>
+                      </anyType>
+                    </Attributes>
+                    <PlaceholderValues>
+                      <Dictionary />
+                    </PlaceholderValues>
+                    <SourceTemplateGuid>708ed66d-adf2-4b21-846d-3d712008f63f</SourceTemplateGuid>
+                    <CompiledTypeName>InRule.Repository.RuleElements.ExecuteMemberRuleSetActionDef, InRule.Repository</CompiledTypeName>
+                  </RuleElement>
+                </ActionValueDef>
+                <ActionValueDef>
+                  <ValueID>b481c37b-5ea0-4278-b209-89847fdc7e49</ValueID>
+                  <Tokens>
+                    <anyType
+                      xsi:type="XmlSerializableStringDictionaryItem"
+                      Key="DisplayValue"
+                      Value="Tier3" />
+                  </Tokens>
+                  <IsFromMasterList>true</IsFromMasterList>
+                  <RuleElement
+                    xsi:type="TemplateValueDef"
+                    Revision="1"
+                    PublicRevision="1"
+                    Guid="7145479f-f09c-4e1f-8805-cead5a2452dd">
+                    <Attributes>
+                      <anyType
+                        xsi:type="CollectionItem">
+                        <Key>
+                          <Name>ReservedAttributeTokenKey</Name>
+                          <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+                        </Key>
+                        <Collection>
+                          <anyType
+                            xsi:type="XmlSerializableStringDictionaryItem"
+                            Key="0"
+                            Value="Vocabulary_Utils.Claim.VocabularyDef1.ExecuteTier3Rules" />
+                        </Collection>
+                      </anyType>
+                    </Attributes>
+                    <PlaceholderValues>
+                      <Dictionary />
+                    </PlaceholderValues>
+                    <SourceTemplateGuid>6e1c5788-88cb-491f-b1f8-180513914e4a</SourceTemplateGuid>
+                    <CompiledTypeName>InRule.Repository.RuleElements.ExecuteMemberRuleSetActionDef, InRule.Repository</CompiledTypeName>
+                  </RuleElement>
+                </ActionValueDef>
+              </ActionValues>
+              <UseLanguageRules>true</UseLanguageRules>
+              <UseFieldsValueList>false</UseFieldsValueList>
+            </ActionDimensionDef>
+          </Actions>
+          <Decisions>
+            <DecisionDef>
+              <DecisionID>a8d6b632-db10-4061-8dfb-1ab3b5a44db6</DecisionID>
+              <ConditionNodes>
+                <ConditionNodeDef>
+                  <SourceDimensionID>9439f044-74d8-40bc-8698-a31850a1269e</SourceDimensionID>
+                  <SourceValueID>e2c2bbe7-fde7-4852-ac00-360124032df8</SourceValueID>
+                </ConditionNodeDef>
+              </ConditionNodes>
+              <ActionNodes>
+                <ActionNodeDef>
+                  <SourceDimensionID>05739023-79fb-4c8b-9a19-45efe5739833</SourceDimensionID>
+                  <SourceValueID>c29996f2-bcd1-4ad5-9c93-bebf18d37c1b</SourceValueID>
+                </ActionNodeDef>
+              </ActionNodes>
+            </DecisionDef>
+            <DecisionDef>
+              <DecisionID>31238daa-25f7-4105-956d-34d079cd3aa2</DecisionID>
+              <ConditionNodes>
+                <ConditionNodeDef>
+                  <SourceDimensionID>9439f044-74d8-40bc-8698-a31850a1269e</SourceDimensionID>
+                  <SourceValueID>7fc0ddef-1fea-4fbe-bdec-6266960e3df4</SourceValueID>
+                </ConditionNodeDef>
+              </ConditionNodes>
+              <ActionNodes>
+                <ActionNodeDef>
+                  <SourceDimensionID>05739023-79fb-4c8b-9a19-45efe5739833</SourceDimensionID>
+                  <SourceValueID>83a4f4a5-8214-4109-9837-3dd79cdf2068</SourceValueID>
+                </ActionNodeDef>
+              </ActionNodes>
+            </DecisionDef>
+            <DecisionDef>
+              <DecisionID>cc150d06-1036-4061-adbd-4d1aa6291204</DecisionID>
+              <ConditionNodes>
+                <ConditionNodeDef>
+                  <SourceDimensionID>9439f044-74d8-40bc-8698-a31850a1269e</SourceDimensionID>
+                  <SourceValueID>f1d3022d-5f94-4f3a-a910-b8256dd6db1d</SourceValueID>
+                </ConditionNodeDef>
+              </ConditionNodes>
+              <ActionNodes>
+                <ActionNodeDef>
+                  <SourceDimensionID>05739023-79fb-4c8b-9a19-45efe5739833</SourceDimensionID>
+                  <SourceValueID>b481c37b-5ea0-4278-b209-89847fdc7e49</SourceValueID>
+                </ActionNodeDef>
+              </ActionNodes>
+            </DecisionDef>
+          </Decisions>
+          <HasContextVersionSettings>false</HasContextVersionSettings>
+          <UseCompatibilityMode>true</UseCompatibilityMode>
+        </RuleElementDef>
+      </Rules>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </RuleElements>
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="df8f3a1f-e7c2-496c-81d2-068d69123ef1"
+      Name="ClaimID"
+      AuthoringIsExpanded="false"
+      DataType="Integer"
+      DisplayName="Claim ID" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="991f0a7b-94f1-4529-906f-10b016d4a7b1"
+      Name="ClaimNumber"
+      AuthoringIsExpanded="false"
+      DataType="String"
+      DisplayName="Claim Number" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="226c9cb9-594c-4d7f-a895-5d1fa6c9ef84"
+      Name="Status"
+      AuthoringIsExpanded="false"
+      DataType="String">
+      <ValueList
+        Guid="b36a79cc-ac38-4fb2-99c2-3597c0626073">
+        <Parameters />
+        <SourceValueListName>ClaimStatusList</SourceValueListName>
+      </ValueList>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="133e751a-d090-4a0a-8ce8-9db950bd473b"
+      Name="Claimant"
+      DataType="Entity"
+      DataTypeEntityName="Claimant" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="22ddc63b-2754-4673-b432-7133b06949dd"
+      Name="LossDate"
+      DataType="Date"
+      DisplayName="Loss Date" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="8f35e110-91a1-479a-a1eb-7e84d7cd4372"
+      Name="ReportDate"
+      DataType="Date"
+      DisplayName="Report Date" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="ab42f85e-037f-4c69-adae-b2f94007537e"
+      Name="ClaimDescription"
+      DataType="String"
+      DisplayName="Claim Description" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="aabdda99-edcd-48e0-a361-2855251289d7"
+      Name="CloseDate"
+      DataType="Date"
+      DisplayName="Close Date" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="2e84b396-0ae2-436e-a4e5-0409da3a6f96"
+      Name="ClaimTier"
+      DataType="String"
+      DisplayName="Claim Tier">
+      <ValueList
+        Guid="dbb3fe1b-3e0e-4198-9443-2eb588ef6f09">
+        <Parameters />
+        <SourceValueListName>DenialTierList</SourceValueListName>
+      </ValueList>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="a102ad9e-f434-4b52-b922-1b7384f55da5"
+      Name="SummaryFormula"
+      DataType="String"
+      DisplayName="Summary Formula">
+      <DefaultValue>"++-+"</DefaultValue>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="61599b42-9972-4dbe-be25-e3342cd74a13"
+      Name="FormulaNotValid"
+      DataType="Boolean"
+      IsCalculated="true"
+      DisplayName="Formula Not Valid">
+      <Calc>
+        <FormulaText>Not(FinancialFunctions.SummaryFormulaIsValid(SummaryFormula))</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="8886f3d6-57b5-4022-9345-f2f1974d6be6"
+      Name="TotalIncurred"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Total Incurred">
+      <Calc>
+        <FormulaText>If(FormulaNotValid = true, 0, Round(CalculateFinancialTotal("Inc"), 2))</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="3f10aeaa-530b-48ac-bb5c-9894edd66c06"
+      Name="TotalReserved"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Total Reserved">
+      <Calc>
+        <FormulaText>If(FormulaNotValid = true, 0, Round(CalculateFinancialTotal("Res"), 2))</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="3f3d4817-7793-4b0e-8bcf-d5d83224d526"
+      Name="TotalPaid"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Total Paid">
+      <Calc>
+        <FormulaText>If(FormulaNotValid = true, 0, Round(CalculateFinancialTotal("Paid"), 2))</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="b378d33f-38a1-4858-8186-deeee463fde3"
+      Name="TotalOutstanding"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Total Outstanding">
+      <Calc>
+        <FormulaText>TotalIncurred - TotalPaid</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="48a42c54-a229-44fd-b745-47a9cb30d128"
+      Name="Incurred_Group1"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Incurred  Group1">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="IntegerDesigner" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>GetIncurredByFinancialGroup(financialGroup:1)</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="f6502409-7840-4ed9-b214-7d2201c49685"
+      Name="Incurred_Group2"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Incurred  Group2">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="IntegerDesigner" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>GetIncurredByFinancialGroup(financialGroup:2)</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="6dd886ea-ad71-402c-a5fa-c396ce22e08f"
+      Name="Incurred_Group3"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Incurred  Group3">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="IntegerDesigner" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>GetIncurredByFinancialGroup(financialGroup:3)</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="1e4fceb7-251d-4e41-8098-905ce2f83ef8"
+      Name="Incurred_Group4"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Incurred  Group4">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucketVocabulary_Utils.Claim.VocabularyDef1.GetIncurredByBucket0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="IntegerDesigner" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>GetIncurredByFinancialGroup(financialGroup:4)</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="2333a6e9-ac35-4d77-9869-79e6041efdc4"
+      Name="Reserved_Group1"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Reserved  Group1">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType.GroupAndPayType.ValueListValueFinancialGroupAndPayTypeList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>SumTransactionsByGroupandPayType(GroupAndPayType:"R1")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="5b1fc31c-ea8a-4a3a-9097-ebc0c3de3c74"
+      Name="Reserved_Group2"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Reserved  Group2">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType.GroupAndPayType.ValueListValueFinancialGroupAndPayTypeList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>SumTransactionsByGroupandPayType(GroupAndPayType:"R2")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="cff6d0e9-b6ec-41b2-a1b6-6ab66d03517a"
+      Name="Reserved_Group3"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Reserved  Group3">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType.GroupAndPayType.ValueListValueFinancialGroupAndPayTypeList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>SumTransactionsByGroupandPayType(GroupAndPayType:"R3")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="cd609965-8353-46b7-98de-b8bfa9712b62"
+      Name="Reserved_Group4"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Reserved  Group4">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType.GroupAndPayType.ValueListValueFinancialGroupAndPayTypeList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>SumTransactionsByGroupandPayType(GroupAndPayType:"R4")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="6a876b90-b50c-4a3b-bf29-fd49a80ef20f"
+      Name="Paid_Group1"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Paid  Group1">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType.GroupAndPayType.ValueListValueFinancialGroupAndPayTypeList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>SumTransactionsByGroupandPayType(GroupAndPayType:"P1")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="5ca0f2f2-6953-4310-bd34-640812eab086"
+      Name="Paid_Group2"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Paid  Group2">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType.GroupAndPayType.ValueListValueFinancialGroupAndPayTypeList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>SumTransactionsByGroupandPayType(GroupAndPayType:"P2")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="218a25e6-e5a6-44cb-804b-434baf080669"
+      Name="Paid_Group3"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Paid  Group3">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType.GroupAndPayType.ValueListValueFinancialGroupAndPayTypeList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>SumTransactionsByGroupandPayType(GroupAndPayType:"P3")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="e0c287e6-4db3-47d9-a757-7dcb6d14b99e"
+      Name="Paid_Group4"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Paid  Group4">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType.GroupAndPayType.ValueListValueFinancialGroupAndPayTypeList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="Vocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayTypeVocabulary_Examples.Claim.VocabularyDef1.SumTransactionsByGroupandPayType0" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <Calc
+        LastAuthoringView="BusinessLangauge">
+        <FormulaText>SumTransactionsByGroupandPayType(GroupAndPayType:"P4")</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="d1b2c863-5092-4468-9943-d2773e148b73"
+      Name="Outstanding_Group1"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Outstanding  Group1">
+      <Calc>
+        <FormulaText>Incurred_Group1 - Paid_Group1</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="3134b9fb-e4ba-4320-b1ed-cf41c488b89f"
+      Name="Outstanding_Group2"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Outstanding  Group2">
+      <Calc>
+        <FormulaText>Incurred_Group2 - Paid_Group2</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="f277515c-7eee-4f35-927b-91e03cfe1e08"
+      Name="Outstanding_Group3"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Outstanding  Group3">
+      <Calc>
+        <FormulaText>Incurred_Group3 - Paid_Group3</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="98c52799-f6d7-40e1-9fbb-b611074d97f6"
+      Name="Outstanding_Group4"
+      DataType="Number"
+      IsCalculated="true"
+      DisplayName="Outstanding  Group4">
+      <Calc>
+        <FormulaText>Incurred_Group4 - Paid_Group4</FormulaText>
+      </Calc>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="365c8610-14e3-49b9-a937-705fda31f9c8"
+      Name="Transactions"
+      DataType="Entity"
+      IsCollection="true"
+      DataTypeEntityName="Transaction" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="adeee019-5be3-4909-a3a3-d672921c3cb3"
+      Name="PendingTransactions"
+      DataType="Entity"
+      IsCollection="true"
+      DataTypeEntityName="PendingTransaction"
+      DisplayName="Pending Transactions" />
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+  <Vocabulary
+    Revision="1"
+    PublicRevision="1"
+    Guid="3b145303-1c47-49a4-bfc6-f1b46fc37366"
+    Name="VocabularyDef1" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Templates>
+      <TemplateDef
+        xsi:type="ExpressionTemplateDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="d0e2c138-ef55-4228-b0a0-6449cfc9fcb1"
+        Name="CalculateFinancialTotal">
+        <DisplayName>Calculate Financial Total</DisplayName>
+        <MenuGroup>ClaimFunctions</MenuGroup>
+        <BusinessLanguagePrototype>Calculate Financial Total for $FieldType$</BusinessLanguagePrototype>
+        <Placeholders>
+          <RuleRepositoryDefBase
+            xsi:type="TemplatePlaceholderDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="54b5567e-9870-4965-8a4e-0c536c91fafc"
+            Name="FieldType">
+            <DisplayText>[FieldType]</DisplayText>
+            <Accepts>
+              <PlaceholderValueDef
+                xsi:type="DataTypeValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="1fcf8668-09db-4906-b558-5e2ee9d11298"
+                Name="DataTypeValueDef1">
+                <DataType>String</DataType>
+              </PlaceholderValueDef>
+              <PlaceholderValueDef
+                xsi:type="ListValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="5d4c861f-8126-4458-a542-eca5961e0e1b"
+                Name="ListValueDef2">
+                <ListName>ClaimFinancialTotalTypeList</ListName>
+                <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+              </PlaceholderValueDef>
+            </Accepts>
+            <IsMultiSelect>false</IsMultiSelect>
+          </RuleRepositoryDefBase>
+        </Placeholders>
+        <TemplateScope>Local Referenced</TemplateScope>
+        <ExpressionPrototype>If($FieldType$ = "Inc", (((Incurred_Group1 * FinancialFunctions.SummaryFormulaSign(1)) + (Incurred_Group2 * FinancialFunctions.SummaryFormulaSign(2))) + (Incurred_Group3 * FinancialFunctions.SummaryFormulaSign(3))) + (Incurred_Group4 * FinancialFunctions.SummaryFormulaSign(4)), If($FieldType$ = "Paid", (((Paid_Group1 * FinancialFunctions.SummaryFormulaSign(1)) + (Paid_Group2 * FinancialFunctions.SummaryFormulaSign(2))) + (Paid_Group3 * FinancialFunctions.SummaryFormulaSign(3))) + (Paid_Group4 * FinancialFunctions.SummaryFormulaSign(4)), (((Reserved_Group1 * FinancialFunctions.SummaryFormulaSign(1)) + (Reserved_Group2 * FinancialFunctions.SummaryFormulaSign(2))) + (Reserved_Group3 * FinancialFunctions.SummaryFormulaSign(3))) + (Reserved_Group4 * FinancialFunctions.SummaryFormulaSign(4))))</ExpressionPrototype>
+        <FunctionName>CalculateFinancialTotal</FunctionName>
+        <SelectionMode>Template</SelectionMode>
+        <Impersonates>
+          <ImpersonationDef
+            xsi:type="DataTypeImpersonationDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="1943a9da-f4ad-420d-9032-5faec3a42887"
+            Name="DataTypeImpersonationDef2">
+            <DataType>Number</DataType>
+          </ImpersonationDef>
+        </Impersonates>
+      </TemplateDef>
+      <TemplateDef
+        xsi:type="ExecuteRulesetTemplateDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="49b952bc-8015-46ab-b550-3eeda1276fe9"
+        Name="ExecuteRunDenialRules">
+        <DisplayName>Execute Run Denial Rules</DisplayName>
+        <MenuGroup>ClaimFunctions</MenuGroup>
+        <BusinessLanguagePrototype>Run the denial rules for $DenialTier$</BusinessLanguagePrototype>
+        <Placeholders>
+          <RuleRepositoryDefBase
+            xsi:type="TemplatePlaceholderDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="6c1a6f1d-13d5-4888-8653-40a0aaaba6df"
+            Name="DenialTier">
+            <DisplayText>[DenialTier]</DisplayText>
+            <Accepts>
+              <PlaceholderValueDef
+                xsi:type="ListValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="5f69a1d2-d8e9-4402-8013-d3f3f80ba670"
+                Name="ListValueDef1">
+                <ListName>DenialTierList</ListName>
+                <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+              </PlaceholderValueDef>
+              <PlaceholderValueDef
+                xsi:type="DataTypeValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="509f5d54-ba7a-4077-99cc-1a4e3b8d6a26"
+                Name="DataTypeValueDef2">
+                <DataType>String</DataType>
+              </PlaceholderValueDef>
+            </Accepts>
+            <IsMultiSelect>false</IsMultiSelect>
+          </RuleRepositoryDefBase>
+        </Placeholders>
+        <TemplateScope>Local Referenced</TemplateScope>
+        <TargetRulesetName>RunDenialRules</TargetRulesetName>
+        <Parameters>
+          <ExecuteRulesetParameterDef
+            Revision="1"
+            PublicRevision="1"
+            Guid="2332053e-fa19-4927-8840-b5c46e27ddcf"
+            Name="ExecuteRulesetParameterDef1">
+            <FieldName>PendingTransactionTier</FieldName>
+            <FieldValuePrototype>$DenialTier$</FieldValuePrototype>
+          </ExecuteRulesetParameterDef>
+        </Parameters>
+      </TemplateDef>
+      <TemplateDef
+        xsi:type="ExpressionTemplateDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="5aefa775-f7a7-42fe-a1d4-4a581a04b6f3"
+        Name="GetIncurredByFinancialGroup">
+        <DisplayName>Get Incurred By Financial Group</DisplayName>
+        <MenuGroup>ClaimFunctions</MenuGroup>
+        <BusinessLanguagePrototype>Get incurred amount for group $financialGroup$</BusinessLanguagePrototype>
+        <Placeholders>
+          <RuleRepositoryDefBase
+            xsi:type="TemplatePlaceholderDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="04423017-df02-4d58-ade5-e22e7ba09432"
+            Name="financialGroup">
+            <DisplayText>[financialGroup]</DisplayText>
+            <Accepts>
+              <PlaceholderValueDef
+                xsi:type="DataTypeValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="8adf1a8e-9ad7-45b4-8d10-716549bdbe75"
+                Name="DataTypeValueDef1">
+                <DataType>Integer</DataType>
+              </PlaceholderValueDef>
+            </Accepts>
+            <IsMultiSelect>false</IsMultiSelect>
+          </RuleRepositoryDefBase>
+        </Placeholders>
+        <TemplateScope>Local Referenced</TemplateScope>
+        <ExpressionPrototype>If(($financialGroup$ &lt; 1) or ($financialGroup$ &gt; 4), 0, If($financialGroup$ = 1, If(Claim.Status &lt;&gt; "C", Largest(Claim.Reserved_Group1, Claim.Paid_Group1), Claim.Paid_Group1), If($financialGroup$ = 2, If(Claim.Status &lt;&gt; "C", Largest(Claim.Reserved_Group2, Claim.Paid_Group2), Claim.Paid_Group2), If($financialGroup$ = 3, If(Claim.Status &lt;&gt; "C", Largest(Claim.Reserved_Group3, Claim.Paid_Group3), Claim.Paid_Group3), If($financialGroup$ = 4, If(Claim.Status &lt;&gt; "C", Largest(Claim.Reserved_Group4, Claim.Paid_Group4), Claim.Paid_Group4), 0)))))</ExpressionPrototype>
+        <FunctionName>GetIncurredByFinancialGroup</FunctionName>
+        <SelectionMode>Template</SelectionMode>
+        <Impersonates>
+          <ImpersonationDef
+            xsi:type="DataTypeImpersonationDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="8696e116-0e2b-4c4c-b299-2199f9e5baf8"
+            Name="DataTypeImpersonationDef2">
+            <DataType>Number</DataType>
+          </ImpersonationDef>
+        </Impersonates>
+      </TemplateDef>
+      <TemplateDef
+        xsi:type="ExpressionTemplateDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="91d2f390-2277-460b-91f3-aafcf93e1c29"
+        Name="SumTransactionsByGroupandPayType">
+        <DisplayName>Sum Transactions By Group and Pay Type</DisplayName>
+        <MenuGroup>ClaimFunctions</MenuGroup>
+        <BusinessLanguagePrototype>Sum the claim transactions for the group and paytype of $GroupAndPayType$.</BusinessLanguagePrototype>
+        <Placeholders>
+          <RuleRepositoryDefBase
+            xsi:type="TemplatePlaceholderDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="5549a26c-204a-435e-9031-3f615de8db30"
+            Name="GroupAndPayType">
+            <DisplayText>[GroupAndPayType]</DisplayText>
+            <Accepts>
+              <PlaceholderValueDef
+                xsi:type="ListValueDef"
+                Revision="1"
+                PublicRevision="1"
+                Guid="e9740fb0-b3ad-4b62-b000-50c36666671f"
+                Name="ListValueDef1">
+                <ListName>FinancialGroupAndPayTypeList</ListName>
+                <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+              </PlaceholderValueDef>
+            </Accepts>
+            <IsMultiSelect>false</IsMultiSelect>
+          </RuleRepositoryDefBase>
+        </Placeholders>
+        <TemplateScope>Local Referenced</TemplateScope>
+        <ExpressionPrototype>Round(Sum(Claim.Transactions,Amount, GroupAndPayType = $GroupAndPayType$),2)
+</ExpressionPrototype>
+        <FunctionName>SumTransactionsByGroupandPayType</FunctionName>
+        <SelectionMode>Template</SelectionMode>
+        <Impersonates>
+          <ImpersonationDef
+            xsi:type="DataTypeImpersonationDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="8db0f544-a623-40b3-bf9f-95748b19b7bf"
+            Name="DataTypeImpersonationDef2">
+            <DataType>Number</DataType>
+          </ImpersonationDef>
+        </Impersonates>
+      </TemplateDef>
+      <TemplateDef
+        xsi:type="ExecuteMemberRulesetTemplateDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="8b7e2be3-7534-40d8-a11f-41535baac991"
+        Name="ExecuteTier1Rules">
+        <DisplayName>Execute Tier1 Rules</DisplayName>
+        <MenuGroup>ClaimFunctions</MenuGroup>
+        <BusinessLanguagePrototype>Execute Tier 1 Rules for all pending transactions.</BusinessLanguagePrototype>
+        <Placeholders />
+        <TemplateScope>Local Referenced</TemplateScope>
+        <TargetRulesetName>Tier1Validations</TargetRulesetName>
+        <Parameters />
+        <TargetCollectionName>PendingTransactions</TargetCollectionName>
+        <FilteredByPrototype>ProcessingStatus='P'</FilteredByPrototype>
+      </TemplateDef>
+      <TemplateDef
+        xsi:type="ExecuteMemberRulesetTemplateDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="708ed66d-adf2-4b21-846d-3d712008f63f"
+        Name="ExecuteTier2Rules">
+        <DisplayName>Execute Tier2 Rules</DisplayName>
+        <MenuGroup>ClaimFunctions</MenuGroup>
+        <BusinessLanguagePrototype>Execute Tier 2 Rules for all pending transactions.</BusinessLanguagePrototype>
+        <Placeholders />
+        <TemplateScope>Local Referenced</TemplateScope>
+        <TargetRulesetName>Tier2Validations</TargetRulesetName>
+        <Parameters />
+        <TargetCollectionName>PendingTransactions</TargetCollectionName>
+        <FilteredByPrototype>ProcessingStatus='P'</FilteredByPrototype>
+      </TemplateDef>
+      <TemplateDef
+        xsi:type="ExecuteMemberRulesetTemplateDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="6e1c5788-88cb-491f-b1f8-180513914e4a"
+        Name="ExecuteTier3Rules">
+        <DisplayName>Execute Tier3 Rules</DisplayName>
+        <MenuGroup>ClaimFunctions</MenuGroup>
+        <BusinessLanguagePrototype>Execute Tier 3 Rules for all pending transactions.</BusinessLanguagePrototype>
+        <Placeholders />
+        <TemplateScope>Local Referenced</TemplateScope>
+        <TargetRulesetName>Tier3Validations</TargetRulesetName>
+        <Parameters />
+        <TargetCollectionName>PendingTransactions</TargetCollectionName>
+        <FilteredByPrototype>ProcessingStatus='P'</FilteredByPrototype>
+      </TemplateDef>
+    </Templates>
+    <TemplateAvailabilitySettings />
+  </Vocabulary>
+</EntityDef>

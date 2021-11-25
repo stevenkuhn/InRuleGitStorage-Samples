@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="1670bc91-c36b-4845-8745-055a1ec7c5a4"
+  Name="SetTransactiontoProcessed">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="ActionSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0"
+          Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatusVocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatus0" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.0"
+          Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatusVocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatus0" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.0.1"
+          Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatus.status.ValueListValueProcessingStatusList" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1"
+          Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage4" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.0"
+          Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage0" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.1"
+          Value="Vocabulary_Examples.PendingTransaction.TransactionID.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.2"
+          Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage0" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1.1.3"
+          Value="StringDesigner" />
+      </Collection>
+    </anyType>
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedInRuleTemplateConversionKey</Name>
+        <Guid>a3dfb567-a0f0-4ed1-8101-65c210b55925</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="ReservedInRuleTemplateConversionKey"
+          Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;TemplateValueDef xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; Revision=&quot;1&quot; PublicRevision=&quot;1&quot; Guid=&quot;a14dc4f0-db30-4341-9ca2-a97a4b469194&quot; Name=&quot;SetTransactiontoProcessed&quot;&gt;&lt;PlaceholderValues xmlns=&quot;http://www.inrule.com/XmlSchema/Schema&quot;&gt;&lt;Dictionary&gt;&lt;KeyValuePair&gt;&lt;Key&gt;&lt;string xmlns=&quot;&quot;&gt;status&lt;/string&gt;&lt;/Key&gt;&lt;Value&gt;&lt;string xmlns=&quot;&quot;&gt;&quot;C&quot;&lt;/string&gt;&lt;/Value&gt;&lt;/KeyValuePair&gt;&lt;/Dictionary&gt;&lt;/PlaceholderValues&gt;&lt;SourceTemplateGuid xmlns=&quot;http://www.inrule.com/XmlSchema/Schema&quot;&gt;bebeb8c5-dd2d-4cce-8126-e91da71a4c5c&lt;/SourceTemplateGuid&gt;&lt;CompiledTypeName xmlns=&quot;http://www.inrule.com/XmlSchema/Schema&quot;&gt;InRule.Repository.RuleElements.SetValueActionDef, InRule.Repository&lt;/CompiledTypeName&gt;&lt;/TemplateValueDef&gt;" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="SimpleRuleDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="982db6ad-66da-4c38-8dfc-d41853e2983b"
+    Name="SetTransactiontoProcessed" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Condition>
+      <ReturnType>Boolean</ReturnType>
+      <FormulaText>true</FormulaText>
+    </Condition>
+    <SubRules>
+      <RuleElementDef
+        xsi:type="TemplateValueDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="f091157f-4f8a-4ef8-ae31-f07ce76d6a3b"
+        Name="TemplateValueDef1">
+        <PlaceholderValues>
+          <Dictionary>
+            <KeyValuePair>
+              <Key>
+                <string xmlns="">status</string>
+              </Key>
+              <Value>
+                <string xmlns="">"C"</string>
+              </Value>
+            </KeyValuePair>
+          </Dictionary>
+        </PlaceholderValues>
+        <SourceTemplateGuid>bebeb8c5-dd2d-4cce-8126-e91da71a4c5c</SourceTemplateGuid>
+        <CompiledTypeName>InRule.Repository.RuleElements.SetValueActionDef, InRule.Repository</CompiledTypeName>
+      </RuleElementDef>
+      <RuleElementDef
+        xsi:type="TemplateValueDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="26c02c75-18e7-4cce-8c45-6085d8dc3563"
+        Name="TemplateValueDef2">
+        <PlaceholderValues>
+          <Dictionary>
+            <KeyValuePair>
+              <Key>
+                <string xmlns="">fieldID</string>
+              </Key>
+              <Value>
+                <string xmlns="">TransactionID</string>
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair>
+              <Key>
+                <string xmlns="">processingStatus</string>
+              </Key>
+              <Value>
+                <string xmlns="">"Completed"</string>
+              </Value>
+            </KeyValuePair>
+          </Dictionary>
+        </PlaceholderValues>
+        <SourceTemplateGuid>7e4b8ed9-4d55-4e6e-a5d8-6dc320aeb929</SourceTemplateGuid>
+        <CompiledTypeName>InRule.Repository.RuleElements.FireNotificationActionDef, InRule.Repository</CompiledTypeName>
+      </RuleElementDef>
+    </SubRules>
+    <HasContextVersionSettings>false</HasContextVersionSettings>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>

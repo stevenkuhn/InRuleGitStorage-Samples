@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="b378d33f-38a1-4858-8186-deeee463fde3"
+  Name="TotalOutstanding"
+  DataType="Number"
+  IsCalculated="true"
+  DisplayName="Total Outstanding">
+  <Calc xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>TotalIncurred - TotalPaid</FormulaText>
+  </Calc>
+</FieldDef>

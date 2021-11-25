@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="3ebdb990-cf5d-4bdc-8baf-a0e5c4e88240"
+  Name="Claimant">
+  <Fields xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="6391e12e-7884-4665-bd0a-a524d0b0ae53"
+      Name="FirstName"
+      DataType="String"
+      DisplayName="First Name" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="e6f2cd96-b830-44b4-9d3b-9b85cf5414ba"
+      Name="MiddleInitial"
+      DataType="String"
+      DisplayName="Middle Initial" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="be62bee8-09ba-4dad-977e-6562e75f61e3"
+      Name="LastName"
+      DataType="String"
+      DisplayName="Last Name" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="70b2a981-5d7c-47b5-b873-5d6c5e06ce10"
+      Name="DateofBirth"
+      DataType="Date"
+      DisplayName="Dateof Birth" />
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="38fc4d52-1893-442a-89f0-ad3ac68c64d3"
+      Name="Gender"
+      DataType="String">
+      <ValueList
+        Guid="3aaafa8a-4222-483f-83af-645068d33e49">
+        <Parameters />
+        <SourceValueListName>GenderList</SourceValueListName>
+      </ValueList>
+    </FieldDef>
+    <FieldDef
+      Revision="1"
+      PublicRevision="1"
+      Guid="8e54cab1-8ade-4712-a9b7-001333f48f9d"
+      Name="Age"
+      DataType="Integer"
+      IsCalculated="true">
+      <Calc
+        LastAuthoringView="Syntax">
+        <FormulaText>YearDiff(DateofBirth,Now())</FormulaText>
+      </Calc>
+    </FieldDef>
+  </Fields>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</EntityDef>

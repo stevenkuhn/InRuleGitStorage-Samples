@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NotificationTemplateDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="7e4b8ed9-4d55-4e6e-a5d8-6dc320aeb929"
+  Name="DisplayProcessingMessage">
+  <DisplayName xmlns="http://www.inrule.com/XmlSchema/Schema">Display Processing Message</DisplayName>
+  <MenuGroup xmlns="http://www.inrule.com/XmlSchema/Schema">ClaimFunctions</MenuGroup>
+  <BusinessLanguagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Transaction ID $fieldID$ was processed with a status of $processingStatus$</BusinessLanguagePrototype>
+  <Placeholders xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="8abc88e9-2ae8-4c86-a31f-39d21c2db45b"
+      Name="fieldID">
+      <DisplayText>[fieldID]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="b46cebb1-3b66-48c4-b943-9cfc81f594f8"
+          Name="DataTypeValueDef1">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="732a7018-07f4-4c58-b34a-967671b8e635"
+          Name="DataTypeValueDef2">
+          <DataType>Integer</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="389303db-0e06-4a08-8dc5-dad295559e6d"
+          Name="DataTypeValueDef3">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+    <RuleRepositoryDefBase
+      xsi:type="TemplatePlaceholderDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="dda90c47-9507-4251-ab92-5a19b2b9a00e"
+      Name="processingStatus">
+      <DisplayText>[processingStatus]</DisplayText>
+      <Accepts>
+        <PlaceholderValueDef
+          xsi:type="DataTypeValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="aef87277-e5f6-4317-82f3-acd0ec58f17b"
+          Name="DataTypeValueDef1">
+          <DataType>String</DataType>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="ListValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="8fadac7b-f950-44c8-9bae-8d62ce8a50ad"
+          Name="ListValueDef2">
+          <ListName>ApprovalStatusList</ListName>
+          <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+        </PlaceholderValueDef>
+        <PlaceholderValueDef
+          xsi:type="ListValueDef"
+          Revision="1"
+          PublicRevision="1"
+          Guid="22c1e743-f7d0-41bd-b8a0-369e43f2d484"
+          Name="ListValueDef3">
+          <ListName>ProcessingStatusList</ListName>
+          <TreatValuesAsExpressions>false</TreatValuesAsExpressions>
+        </PlaceholderValueDef>
+      </Accepts>
+      <IsMultiSelect>false</IsMultiSelect>
+    </RuleRepositoryDefBase>
+  </Placeholders>
+  <TemplateScope xmlns="http://www.inrule.com/XmlSchema/Schema">Local</TemplateScope>
+  <NotificationType xmlns="http://www.inrule.com/XmlSchema/Schema">Informational</NotificationType>
+  <AllowMultipleNotifications xmlns="http://www.inrule.com/XmlSchema/Schema">true</AllowMultipleNotifications>
+  <MessagePrototype xmlns="http://www.inrule.com/XmlSchema/Schema">Transaction ID &lt;%$fieldID$%&gt; was processed with a status of &lt;%$processingStatus$%&gt;</MessagePrototype>
+</NotificationTemplateDef>

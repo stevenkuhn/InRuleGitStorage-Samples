@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="1cee6c47-a61e-4ee6-8eaa-41e67f201979"
+  Name="GroupAndPayType"
+  DataType="String"
+  IsCalculated="true"
+  DisplayName="Group And Pay Type">
+  <Calc xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <FormulaText>Left(TransactionCategory, 2)</FormulaText>
+  </Calc>
+</FieldDef>

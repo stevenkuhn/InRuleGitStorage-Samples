@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InlineValueListDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="339fe8d0-1143-41a7-8c77-058f4f708840"
+  Name="DenialTierList">
+  <SortDirection xmlns="http://www.inrule.com/XmlSchema/Schema">Ascending</SortDirection>
+  <SortMode xmlns="http://www.inrule.com/XmlSchema/Schema">None</SortMode>
+  <Items xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <ValueListItemDef
+      Guid="a94ce71f-cb2d-427b-8eb4-4da7e4647a89">
+      <Value>1</Value>
+      <DisplayText>Tier 1</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="a5eb7582-6410-4a5e-9ec2-702e87f805df">
+      <Value>2</Value>
+      <DisplayText>Tier 2</DisplayText>
+    </ValueListItemDef>
+    <ValueListItemDef
+      Guid="ff0dbf83-03fe-4ef7-9e43-2fcf6cbe55bc">
+      <Value>3</Value>
+      <DisplayText>Tier 3</DisplayText>
+    </ValueListItemDef>
+  </Items>
+</InlineValueListDef>

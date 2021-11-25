@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="bd81d02c-5f1a-4e2a-8270-b8bd857fa5ac"
+  Name="ApprovalProcessing">
+  <FireMode xmlns="http://www.inrule.com/XmlSchema/Schema">Explicit</FireMode>
+  <RunMode xmlns="http://www.inrule.com/XmlSchema/Schema">SequentialRunOnce</RunMode>
+  <Rules xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="724b7caa-69df-45e4-a955-69429ee94cde"
+      Name="IfApproved">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="IfThenDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="IfThenDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1"
+              Value="ConditionGroupTemplateSingleCondition" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.PendingTransactionIsApproved" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.2"
+              Value="IfThenDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.InsertApprovedTransactionVocabulary_Examples.PendingTransaction.VocabularyDef1.InsertApprovedTransaction0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.0"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.InsertApprovedTransactionVocabulary_Examples.PendingTransaction.VocabularyDef1.InsertApprovedTransaction0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.1"
+              Value="Vocabulary_Examples.PendingTransaction.ImplicitEntityTemplate" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.0.2"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.InsertApprovedTransactionVocabulary_Examples.PendingTransaction.VocabularyDef1.InsertApprovedTransaction0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionApprovalStatusVocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionApprovalStatus0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1.0"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionApprovalStatusVocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionApprovalStatus0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.1.1"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionApprovalStatus.status.ValueListValueApprovalStatusList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage4" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.0"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.1"
+              Value="Vocabulary_Examples.PendingTransaction.TransactionID.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.2"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.3.2.3"
+              Value="StringDesigner" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="3d7cd3a0-a5c3-427a-8e67-22d8b371435a"
+        Name="IfApproved">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>PendingTransactionIsApproved()</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="TemplateValueDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="bddc5e58-b4e4-4e65-aae7-75079c8eab85"
+            Name="TemplateValueDef2">
+            <PlaceholderValues>
+              <Dictionary>
+                <KeyValuePair>
+                  <Key>
+                    <string xmlns="">pendingrecord</string>
+                  </Key>
+                  <Value>
+                    <string xmlns="">PendingTransaction</string>
+                  </Value>
+                </KeyValuePair>
+              </Dictionary>
+            </PlaceholderValues>
+            <SourceTemplateGuid>89a4f4e6-2d4e-461c-9177-d88c7ce41e58</SourceTemplateGuid>
+            <CompiledTypeName>InRule.Repository.RuleElements.AddCollectionMemberActionDef, InRule.Repository</CompiledTypeName>
+          </RuleElementDef>
+          <RuleElementDef
+            xsi:type="TemplateValueDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="95947363-0f20-4338-bb91-a695eb184354"
+            Name="TemplateValueDef4">
+            <PlaceholderValues>
+              <Dictionary>
+                <KeyValuePair>
+                  <Key>
+                    <string xmlns="">status</string>
+                  </Key>
+                  <Value>
+                    <string xmlns="">"A"</string>
+                  </Value>
+                </KeyValuePair>
+              </Dictionary>
+            </PlaceholderValues>
+            <SourceTemplateGuid>2a9a6163-15d4-4f6a-909a-7bc66a563bd5</SourceTemplateGuid>
+            <CompiledTypeName>InRule.Repository.RuleElements.SetValueActionDef, InRule.Repository</CompiledTypeName>
+          </RuleElementDef>
+          <RuleElementDef
+            xsi:type="TemplateValueDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="b5b1582b-a488-497b-8f8b-dd3f4f49d2be"
+            Name="TemplateValueDef5">
+            <PlaceholderValues>
+              <Dictionary>
+                <KeyValuePair>
+                  <Key>
+                    <string xmlns="">fieldID</string>
+                  </Key>
+                  <Value>
+                    <string xmlns="">TransactionID</string>
+                  </Value>
+                </KeyValuePair>
+                <KeyValuePair>
+                  <Key>
+                    <string xmlns="">processingStatus</string>
+                  </Key>
+                  <Value>
+                    <string xmlns="">"Approved"</string>
+                  </Value>
+                </KeyValuePair>
+              </Dictionary>
+            </PlaceholderValues>
+            <SourceTemplateGuid>7e4b8ed9-4d55-4e6e-a5d8-6dc320aeb929</SourceTemplateGuid>
+            <CompiledTypeName>InRule.Repository.RuleElements.FireNotificationActionDef, InRule.Repository</CompiledTypeName>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+    <RuleElementDef
+      xsi:type="LanguageRuleDef"
+      Revision="1"
+      PublicRevision="1"
+      Guid="1670bc91-c36b-4845-8745-055a1ec7c5a4"
+      Name="SetTransactiontoProcessed">
+      <Attributes>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedAttributeTokenKey</Name>
+            <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.0"
+              Value="ActionSetDefault" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatusVocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatus0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.0"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatusVocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatus0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.0.1"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.SetPendingTransactionProcessingStatus.status.ValueListValueProcessingStatusList" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage4" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.0"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.1"
+              Value="Vocabulary_Examples.PendingTransaction.TransactionID.Implicit" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.2"
+              Value="Vocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessageVocabulary_Examples.PendingTransaction.VocabularyDef1.DisplayProcessingMessage0" />
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="0.1.1.3"
+              Value="StringDesigner" />
+          </Collection>
+        </anyType>
+        <anyType
+          xsi:type="CollectionItem">
+          <Key>
+            <Name>ReservedInRuleTemplateConversionKey</Name>
+            <Guid>a3dfb567-a0f0-4ed1-8101-65c210b55925</Guid>
+          </Key>
+          <Collection>
+            <anyType
+              xsi:type="XmlSerializableStringDictionaryItem"
+              Key="ReservedInRuleTemplateConversionKey"
+              Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;TemplateValueDef xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; Revision=&quot;1&quot; PublicRevision=&quot;1&quot; Guid=&quot;a14dc4f0-db30-4341-9ca2-a97a4b469194&quot; Name=&quot;SetTransactiontoProcessed&quot;&gt;&lt;PlaceholderValues xmlns=&quot;http://www.inrule.com/XmlSchema/Schema&quot;&gt;&lt;Dictionary&gt;&lt;KeyValuePair&gt;&lt;Key&gt;&lt;string xmlns=&quot;&quot;&gt;status&lt;/string&gt;&lt;/Key&gt;&lt;Value&gt;&lt;string xmlns=&quot;&quot;&gt;&quot;C&quot;&lt;/string&gt;&lt;/Value&gt;&lt;/KeyValuePair&gt;&lt;/Dictionary&gt;&lt;/PlaceholderValues&gt;&lt;SourceTemplateGuid xmlns=&quot;http://www.inrule.com/XmlSchema/Schema&quot;&gt;bebeb8c5-dd2d-4cce-8126-e91da71a4c5c&lt;/SourceTemplateGuid&gt;&lt;CompiledTypeName xmlns=&quot;http://www.inrule.com/XmlSchema/Schema&quot;&gt;InRule.Repository.RuleElements.SetValueActionDef, InRule.Repository&lt;/CompiledTypeName&gt;&lt;/TemplateValueDef&gt;" />
+          </Collection>
+        </anyType>
+      </Attributes>
+      <RuleElement
+        xsi:type="SimpleRuleDef"
+        Revision="1"
+        PublicRevision="1"
+        Guid="982db6ad-66da-4c38-8dfc-d41853e2983b"
+        Name="SetTransactiontoProcessed">
+        <Condition>
+          <ReturnType>Boolean</ReturnType>
+          <FormulaText>true</FormulaText>
+        </Condition>
+        <SubRules>
+          <RuleElementDef
+            xsi:type="TemplateValueDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="f091157f-4f8a-4ef8-ae31-f07ce76d6a3b"
+            Name="TemplateValueDef1">
+            <PlaceholderValues>
+              <Dictionary>
+                <KeyValuePair>
+                  <Key>
+                    <string xmlns="">status</string>
+                  </Key>
+                  <Value>
+                    <string xmlns="">"C"</string>
+                  </Value>
+                </KeyValuePair>
+              </Dictionary>
+            </PlaceholderValues>
+            <SourceTemplateGuid>bebeb8c5-dd2d-4cce-8126-e91da71a4c5c</SourceTemplateGuid>
+            <CompiledTypeName>InRule.Repository.RuleElements.SetValueActionDef, InRule.Repository</CompiledTypeName>
+          </RuleElementDef>
+          <RuleElementDef
+            xsi:type="TemplateValueDef"
+            Revision="1"
+            PublicRevision="1"
+            Guid="26c02c75-18e7-4cce-8c45-6085d8dc3563"
+            Name="TemplateValueDef2">
+            <PlaceholderValues>
+              <Dictionary>
+                <KeyValuePair>
+                  <Key>
+                    <string xmlns="">fieldID</string>
+                  </Key>
+                  <Value>
+                    <string xmlns="">TransactionID</string>
+                  </Value>
+                </KeyValuePair>
+                <KeyValuePair>
+                  <Key>
+                    <string xmlns="">processingStatus</string>
+                  </Key>
+                  <Value>
+                    <string xmlns="">"Completed"</string>
+                  </Value>
+                </KeyValuePair>
+              </Dictionary>
+            </PlaceholderValues>
+            <SourceTemplateGuid>7e4b8ed9-4d55-4e6e-a5d8-6dc320aeb929</SourceTemplateGuid>
+            <CompiledTypeName>InRule.Repository.RuleElements.FireNotificationActionDef, InRule.Repository</CompiledTypeName>
+          </RuleElementDef>
+        </SubRules>
+        <HasContextVersionSettings>false</HasContextVersionSettings>
+      </RuleElement>
+      <HasContextVersionSettings>false</HasContextVersionSettings>
+    </RuleElementDef>
+  </Rules>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</RuleSetDef>

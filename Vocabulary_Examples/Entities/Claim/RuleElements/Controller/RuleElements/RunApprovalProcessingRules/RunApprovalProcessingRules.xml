@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageRuleDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Revision="1"
+  PublicRevision="1"
+  Guid="fca15e2e-891e-4bc2-9f76-aaf50336eb82"
+  Name="RunApprovalProcessingRules">
+  <Attributes xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <anyType
+      xsi:type="CollectionItem">
+      <Key>
+        <Name>ReservedAttributeTokenKey</Name>
+        <Guid>60fae55a-9a45-41a5-828a-bc71a3b65013</Guid>
+      </Key>
+      <Collection>
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0"
+          Value="ExecuteMemberRuleSetWhereDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.0"
+          Value="ExecuteMemberRuleSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.1"
+          Value="VocabUtils.PendingTransaction.RuleSets.ApprovalProcessing.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.2"
+          Value="ExecuteMemberRuleSetDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.3"
+          Value="VocabUtils.Claim.PendingTransactions.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.4"
+          Value="ExecuteMemberRuleSetWhereDefault" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.5"
+          Value="VocabUtils.PendingTransaction.ProcessingStatus_ValueListIs" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.5.0"
+          Value="VocabUtils.PendingTransaction.ProcessingStatus.Implicit" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.5.1"
+          Value="VocabUtils.Claim.Status_ValueListIs" />
+        <anyType
+          xsi:type="XmlSerializableStringDictionaryItem"
+          Key="0.5.2.0"
+          Value="VocabUtils.PendingTransaction.ProcessingStatus.ValueListValue" />
+      </Collection>
+    </anyType>
+  </Attributes>
+  <RuleElement
+    xsi:type="ExecuteMemberRuleSetActionDef"
+    Revision="1"
+    PublicRevision="1"
+    Guid="3010090d-6ab3-400a-b3b8-445b3ac1ce48"
+    Name="RunApprovalProcessingRules" xmlns="http://www.inrule.com/XmlSchema/Schema">
+    <Collection>
+      <FormulaText>PendingTransactions</FormulaText>
+    </Collection>
+    <RuleSet>
+      <FormulaText>ApprovalProcessing</FormulaText>
+    </RuleSet>
+    <FilteredBy>
+      <FormulaText>IsInValueList(ToValueList("P"), ProcessingStatus)</FormulaText>
+    </FilteredBy>
+  </RuleElement>
+  <HasContextVersionSettings xmlns="http://www.inrule.com/XmlSchema/Schema">false</HasContextVersionSettings>
+</LanguageRuleDef>
